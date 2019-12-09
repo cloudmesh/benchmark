@@ -1,0 +1,948 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.4, pytest-5.2.2, py-1.8.0, pluggy-0.13.0 -- d:\school\b649_engineeringcloudcomputing\env4\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-cloud, inifile: pytest.ini
+collecting ... collected 71 items
+
+tests/cloud/test_00_sys.py::Test_Sys::test_cms_help PASSED               [  1%]
+tests/cloud/test_00_sys.py::Test_Sys::test_benchmark PASSED              [  2%]
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_cms_init PASSED [  4%]
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_delete_all_keys_from_cloud PASSED [  5%]
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_delete_all_secgroups_from_cloud PASSED [  7%]
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_benchmark PASSED [  8%]
+tests/cloud/test_02_key.py::Test_Key::test_cleanup PASSED                [  9%]
+tests/cloud/test_02_key.py::Test_Key::test_upload_key_to_database PASSED [ 11%]
+tests/cloud/test_02_key.py::Test_Key::test_upload_key_to_cloud PASSED    [ 12%]
+tests/cloud/test_02_key.py::Test_Key::test_list_key_from_cloud PASSED    [ 14%]
+tests/cloud/test_02_key.py::Test_Key::test_delete_key_from_cloud PASSED  [ 15%]
+tests/cloud/test_02_key.py::Test_Key::test_get_key_from_cloud PASSED     [ 16%]
+tests/cloud/test_02_key.py::Test_Key::test_benchmark PASSED              [ 18%]
+tests/cloud/test_03_key_upload.py::Test_Key::test_cleanup PASSED         [ 19%]
+tests/cloud/test_03_key_upload.py::Test_Key::test_upload_key_to_database PASSED [ 21%]
+tests/cloud/test_03_key_upload.py::Test_Key::test_upload_key_to_cloud PASSED [ 22%]
+tests/cloud/test_03_key_upload.py::Test_Key::test_list_key_from_cloud PASSED [ 23%]
+tests/cloud/test_03_key_upload.py::Test_Key::test_benchmark PASSED       [ 25%]
+tests/cloud/test_04_flavor.py::Test_Flavor::test_empty_database PASSED   [ 26%]
+tests/cloud/test_04_flavor.py::Test_Flavor::test_provider_flavor PASSED  [ 28%]
+tests/cloud/test_04_flavor.py::Test_Flavor::test_provider_flavor_update PASSED [ 29%]
+tests/cloud/test_04_flavor.py::Test_Flavor::test_cms_flavor_refresh PASSED [ 30%]
+tests/cloud/test_04_flavor.py::Test_Flavor::test_cms_flavor PASSED       [ 32%]
+tests/cloud/test_04_flavor.py::Test_Flavor::test_benchmark PASSED        [ 33%]
+tests/cloud/test_05_image.py::Test_Image::test_empty_database PASSED     [ 35%]
+tests/cloud/test_05_image.py::Test_Image::test_provider_image PASSED     [ 36%]
+tests/cloud/test_05_image.py::Test_Image::test_provider_image_update PASSED [ 38%]
+tests/cloud/test_05_image.py::Test_Image::test_cms_image_refresh PASSED  [ 39%]
+tests/cloud/test_05_image.py::Test_Image::test_cms_image PASSED          [ 40%]
+tests/cloud/test_05_image.py::Test_Image::test_benchmark PASSED          [ 42%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_clear PASSED    [ 43%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_group_add PASSED    [ 45%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_group_delete PASSED [ 46%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_init PASSED     [ 47%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_add_group_wrong PASSED [ 49%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_list PASSED     [ 50%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_group_list_local PASSED [ 52%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_group_list_cloud PASSED [ 53%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_benchmark PASSED    [ 54%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_load PASSED [ 56%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_list_variables PASSED [ 57%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_list_secgroups PASSED [ 59%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_list_secgroups_rules PASSED [ 60%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_secgroups_add PASSED [ 61%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_upload_secgroup FAILED [ 63%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_secgroups_delete PASSED [ 64%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_secgroups_delete_again PASSED [ 66%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_benchmark PASSED [ 67%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_create FAILED [ 69%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vmprovider_vm_list PASSED [ 70%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_wait FAILED [ 71%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_ssh FAILED [ 73%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_info PASSED [ 74%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_vm_status FAILED [ 76%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_stop FAILED [ 77%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_start FAILED [ 78%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_terminate FAILED [ 80%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_benchmark PASSED [ 81%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_collection PASSED [ 83%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_loop PASSED [ 84%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_loop PASSED  [ 85%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_image_name_cloud PASSED [ 87%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_image_name_collection PASSED [ 88%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_names_regexp PASSED [ 90%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vms PASSED [ 91%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_ubuntu_in_images PASSED [ 92%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_cloud_name_attributes PASSED [ 94%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vm_collections PASSED [ 95%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vm_collections_vm PASSED [ 97%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vm_collection_form_parameter PASSED [ 98%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_benchmark PASSED [100%]
+
+================================== FAILURES ===================================
+_________________ Test_secgroup_provider.test_upload_secgroup _________________
+
+self = <cloudmesh.compute.openstack.Provider.Provider object at 0x00000202633BA188>
+name = 'Test_Sec_Group', rules = ['ssh']
+
+    def add_rules_to_secgroup(self, name=None, rules=None):
+        if name is None and rules is None:
+            raise ValueError("name or rules are None")
+    
+        cgroups = self.list_secgroups(name)
+        if len(cgroups) == 0:
+            raise ValueError("group does not exist")
+    
+        groups = DictList(Secgroup().list())
+        rules_details = DictList(SecgroupRule().list())
+    
+        try:
+>           group = groups[name]
+E           KeyError: 'Test_Sec_Group'
+
+cloudmesh\compute\openstack\Provider.py:545: KeyError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_07_secgroup_provider.Test_secgroup_provider object at 0x00000202633DD748>
+
+    def test_upload_secgroup(self):
+        HEADING()
+        name = "Test_Sec_Group"
+        Benchmark.Start()
+>       provider.upload_secgroup(name=name)
+
+tests\cloud\test_07_secgroup_provider.py:107: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cloudmesh\compute\vm\Provider.py:421: in upload_secgroup
+    return self.p.upload_secgroup(name=name)
+cloudmesh\compute\openstack\Provider.py:530: in upload_secgroup
+    rules=[found['name']])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudmesh.compute.openstack.Provider.Provider object at 0x00000202633BA188>
+name = 'Test_Sec_Group', rules = ['ssh']
+
+    def add_rules_to_secgroup(self, name=None, rules=None):
+        if name is None and rules is None:
+            raise ValueError("name or rules are None")
+    
+        cgroups = self.list_secgroups(name)
+        if len(cgroups) == 0:
+            raise ValueError("group does not exist")
+    
+        groups = DictList(Secgroup().list())
+        rules_details = DictList(SecgroupRule().list())
+    
+        try:
+            group = groups[name]
+        except:
+>           raise ValueError("group does not exist")
+E           ValueError: group does not exist
+
+cloudmesh\compute\openstack\Provider.py:547: ValueError
+---------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_upload_secgroup \tests\cloud\test_07_secgroup_provider.py 103
+# ######################################################################
+[0m
+Warning group already exists
+upload group: Test_Sec_Group
+     rule: ssh
+__________________ Test_provider_vm.test_provider_vm_create ___________________
+
+self = <cloudmesh.compute.openstack.Provider.Provider object at 0x0000020262C0B248>
+name = 'test-wang542-vm-2', image = 'CC-Ubuntu18.04', size = 'm1.medium'
+location = None, timeout = 360, key = 'wang542-key', secgroup = None
+ip = '129.114.33.243', user = 'cc', public = True, group = 'cloudmesh'
+metadata = None, cloud = 'chameleon', kwargs = {}, image_use = None
+flavor_use = None, groups = ['cloudmesh']
+server = Munch({'id': '9b6c365b-2468-4278-aeca-2f8db03b6716', 'name': 'test-wang542-vm-2', 'flavor': {'id': '3'}, 'image': Munc... 'OS-DCF:diskConfig': 'MANUAL', 'os-extended-volumes:volumes_attached': [], 'OS-EXT-STS:power_state': 0, 'user': 'cc'})
+
+    def create(self,
+               name=None,
+               image=None,
+               size=None,
+               location=None,
+               timeout=360,
+               key=None,
+               secgroup=None,
+               ip=None,
+               user=None,
+               public=True,
+               group=None,
+               metadata=None,
+               cloud=None,
+               **kwargs):
+        """
+        creates a named node
+    
+    
+        :param group: the list of groups the vm belongs to
+        :param name: the name of the node
+        :param image: the image used
+        :param size: the size of the image
+        :param timeout: a timeout in seconds that is invoked in case the image
+                        does not boot. The default is set to 3 minutes.
+        :param kwargs: additional arguments HEADING(c=".")ed along at time of
+                       boot
+        :return:
+        """
+        image_use = None
+        flavor_use = None
+    
+        # keyname = Config()["cloudmesh"]["profile"]["user"]
+        # ex_keyname has to be the registered keypair name in cloud
+    
+        """
+        https://docs.openstack.org/openstacksdk/latest/user/connection.html#openstack.connection.Connection.create_server
+    
+        """
+    
+        if 'flavor' in kwargs and size is None:
+            size = kwargs['flavor']
+    
+        # Guess user name
+    
+        if user is None:
+            user = Image.guess_username(image)
+            # image_name = image.lower()
+            # if image_name.startswith("cc-"):
+            #    user = "cc"
+            # if "centos" in image_name:
+            #    user = "centos"
+            # elif "ubuntu" in image_name:
+            #    user = "ubuntu"
+    
+        # get IP
+    
+        if not ip and public:
+            ip = self.find_available_public_ip()
+            # pprint(entry)
+    
+        elif ip is not None:
+            entry = self.list_public_ips(ip=ip, available=True)
+            if len(entry) == 0:
+                print("ip not available")
+                raise ValueError(f"The ip can not be assigned {ip}")
+    
+        if type(group) == str:
+            groups = Parameter.expand(group)
+    
+        banner("Create Server")
+        print("    Name:    ", name)
+        print("    User:    ", user)
+        print("    IP:      ", ip)
+        print("    Image:   ", image)
+        print("    Size:    ", size)
+        print("    Public:  ", public)
+        print("    Key:     ", key)
+        print("    location:", location)
+        print("    timeout: ", timeout)
+        print("    secgroup:", secgroup)
+        print("    group:   ", group)
+        print("    groups:  ", groups)
+        print()
+    
+        try:
+            server = self.cloudman.create_server(name,
+                                                 flavor=size,
+                                                 image=image,
+                                                 key_name=key,
+                                                 security_groups=[secgroup],
+                                                 timeout=timeout
+                                                 # tags=groups,
+                                                 # wait=True
+                                                 )
+            server['user'] = user
+>           r = self.cloudman.wait_for_server(server)
+
+cloudmesh\compute\openstack\Provider.py:964: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <openstack.connection.Connection object at 0x00000202633BCDC8>
+server = None, auto_ip = True, ips = None, ip_pool = None, reuse = True
+timeout = 180, nat_destination = None
+
+    def wait_for_server(
+            self, server, auto_ip=True, ips=None, ip_pool=None,
+            reuse=True, timeout=180, nat_destination=None):
+        """
+        Wait for a server to reach ACTIVE status.
+        """
+        # server = self.compute.wait_for_server(
+        #     server=server, interval=self._SERVER_AGE or 2, wait=timeout
+        # )
+        server_id = server['id']
+        timeout_message = "Timeout waiting for the server to come up."
+        start_time = time.time()
+    
+        # There is no point in iterating faster than the list_servers cache
+        for count in utils.iterate_timeout(
+                timeout,
+                timeout_message,
+                # if _SERVER_AGE is 0 we still want to wait a bit
+                # to be friendly with the server.
+>               wait=self._SERVER_AGE or 2):
+
+..\..\lib\site-packages\openstack\cloud\_compute.py:1071: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+timeout = 180, message = 'Timeout waiting for the server to come up.'
+wait = 2.0
+
+    def iterate_timeout(timeout, message, wait=2):
+        """Iterate and raise an exception on timeout.
+    
+        This is a generator that will continually yield and sleep for
+        wait seconds, and if the timeout is reached, will raise an exception
+        with <message>.
+    
+        """
+        log = _log.setup_logging('openstack.iterate_timeout')
+    
+        try:
+            # None as a wait winds up flowing well in the per-resource cache
+            # flow. We could spread this logic around to all of the calling
+            # points, but just having this treat None as "I don't have a value"
+            # seems friendlier
+            if wait is None:
+                wait = 2
+            elif wait == 0:
+                # wait should be < timeout, unless timeout is None
+                wait = 0.1 if timeout is None else min(0.1, timeout)
+            wait = float(wait)
+        except ValueError:
+            raise exceptions.SDKException(
+                "Wait value must be an int or float value. {wait} given"
+                " instead".format(wait=wait))
+    
+        start = time.time()
+        count = 0
+        while (timeout is None) or (time.time() < start + timeout):
+            count += 1
+            yield count
+            log.debug('Waiting %s seconds', wait)
+            time.sleep(wait)
+>       raise exceptions.ResourceTimeout(message)
+E       openstack.exceptions.ResourceTimeout: Timeout waiting for the server to come up.
+
+..\..\lib\site-packages\openstack\utils.py:68: ResourceTimeout
+
+During handling of the above exception, another exception occurred:
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x00000202646F1588>
+
+    def test_provider_vm_create(self):
+        HEADING()
+        name_generator.incr()
+        Benchmark.Start()
+>       data = provider.create(key=key)
+
+tests\cloud\test_08_vm_provider.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cloudmesh\mongo\DataBaseDecorator.py:87: in wrapper
+    current = f(*args, **kwargs)
+cloudmesh\compute\vm\Provider.py:216: in create
+    created = self.loop(self._create, **arguments)
+cloudmesh\compute\vm\Provider.py:112: in loop
+    vm = func(**parameters)
+cloudmesh\compute\vm\Provider.py:251: in _create
+    data = self.p.create(**arguments)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudmesh.compute.openstack.Provider.Provider object at 0x0000020262C0B248>
+name = 'test-wang542-vm-2', image = 'CC-Ubuntu18.04', size = 'm1.medium'
+location = None, timeout = 360, key = 'wang542-key', secgroup = None
+ip = '129.114.33.243', user = 'cc', public = True, group = 'cloudmesh'
+metadata = None, cloud = 'chameleon', kwargs = {}, image_use = None
+flavor_use = None, groups = ['cloudmesh']
+server = Munch({'id': '9b6c365b-2468-4278-aeca-2f8db03b6716', 'name': 'test-wang542-vm-2', 'flavor': {'id': '3'}, 'image': Munc... 'OS-DCF:diskConfig': 'MANUAL', 'os-extended-volumes:volumes_attached': [], 'OS-EXT-STS:power_state': 0, 'user': 'cc'})
+
+    def create(self,
+               name=None,
+               image=None,
+               size=None,
+               location=None,
+               timeout=360,
+               key=None,
+               secgroup=None,
+               ip=None,
+               user=None,
+               public=True,
+               group=None,
+               metadata=None,
+               cloud=None,
+               **kwargs):
+        """
+        creates a named node
+    
+    
+        :param group: the list of groups the vm belongs to
+        :param name: the name of the node
+        :param image: the image used
+        :param size: the size of the image
+        :param timeout: a timeout in seconds that is invoked in case the image
+                        does not boot. The default is set to 3 minutes.
+        :param kwargs: additional arguments HEADING(c=".")ed along at time of
+                       boot
+        :return:
+        """
+        image_use = None
+        flavor_use = None
+    
+        # keyname = Config()["cloudmesh"]["profile"]["user"]
+        # ex_keyname has to be the registered keypair name in cloud
+    
+        """
+        https://docs.openstack.org/openstacksdk/latest/user/connection.html#openstack.connection.Connection.create_server
+    
+        """
+    
+        if 'flavor' in kwargs and size is None:
+            size = kwargs['flavor']
+    
+        # Guess user name
+    
+        if user is None:
+            user = Image.guess_username(image)
+            # image_name = image.lower()
+            # if image_name.startswith("cc-"):
+            #    user = "cc"
+            # if "centos" in image_name:
+            #    user = "centos"
+            # elif "ubuntu" in image_name:
+            #    user = "ubuntu"
+    
+        # get IP
+    
+        if not ip and public:
+            ip = self.find_available_public_ip()
+            # pprint(entry)
+    
+        elif ip is not None:
+            entry = self.list_public_ips(ip=ip, available=True)
+            if len(entry) == 0:
+                print("ip not available")
+                raise ValueError(f"The ip can not be assigned {ip}")
+    
+        if type(group) == str:
+            groups = Parameter.expand(group)
+    
+        banner("Create Server")
+        print("    Name:    ", name)
+        print("    User:    ", user)
+        print("    IP:      ", ip)
+        print("    Image:   ", image)
+        print("    Size:    ", size)
+        print("    Public:  ", public)
+        print("    Key:     ", key)
+        print("    location:", location)
+        print("    timeout: ", timeout)
+        print("    secgroup:", secgroup)
+        print("    group:   ", group)
+        print("    groups:  ", groups)
+        print()
+    
+        try:
+            server = self.cloudman.create_server(name,
+                                                 flavor=size,
+                                                 image=image,
+                                                 key_name=key,
+                                                 security_groups=[secgroup],
+                                                 timeout=timeout
+                                                 # tags=groups,
+                                                 # wait=True
+                                                 )
+            server['user'] = user
+            r = self.cloudman.wait_for_server(server)
+            s = self.cloudman.add_ips_to_server(server, ips=ip)
+            variables = Variables()
+            variables['vm'] = name
+            if metadata is None:
+                metadata = {}
+    
+            metadata['image'] = image
+            metadata['flavor'] = size
+    
+            self.cloudman.set_server_metadata(server, metadata)
+    
+            self.add_secgroup(name=secgroup)
+    
+            # server = self.cloudman.compute.wait_for_server(server)
+    
+            # print("ssh -i {key} root@{ip}".format(
+            #    key=PRIVATE_KEYPAIR_FILE,
+            #    ip=server.access_ipv4))
+    
+        except openstack.exceptions.ResourceTimeout:
+            Console.error("Problem starting vm in time.")
+>           raise TimeoutError
+E           TimeoutError
+
+cloudmesh\compute\openstack\Provider.py:986: TimeoutError
+---------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vm_create \tests\cloud\test_08_vm_provider.py 55
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# Create Server
+# ----------------------------------------------------------------------
+[0m
+    Name:     test-wang542-vm-2
+    User:     cc
+    IP:       129.114.33.243
+    Image:    CC-Ubuntu18.04
+    Size:     m1.medium
+    Public:   True
+    Key:      wang542-key
+    location: None
+    timeout:  360
+    secgroup: None
+    group:    cloudmesh
+    groups:   ['cloudmesh']
+
+[31mERROR: Problem starting vm in time.[0m
+___________________ Test_provider_vm.test_provider_vm_wait ____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x00000202646FDC08>
+
+    def test_provider_vm_wait(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        cm = CmDatabase()
+        vm = cm.find_name(name, kind="vm")[0]
+>       assert provider.wait(vm=vm), "cms wait timed out ..."
+E       AssertionError: cms wait timed out ...
+E       assert False
+E        +  where False = <bound method Provider.wait of <cloudmesh.compute.vm.Provider.Provider object at 0x00000202633C18C8>>(vm={'_id': ObjectId('5dee8f0a96f91cdb729453d2'), 'access_ipv4': '', 'access_ipv6': '', 'addresses': {}, ...})
+E        +    where <bound method Provider.wait of <cloudmesh.compute.vm.Provider.Provider object at 0x00000202633C18C8>> = <cloudmesh.compute.vm.Provider.Provider object at 0x00000202633C18C8>.wait
+
+tests\cloud\test_08_vm_provider.py:89: AssertionError
+---------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vm_wait \tests\cloud\test_08_vm_provider.py 83
+# ######################################################################
+[0m
+[34mINFO: waiting for instance test-wang542-vm-2 to be reachable: Interval: 10, Timeout: 360[0m
+____________________ Test_provider_vm.test_provider_vm_ssh ____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x0000020264631A88>
+
+    def test_provider_vm_ssh(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        cm = CmDatabase()
+        vm = cm.find_name(name, kind="vm")[0]
+>       data = provider.ssh(vm=vm, command='\"echo IAmAlive\"')
+
+tests\cloud\test_08_vm_provider.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cloudmesh\compute\vm\Provider.py:446: in ssh
+    return self.p.ssh(vm=vm, command=command)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <cloudmesh.compute.openstack.Provider.Provider object at 0x0000020262C0B248>
+vm = {'_id': ObjectId('5dee8f0a96f91cdb729453d2'), 'access_ipv4': '', 'access_ipv6': '', 'addresses': {}, ...}
+command = '"echo IAmAlive"'
+
+    def ssh(self, vm=None, command=None):
+        #
+        # TODO: fix user name issue, should be stored in db
+        #
+    
+        # VERBOSE(vm)
+    
+>       ip = vm['ip_public']
+E       KeyError: 'ip_public'
+
+cloudmesh\compute\openstack\Provider.py:1112: KeyError
+---------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vm_ssh \tests\cloud\test_08_vm_provider.py 92
+# ######################################################################
+[0m
+_______________________ Test_provider_vm.test_vm_status _______________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x000002026474D9C8>
+
+    def test_vm_status(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        data = provider.status(name=name)
+        if type(data) == list:
+            data = data[0]
+        print(data)
+        Benchmark.Stop()
+        if cloud == 'oracle':
+            assert data["cm.status"] in ['STARTING', 'RUNNING', 'STOPPING',
+                                         'STOPPED']
+        else:
+>           assert data["cm.status"] in ['ACTIVE', 'BOOTING', 'TERMINATED',
+                                         'STOPPED']
+E           AssertionError: assert 'BUILD' in ['ACTIVE', 'BOOTING', 'TERMINATED', 'STOPPED']
+
+tests\cloud\test_08_vm_provider.py:128: AssertionError
+---------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_vm_status \tests\cloud\test_08_vm_provider.py 115
+# ######################################################################
+[0m
+{'name': 'test-wang542-vm-2', 'status:': 'BUILD', 'cm.status': 'BUILD'}
+___________________ Test_provider_vm.test_provider_vm_stop ____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x0000020264657A88>
+
+    def test_provider_vm_stop(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+>       data = provider.stop(name=name)
+
+tests\cloud\test_08_vm_provider.py:135: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cloudmesh\mongo\DataBaseDecorator.py:87: in wrapper
+    current = f(*args, **kwargs)
+cloudmesh\compute\vm\Provider.py:292: in stop
+    return self.loop_name(name, self.p.stop)
+cloudmesh\compute\vm\Provider.py:94: in loop_name
+    vm = func(name=name)
+cloudmesh\compute\openstack\Provider.py:681: in stop
+    r = self.cloudman.compute.stop_server(server)
+..\..\lib\site-packages\openstack\compute\v2\_proxy.py:878: in stop_server
+    server.stop(self)
+..\..\lib\site-packages\openstack\compute\v2\server.py:436: in stop
+    self._action(session, body)
+..\..\lib\site-packages\openstack\compute\v2\server.py:240: in _action
+    exceptions.raise_from_response(response)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+response = <Response [409]>, error_message = None
+
+    def raise_from_response(response, error_message=None):
+        """Raise an instance of an HTTPException based on keystoneauth response."""
+        if response.status_code < 400:
+            return
+    
+        if response.status_code == 409:
+            cls = ConflictException
+        elif response.status_code == 404:
+            cls = NotFoundException
+        elif response.status_code == 400:
+            cls = BadRequestException
+        else:
+            cls = HttpException
+    
+        details = None
+        content_type = response.headers.get('content-type', '')
+        if response.content and 'application/json' in content_type:
+            # Iterate over the nested objects to retrieve "message" attribute.
+            # TODO(shade) Add exception handling for times when the content type
+            # is lying.
+    
+            try:
+                content = response.json()
+                messages = [_extract_message(obj) for obj in content.values()]
+                # Join all of the messages together nicely and filter out any
+                # objects that don't have a "message" attr.
+                details = '\n'.join(msg for msg in messages if msg)
+            except Exception:
+                details = response.text
+        elif response.content and 'text/html' in content_type:
+            # Split the lines, strip whitespace and inline HTML from the response.
+            details = [re.sub(r'<.+?>', '', i.strip())
+                       for i in response.text.splitlines()]
+            details = list(set([msg for msg in details if msg]))
+            # Return joined string separated by colons.
+            details = ': '.join(details)
+    
+        if not details:
+            details = response.reason if response.reason else response.text
+    
+        http_status = response.status_code
+        request_id = response.headers.get('x-openstack-request-id')
+    
+        raise cls(
+            message=error_message, response=response, details=details,
+>           http_status=http_status, request_id=request_id
+        )
+E       openstack.exceptions.ConflictException: ConflictException: 409: Client Error for url: https://openstack.tacc.chameleoncloud.org:8774/v2/CH-819337/servers/9b6c365b-2468-4278-aeca-2f8db03b6716/action, Cannot 'stop' instance 9b6c365b-2468-4278-aeca-2f8db03b6716 while it is in vm_state building
+
+..\..\lib\site-packages\openstack\exceptions.py:229: ConflictException
+---------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vm_stop \tests\cloud\test_08_vm_provider.py 131
+# ######################################################################
+[0m
+___________________ Test_provider_vm.test_provider_vm_start ___________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x00000202645C2648>
+
+    def test_provider_vm_start(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+>       data = provider.start(name=name)
+
+tests\cloud\test_08_vm_provider.py:153: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cloudmesh\mongo\DataBaseDecorator.py:87: in wrapper
+    current = f(*args, **kwargs)
+cloudmesh\compute\vm\Provider.py:297: in start
+    return self.loop_name(name, self.p.start)
+cloudmesh\compute\vm\Provider.py:94: in loop_name
+    vm = func(name=name)
+cloudmesh\compute\openstack\Provider.py:670: in start
+    r = self.cloudman.compute.start_server(server)
+..\..\lib\site-packages\openstack\compute\v2\_proxy.py:868: in start_server
+    server.start(self)
+..\..\lib\site-packages\openstack\compute\v2\server.py:432: in start
+    self._action(session, body)
+..\..\lib\site-packages\openstack\compute\v2\server.py:240: in _action
+    exceptions.raise_from_response(response)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+response = <Response [409]>, error_message = None
+
+    def raise_from_response(response, error_message=None):
+        """Raise an instance of an HTTPException based on keystoneauth response."""
+        if response.status_code < 400:
+            return
+    
+        if response.status_code == 409:
+            cls = ConflictException
+        elif response.status_code == 404:
+            cls = NotFoundException
+        elif response.status_code == 400:
+            cls = BadRequestException
+        else:
+            cls = HttpException
+    
+        details = None
+        content_type = response.headers.get('content-type', '')
+        if response.content and 'application/json' in content_type:
+            # Iterate over the nested objects to retrieve "message" attribute.
+            # TODO(shade) Add exception handling for times when the content type
+            # is lying.
+    
+            try:
+                content = response.json()
+                messages = [_extract_message(obj) for obj in content.values()]
+                # Join all of the messages together nicely and filter out any
+                # objects that don't have a "message" attr.
+                details = '\n'.join(msg for msg in messages if msg)
+            except Exception:
+                details = response.text
+        elif response.content and 'text/html' in content_type:
+            # Split the lines, strip whitespace and inline HTML from the response.
+            details = [re.sub(r'<.+?>', '', i.strip())
+                       for i in response.text.splitlines()]
+            details = list(set([msg for msg in details if msg]))
+            # Return joined string separated by colons.
+            details = ': '.join(details)
+    
+        if not details:
+            details = response.reason if response.reason else response.text
+    
+        http_status = response.status_code
+        request_id = response.headers.get('x-openstack-request-id')
+    
+        raise cls(
+            message=error_message, response=response, details=details,
+>           http_status=http_status, request_id=request_id
+        )
+E       openstack.exceptions.ConflictException: ConflictException: 409: Client Error for url: https://openstack.tacc.chameleoncloud.org:8774/v2/CH-819337/servers/9b6c365b-2468-4278-aeca-2f8db03b6716/action, Cannot 'start' instance 9b6c365b-2468-4278-aeca-2f8db03b6716 while it is in vm_state building
+
+..\..\lib\site-packages\openstack\exceptions.py:229: ConflictException
+---------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vm_start \tests\cloud\test_08_vm_provider.py 149
+# ######################################################################
+[0m
+_________________ Test_provider_vm.test_provider_vm_terminate _________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x0000020264659148>
+
+    def test_provider_vm_terminate(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        data = provider.destroy(name=name)
+        Benchmark.Stop()
+    
+        pprint(data)
+    
+        termination_timeout = 360
+        time = 0
+        while time <= termination_timeout:
+            sleep(5)
+            time += 5
+            if cloud == 'chameleon' and len(provider.info(name=name)) == 0:
+                break
+            elif cloud == 'aws' and (len(provider.info(name=name)) == 0 or
+                                     provider.info(name=name)[0]["cm"][
+                                         "status"] in ['TERMINATED']):
+                break
+            elif cloud == 'azure':
+                try:
+                    provider.info(name=name)
+                except Exception:
+                    # if there is an exception that means the group has been
+                    # deleted
+                    break
+    
+        # print(provider.info(name=name))
+        if cloud == 'chameleon':
+>           assert len(provider.info(name=name)) == 0
+E           assert 1 == 0
+E             -1
+E             +0
+
+tests\cloud\test_08_vm_provider.py:201: AssertionError
+---------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vm_terminate \tests\cloud\test_08_vm_provider.py 171
+# ######################################################################
+[0m
+[{'OS-DCF:diskConfig': 'MANUAL',
+  'OS-EXT-AZ:availability_zone': 'nova',
+  'OS-EXT-SRV-ATTR:host': None,
+  'OS-EXT-SRV-ATTR:hostname': None,
+  'OS-EXT-SRV-ATTR:hypervisor_hostname': None,
+  'OS-EXT-SRV-ATTR:instance_name': None,
+  'OS-EXT-SRV-ATTR:kernel_id': None,
+  'OS-EXT-SRV-ATTR:launch_index': None,
+  'OS-EXT-SRV-ATTR:ramdisk_id': None,
+  'OS-EXT-SRV-ATTR:reservation_id': None,
+  'OS-EXT-SRV-ATTR:root_device_name': None,
+  'OS-EXT-SRV-ATTR:user_data': None,
+  'OS-EXT-STS:power_state': 0,
+  'OS-EXT-STS:task_state': 'spawning',
+  'OS-EXT-STS:vm_state': 'building',
+  'OS-SCH-HNT:scheduler_hints': None,
+  'OS-SRV-USG:launched_at': None,
+  'OS-SRV-USG:terminated_at': None,
+  'accessIPv4': '',
+  'accessIPv6': '',
+  'addresses': Munch({}),
+  'adminPass': None,
+  'az': 'nova',
+  'block_device_mapping': None,
+  'cloud': 'defaults',
+  'cm': {'cloud': 'chameleon',
+         'created': '2019-12-09T18:14:43Z',
+         'driver': 'openstack',
+         'kind': 'vm',
+         'name': 'test-wang542-vm-2',
+         'status': 'DELETED',
+         'updated': '2019-12-09 18:24:41.751147'},
+  'config_drive': '',
+  'created': '2019-12-09T18:14:43Z',
+  'created_at': '2019-12-09T18:14:43Z',
+  'description': None,
+  'disk_config': 'MANUAL',
+  'flavor': Munch({'id': '3'}),
+  'has_config_drive': False,
+  'host': None,
+  'hostId': '7a03da6610f1f745689b37f01c99989133c2889aa23717c050ee7379',
+  'host_id': '7a03da6610f1f745689b37f01c99989133c2889aa23717c050ee7379',
+  'host_status': None,
+  'hostname': None,
+  'hypervisor_hostname': None,
+  'id': '9b6c365b-2468-4278-aeca-2f8db03b6716',
+  'image': Munch({'id': 'aa47c52e-df7d-4dcf-ba6d-1aa17951e97b'}),
+  'instance_name': None,
+  'interface_ip': '',
+  'kernel_id': None,
+  'key_name': 'wang542-key',
+  'launch_index': None,
+  'launched_at': None,
+  'location': {'cloud': 'defaults',
+               'project': {'domain_id': None,
+                           'domain_name': None,
+                           'id': 'CH-819337',
+                           'name': None},
+               'region_name': 'RegionOne',
+               'zone': 'nova'},
+  'locked': None,
+  'metadata': Munch({}),
+  'name': 'test-wang542-vm-2',
+  'networks': {},
+  'os-extended-volumes:volumes_attached': [],
+  'personality': None,
+  'power_state': 0,
+  'private_v4': '',
+  'progress': 0,
+  'project_id': 'CH-819337',
+  'properties': {'OS-DCF:diskConfig': 'MANUAL',
+                 'OS-EXT-AZ:availability_zone': 'nova',
+                 'OS-EXT-SRV-ATTR:host': None,
+                 'OS-EXT-SRV-ATTR:hostname': None,
+                 'OS-EXT-SRV-ATTR:hypervisor_hostname': None,
+                 'OS-EXT-SRV-ATTR:instance_name': None,
+                 'OS-EXT-SRV-ATTR:kernel_id': None,
+                 'OS-EXT-SRV-ATTR:launch_index': None,
+                 'OS-EXT-SRV-ATTR:ramdisk_id': None,
+                 'OS-EXT-SRV-ATTR:reservation_id': None,
+                 'OS-EXT-SRV-ATTR:root_device_name': None,
+                 'OS-EXT-SRV-ATTR:user_data': None,
+                 'OS-EXT-STS:power_state': 0,
+                 'OS-EXT-STS:task_state': 'spawning',
+                 'OS-EXT-STS:vm_state': 'building',
+                 'OS-SCH-HNT:scheduler_hints': None,
+                 'OS-SRV-USG:launched_at': None,
+                 'OS-SRV-USG:terminated_at': None,
+                 'host_status': None,
+                 'locked': None,
+                 'os-extended-volumes:volumes_attached': [],
+                 'trusted_image_certificates': None},
+  'public_v4': '',
+  'public_v6': '',
+  'ramdisk_id': None,
+  'region': 'RegionOne',
+  'reservation_id': None,
+  'root_device_name': None,
+  'scheduler_hints': None,
+  'security_groups': [Munch({'name': 'default'})],
+  'server_groups': None,
+  'status': 'DELETED',
+  'tags': [],
+  'task_state': 'spawning',
+  'tenant_id': 'CH-819337',
+  'terminated_at': None,
+  'trusted_image_certificates': None,
+  'updated': '2019-12-09T18:14:44Z',
+  'user_data': None,
+  'user_id': 'wang542',
+  'vm_state': 'building',
+  'volumes': []}]
+============================== warnings summary ===============================
+tests/cloud/test_05_image.py::Test_Image::test_provider_image
+tests/cloud/test_05_image.py::Test_Image::test_provider_image_update
+  d:\school\b649_engineeringcloudcomputing\env4\lib\site-packages\openstack\compute\v2\_proxy.py:289: DeprecationWarning: This API is deprecated and may disappear shortly
+    DeprecationWarning)
+
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_create
+  d:\school\b649_engineeringcloudcomputing\env4\lib\site-packages\openstack\cloud\_utils.py:372: DeprecationWarning: inspect.getargspec() is deprecated since Python 3.0, use inspect.signature() or inspect.getfullargspec()
+    argspec = inspect.getargspec(func)
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+============ 8 failed, 63 passed, 3 warnings in 1172.25s (0:19:32) ============

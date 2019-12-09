@@ -1,0 +1,609 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.4, pytest-5.2.2, py-1.8.0, pluggy-0.13.0 -- d:\school\b649_engineeringcloudcomputing\env4\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-cloud, inifile: pytest.ini
+collecting ... collected 71 items
+
+tests/cloud/test_00_sys.py::Test_Sys::test_cms_help PASSED               [  1%]
+tests/cloud/test_00_sys.py::Test_Sys::test_benchmark PASSED              [  2%]
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_cms_init PASSED [  4%]
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_delete_all_keys_from_cloud PASSED [  5%]
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_delete_all_secgroups_from_cloud PASSED [  7%]
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_benchmark PASSED [  8%]
+tests/cloud/test_02_key.py::Test_Key::test_cleanup PASSED                [  9%]
+tests/cloud/test_02_key.py::Test_Key::test_upload_key_to_database PASSED [ 11%]
+tests/cloud/test_02_key.py::Test_Key::test_upload_key_to_cloud PASSED    [ 12%]
+tests/cloud/test_02_key.py::Test_Key::test_list_key_from_cloud PASSED    [ 14%]
+tests/cloud/test_02_key.py::Test_Key::test_delete_key_from_cloud PASSED  [ 15%]
+tests/cloud/test_02_key.py::Test_Key::test_get_key_from_cloud PASSED     [ 16%]
+tests/cloud/test_02_key.py::Test_Key::test_benchmark PASSED              [ 18%]
+tests/cloud/test_03_key_upload.py::Test_Key::test_cleanup PASSED         [ 19%]
+tests/cloud/test_03_key_upload.py::Test_Key::test_upload_key_to_database PASSED [ 21%]
+tests/cloud/test_03_key_upload.py::Test_Key::test_upload_key_to_cloud PASSED [ 22%]
+tests/cloud/test_03_key_upload.py::Test_Key::test_list_key_from_cloud PASSED [ 23%]
+tests/cloud/test_03_key_upload.py::Test_Key::test_benchmark PASSED       [ 25%]
+tests/cloud/test_04_flavor.py::Test_Flavor::test_empty_database PASSED   [ 26%]
+tests/cloud/test_04_flavor.py::Test_Flavor::test_provider_flavor PASSED  [ 28%]
+tests/cloud/test_04_flavor.py::Test_Flavor::test_provider_flavor_update PASSED [ 29%]
+tests/cloud/test_04_flavor.py::Test_Flavor::test_cms_flavor_refresh PASSED [ 30%]
+tests/cloud/test_04_flavor.py::Test_Flavor::test_cms_flavor PASSED       [ 32%]
+tests/cloud/test_04_flavor.py::Test_Flavor::test_benchmark PASSED        [ 33%]
+tests/cloud/test_05_image.py::Test_Image::test_empty_database PASSED     [ 35%]
+tests/cloud/test_05_image.py::Test_Image::test_provider_image FAILED     [ 36%]
+tests/cloud/test_05_image.py::Test_Image::test_provider_image_update FAILED [ 38%]
+tests/cloud/test_05_image.py::Test_Image::test_cms_image_refresh PASSED  [ 39%]
+tests/cloud/test_05_image.py::Test_Image::test_cms_image PASSED          [ 40%]
+tests/cloud/test_05_image.py::Test_Image::test_benchmark PASSED          [ 42%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_clear PASSED    [ 43%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_group_add PASSED    [ 45%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_group_delete PASSED [ 46%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_init PASSED     [ 47%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_add_group_wrong PASSED [ 49%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_list PASSED     [ 50%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_group_list_local PASSED [ 52%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_group_list_cloud PASSED [ 53%]
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_benchmark PASSED    [ 54%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_load PASSED [ 56%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_list_variables PASSED [ 57%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_list_secgroups PASSED [ 59%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_list_secgroups_rules PASSED [ 60%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_secgroups_add PASSED [ 61%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_upload_secgroup PASSED [ 63%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_secgroups_delete PASSED [ 64%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_secgroups_delete_again PASSED [ 66%]
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_benchmark PASSED [ 67%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_create PASSED [ 69%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vmprovider_vm_list PASSED [ 70%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_wait FAILED [ 71%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_ssh FAILED [ 73%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_info PASSED [ 74%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_vm_status PASSED [ 76%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_stop PASSED [ 77%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_start PASSED [ 78%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_terminate FAILED [ 80%]
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_benchmark PASSED [ 81%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_collection PASSED [ 83%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_loop PASSED [ 84%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_loop PASSED  [ 85%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_image_name_cloud FAILED [ 87%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_image_name_collection PASSED [ 88%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_names_regexp PASSED [ 90%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vms PASSED [ 91%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_ubuntu_in_images FAILED [ 92%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_cloud_name_attributes PASSED [ 94%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vm_collections PASSED [ 95%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vm_collections_vm PASSED [ 97%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vm_collection_form_parameter PASSED [ 98%]
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_benchmark PASSED [100%]
+
+================================== FAILURES ===================================
+_______________________ Test_Image.test_provider_image ________________________
+
+self = <test_05_image.Test_Image object at 0x0000026F696CBEC8>
+
+    def test_provider_image(self):
+        HEADING()
+        local = Key()
+        Benchmark.Start()
+>       r = provider.images()
+
+tests\cloud\test_05_image.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cloudmesh\mongo\DataBaseDecorator.py:87: in wrapper
+    current = f(*args, **kwargs)
+cloudmesh\compute\vm\Provider.py:149: in images
+    return self.p.images(*args, **kwargs)
+cloudmesh\compute\aws\Provider.py:1306: in images
+    self.get_images_and_import(data)
+cloudmesh\mongo\DataBaseDecorator.py:129: in wrapper
+    result = self.database.importAsFile(data, collection, db)
+cloudmesh\mongo\CmDatabase.py:591: in importAsFile
+    MongoDBController().importAsFile(data, collection, db)
+cloudmesh\mongo\MongoDBController.py:988: in importAsFile
+    result = Shell.run2(cmd)
+cloudmesh\common3\Shell.py:66: in run2
+    shell=True)
+C:\Python37\lib\subprocess.py:395: in check_output
+    **kwargs).stdout
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = ('mongoimport --db cloudmesh --collection aws-image  --authenticationDatabase admin  --username admin --password admin123  --drop --file C:\\Users\\wangc\\.cloudmesh\\tmp\\tmp_import_file.json',)
+kwargs = {'shell': True, 'stderr': -2, 'stdout': -1}
+process = <subprocess.Popen object at 0x0000026F8ED86B08>
+stdout = b"'mongoimport' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n"
+stderr = None, retcode = 1
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired:
+                process.kill()
+                stdout, stderr = process.communicate()
+                raise TimeoutExpired(process.args, timeout, output=stdout,
+                                     stderr=stderr)
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+                raise CalledProcessError(retcode, process.args,
+>                                        output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command 'mongoimport --db cloudmesh --collection aws-image  --authenticationDatabase admin  --username admin --password admin123  --drop --file C:\Users\wangc\.cloudmesh\tmp\tmp_import_file.json' returned non-zero exit status 1.
+
+C:\Python37\lib\subprocess.py:487: CalledProcessError
+---------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_image \tests\cloud\test_05_image.py 43
+# ######################################################################
+[0m
+Getting the list of images for aws cloud, this might take a few minutes ...
+[32mImages list for aws cloud retrieved successfully[0m
+Saving the data to file 
+Importing the saved data to database
+____________________ Test_Image.test_provider_image_update ____________________
+
+self = <test_05_image.Test_Image object at 0x0000026F8EAF3688>
+
+    def test_provider_image_update(self):
+        HEADING()
+        local = Key()
+        Benchmark.Start()
+>       r = provider.images()
+
+tests\cloud\test_05_image.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cloudmesh\mongo\DataBaseDecorator.py:87: in wrapper
+    current = f(*args, **kwargs)
+cloudmesh\compute\vm\Provider.py:149: in images
+    return self.p.images(*args, **kwargs)
+cloudmesh\compute\aws\Provider.py:1306: in images
+    self.get_images_and_import(data)
+cloudmesh\mongo\DataBaseDecorator.py:129: in wrapper
+    result = self.database.importAsFile(data, collection, db)
+cloudmesh\mongo\CmDatabase.py:591: in importAsFile
+    MongoDBController().importAsFile(data, collection, db)
+cloudmesh\mongo\MongoDBController.py:988: in importAsFile
+    result = Shell.run2(cmd)
+cloudmesh\common3\Shell.py:66: in run2
+    shell=True)
+C:\Python37\lib\subprocess.py:395: in check_output
+    **kwargs).stdout
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = ('mongoimport --db cloudmesh --collection aws-image  --authenticationDatabase admin  --username admin --password admin123  --drop --file C:\\Users\\wangc\\.cloudmesh\\tmp\\tmp_import_file.json',)
+kwargs = {'shell': True, 'stderr': -2, 'stdout': -1}
+process = <subprocess.Popen object at 0x0000026F3C6E0E48>
+stdout = b"'mongoimport' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n"
+stderr = None, retcode = 1
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired:
+                process.kill()
+                stdout, stderr = process.communicate()
+                raise TimeoutExpired(process.args, timeout, output=stdout,
+                                     stderr=stderr)
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+                raise CalledProcessError(retcode, process.args,
+>                                        output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command 'mongoimport --db cloudmesh --collection aws-image  --authenticationDatabase admin  --username admin --password admin123  --drop --file C:\Users\wangc\.cloudmesh\tmp\tmp_import_file.json' returned non-zero exit status 1.
+
+C:\Python37\lib\subprocess.py:487: CalledProcessError
+---------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_image_update \tests\cloud\test_05_image.py 50
+# ######################################################################
+[0m
+Getting the list of images for aws cloud, this might take a few minutes ...
+[32mImages list for aws cloud retrieved successfully[0m
+Saving the data to file 
+Importing the saved data to database
+___________________ Test_provider_vm.test_provider_vm_wait ____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x0000026F3C383348>
+
+    def test_provider_vm_wait(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        cm = CmDatabase()
+        vm = cm.find_name(name, kind="vm")[0]
+>       assert provider.wait(vm=vm), "cms wait timed out ..."
+E       AssertionError: cms wait timed out ...
+E       assert False
+E        +  where False = <bound method Provider.wait of <cloudmesh.compute.vm.Provider.Provider object at 0x0000026F5593C548>>(vm={'KeyName': 'wang542-key', '_id': ObjectId('5dee8be10cf7240814a3fc44'), 'cm': {'cloud': 'aws', 'collection': 'aws-vm', 'created': '2019-12-09 18:01:36.710234', 'creation_time': '30.00', ...}, 'created': '12/09/2019, 18:01:08', ...})
+E        +    where <bound method Provider.wait of <cloudmesh.compute.vm.Provider.Provider object at 0x0000026F5593C548>> = <cloudmesh.compute.vm.Provider.Provider object at 0x0000026F5593C548>.wait
+
+tests\cloud\test_08_vm_provider.py:89: AssertionError
+---------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vm_wait \tests\cloud\test_08_vm_provider.py 83
+# ######################################################################
+[0m
+[34mINFO: waiting for instance to be reachable: Interval: 5, Timeout: 360[0m
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b'ssh: connect to host 54.147.243.220 port 22: Connection refused\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 echo IAmReady
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+____________________ Test_provider_vm.test_provider_vm_ssh ____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x0000026F3C36B488>
+
+    def test_provider_vm_ssh(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        cm = CmDatabase()
+        vm = cm.find_name(name, kind="vm")[0]
+        data = provider.ssh(vm=vm, command='\"echo IAmAlive\"')
+        print(data)
+>       assert 'IAmAlive' in data
+E       TypeError: argument of type 'NoneType' is not iterable
+
+tests\cloud\test_08_vm_provider.py:100: TypeError
+---------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vm_ssh \tests\cloud\test_08_vm_provider.py 92
+# ######################################################################
+[0m
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:\Users\wangc\.ssh\id_rsa ubuntu@54.147.243.220 "echo IAmAlive"
+ERROR: [b"Warning: Permanently added '54.147.243.220' (ECDSA) to the list of known hosts.\r\n", b'ubuntu@54.147.243.220: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n']
+None
+_________________ Test_provider_vm.test_provider_vm_terminate _________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x0000026F3C356848>
+
+    def test_provider_vm_terminate(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        data = provider.destroy(name=name)
+        Benchmark.Stop()
+    
+        pprint(data)
+    
+        termination_timeout = 360
+        time = 0
+        while time <= termination_timeout:
+            sleep(5)
+            time += 5
+            if cloud == 'chameleon' and len(provider.info(name=name)) == 0:
+                break
+            elif cloud == 'aws' and (len(provider.info(name=name)) == 0 or
+                                     provider.info(name=name)[0]["cm"][
+                                         "status"] in ['TERMINATED']):
+                break
+            elif cloud == 'azure':
+                try:
+                    provider.info(name=name)
+                except Exception:
+                    # if there is an exception that means the group has been
+                    # deleted
+                    break
+    
+        # print(provider.info(name=name))
+        if cloud == 'chameleon':
+            assert len(provider.info(name=name)) == 0
+        elif cloud == 'aws':
+>           assert len(data) == 0 \
+                   or (data[0]["cm"]["status"] in ['BOOTING', 'TERMINATED']
+                       if data and data[0].get('cm', None) is not None
+E                      TypeError: object of type 'NoneType' has no len()
+
+tests\cloud\test_08_vm_provider.py:203: TypeError
+---------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vm_terminate \tests\cloud\test_08_vm_provider.py 171
+# ######################################################################
+[0m
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+Terminating Instance..Please wait...
+[32mInstance having Tag:test-wang542-vm-2 and Instance-Id:i-0ac2437a179c7f236 terminated[0m
+None
+____________________ Test_cm_find.test_cm_image_name_cloud ____________________
+
+self = <test_09_cm_names_find.Test_cm_find object at 0x0000026F3C630148>
+
+    def test_cm_image_name_cloud(self):
+        HEADING()
+        Benchmark.Start()
+        names = cm.names(cloud=cloud, kind="image")
+        Benchmark.Stop()
+        kind = "image"
+        if benchmark_print:
+            pprint(names)
+        else:
+            print(f"Number of entries [{kind}", len(names))
+>       assert len(names) > 0
+E       assert 0 > 0
+E        +  where 0 = len([])
+
+tests\cloud\test_09_cm_names_find.py:83: AssertionError
+---------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_cm_image_name_cloud \tests\cloud\test_09_cm_names_find.py 73
+# ######################################################################
+[0m
+Number of entries [image 0
+_________________ Test_cm_find.test_cm_find_ubuntu_in_images __________________
+
+self = <test_09_cm_names_find.Test_cm_find object at 0x0000026F3C5BD1C8>
+
+    def test_cm_find_ubuntu_in_images(self):
+        HEADING()
+        print()
+        query = {"name": {'$regex': ".*Ubuntu.*"}}
+        print(query)
+    
+        Benchmark.Start()
+        entries = cm.find(collection=f"{cloud}-image", query=query)
+        Benchmark.Stop()
+    
+        kind = "image"
+        if benchmark_print:
+            print(entries)
+            for entry in entries:
+                print(entry['name'])
+        else:
+            print(f"Number of entries [{kind}", len(entries))
+    
+>       assert len(entries) > 0
+E       assert 0 > 0
+E        +  where 0 = len([])
+
+tests\cloud\test_09_cm_names_find.py:146: AssertionError
+---------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_cm_find_ubuntu_in_images \tests\cloud\test_09_cm_names_find.py 128
+# ######################################################################
+[0m
+
+{'name': {'$regex': '.*Ubuntu.*'}}
+Number of entries [image 0
+================== 7 failed, 64 passed in 1935.46s (0:32:15) ==================
