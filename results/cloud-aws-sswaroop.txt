@@ -1,0 +1,2067 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.7.3, pytest-5.0.1, py-1.8.0, pluggy-0.12.0 -- /Users/saurabhiu/ENV3/bin/python3
+cachedir: .pytest_cache
+hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/Users/saurabhiu/github/cm/cloudmesh-cloud/.hypothesis/examples')
+rootdir: /Users/saurabhiu/github/cm/cloudmesh-cloud, inifile: pytest.ini
+plugins: hypothesis-4.27.0
+collecting ... Test run for aws
+Test run for aws
+Test run for aws
+Test run for aws
+Test run for aws
+Test run for aws
+[34m
+# ----------------------------------------------------------------------
+# variables.dict()
+# ----------------------------------------------------------------------
+# 28:<module> ./tests/cloud/test_07_secgroup_provider.py
+# ----------------------------------------------------------------------
+# {'cloud': 'aws',
+#  'cluster': 'clustera',
+#  'debug': 'True',
+#  'experiment': 'base',
+#  'group': 'cloudmesh',
+#  'key': 'saurabhs',
+#  'refresh': 'False',
+#  'timer': 'True',
+#  'trace': 'True',
+#  'verbose': '10',
+#  'vm': 'test-saurabhs-vm-31'}
+# ----------------------------------------------------------------------
+[0m
+Test run for aws
+[34m
+# ----------------------------------------------------------------------
+# variables.dict()
+# ----------------------------------------------------------------------
+# 26:<module> ./tests/cloud/test_08_vm_provider.py
+# ----------------------------------------------------------------------
+# {'cloud': 'aws',
+#  'cluster': 'clustera',
+#  'debug': 'True',
+#  'experiment': 'base',
+#  'group': 'cloudmesh',
+#  'key': 'saurabhs',
+#  'refresh': 'False',
+#  'timer': 'True',
+#  'trace': 'True',
+#  'verbose': '10',
+#  'vm': 'test-saurabhs-vm-31'}
+# ----------------------------------------------------------------------
+[0m
+Test run for aws
+collected 71 items
+
+tests/cloud/test_00_sys.py::Test_Sys::test_cms_help 
+[35m
+# ######################################################################
+# test_cms_help /tests/cloud/test_00_sys.py 30
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# result
+# ----------------------------------------------------------------------
+# 36:test_cms_help ./tests/cloud/test_00_sys.py
+# ----------------------------------------------------------------------
+# ('Documented commands (type help <topic>):\n'
+#  '========================================\n'
+#  'EOF        data     host       man       register  ssh        '
+#  'vcluster      \n'
+#  'admin      debug    image      open      sec       start      '
+#  'version       \n'
+#  'banner     default  info       pause     service   stop       '
+#  'vm            \n'
+#  'clear      echo     init       plugin    set       stopwatch  '
+#  'workflow_draft\n'
+#  'commands   flavor   inventory  provider  shell     sys      \n'
+#  'config     group    ip         q         sleep     var      \n'
+#  'container  help     key        quit      source    vbox     \n'
+#  '\n'
+#  'Timer: 0.0000s (help)')
+# ----------------------------------------------------------------------
+[0m
+PASSED
+tests/cloud/test_00_sys.py::Test_Sys::test_benchmark 
++-------------------+--------------------------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                                            |
++-------------------+--------------------------------------------------------------------------------------------------+
+| cpu_count         | 12                                                                                               |
+| mac_version       | 10.15.1                                                                                          |
+| machine           | ('x86_64',)                                                                                      |
+| mem_active        | 5.8 GiB                                                                                          |
+| mem_available     | 6.9 GiB                                                                                          |
+| mem_free          | 1.1 GiB                                                                                          |
+| mem_inactive      | 5.6 GiB                                                                                          |
+| mem_percent       | 56.6%                                                                                            |
+| mem_total         | 16.0 GiB                                                                                         |
+| mem_used          | 8.9 GiB                                                                                          |
+| mem_wired         | 3.1 GiB                                                                                          |
+| node              | ('Saurabhs-MacBook-Pro.local',)                                                                  |
+| platform          | Darwin-19.0.0-x86_64-i386-64bit                                                                  |
+| processor         | ('i386',)                                                                                        |
+| processors        | Darwin                                                                                           |
+| python            | 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 16:52:21)                                                 |
+|                   | [Clang 6.0 (clang-600.0.57)]                                                                     |
+| release           | ('19.0.0',)                                                                                      |
+| sys               | darwin                                                                                           |
+| system            | Darwin                                                                                           |
+| user              | saurabhiu                                                                                        |
+| version           | Darwin Kernel Version 19.0.0: Thu Oct 17 16:17:15 PDT 2019; root:xnu-6153.41.3~29/RELEASE_X86_64 |
+| win_version       |                                                                                                  |
++-------------------+--------------------------------------------------------------------------------------------------+
++---------------------------+-------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| timer                     | time  | start               | tag | node                            | user      | system | mac_version | win_version |
++---------------------------+-------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| test_00_sys/test_cms_help | 1.438 | 2019-12-14 03:43:07 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| benchmark_start_stop      | 0.0   | 2019-12-14 03:43:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
++---------------------------+-------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,1.438,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,benchmark_start_stop,0.0,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+
+PASSED
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_cms_init MongoDB stop
+server should be down...
+MongoDB folder deleted
+Set key
+Config Security Initialization
+MongoDB create
+MongoDB create
+INFO: Starting mongo without authentication ... 
+2019-12-13T20:43:12.749-0700 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+about to fork child process, waiting until server is ready for connections.
+forked process: 20983
+child process started successfully, parent exiting
+
+None
+INFO: Creating admin user ... 
+Administrative user created.
+INFO: Stopping the service ... 
+server should be down...
+Timer: 1.0000s (admin mongo create)
+MongoDB start
+2019-12-13T20:43:15.184-0700 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+about to fork child process, waiting until server is ready for connections.
+forked process: 20992
+child process started successfully, parent exiting
+
+None
+Timer: 1.0000s (admin mongo start)
+
++---------+-------+----------+-----------+-----------+
+| Group   | Rule  | Protocol | Ports     | IP Range  |
++---------+-------+----------+-----------+-----------+
+| default | ssh   | tcp      | 22:22     | 0.0.0.0/0 |
+| default | icmp  | icmp     |           | 0.0.0.0/0 |
+| default | http  | tcp      | 80:80     | 0.0.0.0/0 |
+| default | https | tcp      | 443:443   | 0.0.0.0/0 |
+| flask   | ssh   | tcp      | 22:22     | 0.0.0.0/0 |
+| flask   | icmp  | icmp     |           | 0.0.0.0/0 |
+| flask   | http  | tcp      | 80:80     | 0.0.0.0/0 |
+| flask   | https | tcp      | 443:443   | 0.0.0.0/0 |
+| flask   | flask | tcp      | 8000:8000 | 0.0.0.0/0 |
++---------+-------+----------+-----------+-----------+
+Timer: 1.0000s (sec load)
+
+Variables
+
+    timer=True
+    trace=True
+    debug=True
+    group=cloudmesh
+    experiment=base
+    cloud=aws
+    cluster=clustera
+    verbose=10
+    vm=test-saurabhs-vm-31
+    key=saurabhs
+    refresh=False
+Timer: 9.0000s (init)
+
+[35m
+# ######################################################################
+# test_cms_init /tests/cloud/test_01_clean_local_remote.py 36
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_delete_all_keys_from_cloud 
+[35m
+# ######################################################################
+# test_delete_all_keys_from_cloud /tests/cloud/test_01_clean_local_remote.py 42
+# ######################################################################
+[0m
+deleting the key: saurabhs -> aws
+None
+PASSED
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_delete_all_secgroups_from_cloud 
+[35m
+# ######################################################################
+# test_delete_all_secgroups_from_cloud /tests/cloud/test_01_clean_local_remote.py 59
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_benchmark 
++-----------------------------------------------------------------+--------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| timer                                                           | time   | start               | tag | node                            | user      | system | mac_version | win_version |
++-----------------------------------------------------------------+--------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 1.438  | 2019-12-14 03:43:07 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| benchmark_start_stop                                            | 0.0    | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_cms_init                        | 10.489 | 2019-12-14 03:43:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.11   | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.002  | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
++-----------------------------------------------------------------+--------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_cleanup 
+[35m
+# ######################################################################
+# test_cleanup /tests/cloud/test_02_key.py 38
+# ######################################################################
+[0m
+deleting the key: saurabhs -> aws
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_upload_key_to_database 
+[35m
+# ######################################################################
+# test_upload_key_to_database /tests/cloud/test_02_key.py 46
+# ######################################################################
+[0m
+<cloudmesh.key.Key.Key object at 0x117e27780>
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_upload_key_to_cloud 
+[35m
+# ######################################################################
+# test_upload_key_to_cloud /tests/cloud/test_02_key.py 57
+# ######################################################################
+[0m
+{'_id': ObjectId('5df45a5856af9fa1311f4349'),
+ 'cm': {'cloud': 'local',
+        'collection': 'local-key',
+        'created': '2019-12-14 03:43:20.118187',
+        'kind': 'key',
+        'modified': '2019-12-14 03:43:20.118187',
+        'name': 'saurabhs'},
+ 'comment': 'saurabhiu@Saurabhs-MacBook-Pro.local',
+ 'fingerprint': 'da:20:8a:61:ad:5b:34:ca:04:32:29:1f:0d:70:27:16',
+ 'key': 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCyyCgR5Zh955PhQOxym8hjz+rKj144cXs2dUhEWWcavMjkFf23bJNkr6XKyb1eYVhWT6OhQV9z7VynQpff2nbK03SkRqtqjBIlT6JYExXJycYcRnUgS2T07na5TQCcpVY0lUWk/LlerWPYZSjjjiYjldZsR1ciBF4Aug02aLtsIwEisKX3nFK77C1cX668k3oUYSnHJDBbaVuKeuHsH0COnuq73qNxn8csAFOe6bkB0wQ0JSlzfIuoujzZjmYF5unkFbApD41WV/Pc9b6tmQnFOF09QJfS4/Obqm2WRl5KL1JA2K46+w7RzRr7OtTRX9Hw3aPBX9qysZ3FNo29BHBp',
+ 'location': {'private': '/Users/saurabhiu/.ssh/id_rsa',
+              'public': '/Users/saurabhiu/.ssh/id_rsa.pub'},
+ 'name': 'saurabhs',
+ 'path': '/Users/saurabhiu/.ssh/id_rsa.pub',
+ 'profile': {'email': 'sswaroop@iu.edu',
+             'firstname': 'Saurabh',
+             'github': 'saurabhiu',
+             'lastname': 'Swaroop',
+             'publickey': '~/.ssh/id_rsa.pub',
+             'user': 'saurabhs'},
+ 'public_key': 'ssh-rsa '
+               'AAAAB3NzaC1yc2EAAAADAQABAAABAQCyyCgR5Zh955PhQOxym8hjz+rKj144cXs2dUhEWWcavMjkFf23bJNkr6XKyb1eYVhWT6OhQV9z7VynQpff2nbK03SkRqtqjBIlT6JYExXJycYcRnUgS2T07na5TQCcpVY0lUWk/LlerWPYZSjjjiYjldZsR1ciBF4Aug02aLtsIwEisKX3nFK77C1cX668k3oUYSnHJDBbaVuKeuHsH0COnuq73qNxn8csAFOe6bkB0wQ0JSlzfIuoujzZjmYF5unkFbApD41WV/Pc9b6tmQnFOF09QJfS4/Obqm2WRl5KL1JA2K46+w7RzRr7OtTRX9Hw3aPBX9qysZ3FNo29BHBp '
+               'saurabhiu@Saurabhs-MacBook-Pro.local',
+ 'source': 'ssh',
+ 'type': 'ssh-rsa',
+ 'uri': 'file:///Users/saurabhiu/.ssh/id_rsa.pub'}
+uploading the key: saurabhs -> aws
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_list_key_from_cloud 
+[35m
+# ######################################################################
+# test_list_key_from_cloud /tests/cloud/test_02_key.py 73
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_delete_key_from_cloud 
+[35m
+# ######################################################################
+# test_delete_key_from_cloud /tests/cloud/test_02_key.py 91
+# ######################################################################
+[0m
+deleting the key: saurabhs -> aws
+None
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_get_key_from_cloud 
+[35m
+# ######################################################################
+# test_get_key_from_cloud /tests/cloud/test_02_key.py 101
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_benchmark 
++-----------------------------------------------------------------+--------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| timer                                                           | time   | start               | tag | node                            | user      | system | mac_version | win_version |
++-----------------------------------------------------------------+--------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 1.438  | 2019-12-14 03:43:07 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| benchmark_start_stop                                            | 0.0    | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_cms_init                        | 10.489 | 2019-12-14 03:43:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.11   | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.002  | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_database                         | 0.09   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_cloud                            | 0.113  | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_list_key_from_cloud                            | 0.104  | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_delete_key_from_cloud                          | 0.103  | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
++-----------------------------------------------------------------+--------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,1.438,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,benchmark_start_stop,0.0,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_cms_init,10.489,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.11,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.002,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_database,0.09,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_cloud,0.113,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_list_key_from_cloud,0.104,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_delete_key_from_cloud,0.103,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+
+PASSED
+tests/cloud/test_03_key_upload.py::Test_Key::test_cleanup 
+[35m
+# ######################################################################
+# test_cleanup /tests/cloud/test_03_key_upload.py 37
+# ######################################################################
+[0m
+deleting the key: saurabhs -> aws
+PASSED
+tests/cloud/test_03_key_upload.py::Test_Key::test_upload_key_to_database 
+[35m
+# ######################################################################
+# test_upload_key_to_database /tests/cloud/test_03_key_upload.py 45
+# ######################################################################
+[0m
+<cloudmesh.key.Key.Key object at 0x117e73b00>
+PASSED
+tests/cloud/test_03_key_upload.py::Test_Key::test_upload_key_to_cloud 
+[35m
+# ######################################################################
+# test_upload_key_to_cloud /tests/cloud/test_03_key_upload.py 56
+# ######################################################################
+[0m
+{'_id': ObjectId('5df45a5956af9fa1311f434a'),
+ 'cm': {'cloud': 'local',
+        'collection': 'local-key',
+        'created': '2019-12-14 03:43:21.118138',
+        'kind': 'key',
+        'modified': '2019-12-14 03:43:21.118138',
+        'name': 'saurabhs'},
+ 'comment': 'saurabhiu@Saurabhs-MacBook-Pro.local',
+ 'fingerprint': 'da:20:8a:61:ad:5b:34:ca:04:32:29:1f:0d:70:27:16',
+ 'key': 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCyyCgR5Zh955PhQOxym8hjz+rKj144cXs2dUhEWWcavMjkFf23bJNkr6XKyb1eYVhWT6OhQV9z7VynQpff2nbK03SkRqtqjBIlT6JYExXJycYcRnUgS2T07na5TQCcpVY0lUWk/LlerWPYZSjjjiYjldZsR1ciBF4Aug02aLtsIwEisKX3nFK77C1cX668k3oUYSnHJDBbaVuKeuHsH0COnuq73qNxn8csAFOe6bkB0wQ0JSlzfIuoujzZjmYF5unkFbApD41WV/Pc9b6tmQnFOF09QJfS4/Obqm2WRl5KL1JA2K46+w7RzRr7OtTRX9Hw3aPBX9qysZ3FNo29BHBp',
+ 'location': {'private': '/Users/saurabhiu/.ssh/id_rsa',
+              'public': '/Users/saurabhiu/.ssh/id_rsa.pub'},
+ 'name': 'saurabhs',
+ 'path': '/Users/saurabhiu/.ssh/id_rsa.pub',
+ 'profile': {'email': 'sswaroop@iu.edu',
+             'firstname': 'Saurabh',
+             'github': 'saurabhiu',
+             'lastname': 'Swaroop',
+             'publickey': '~/.ssh/id_rsa.pub',
+             'user': 'saurabhs'},
+ 'public_key': 'ssh-rsa '
+               'AAAAB3NzaC1yc2EAAAADAQABAAABAQCyyCgR5Zh955PhQOxym8hjz+rKj144cXs2dUhEWWcavMjkFf23bJNkr6XKyb1eYVhWT6OhQV9z7VynQpff2nbK03SkRqtqjBIlT6JYExXJycYcRnUgS2T07na5TQCcpVY0lUWk/LlerWPYZSjjjiYjldZsR1ciBF4Aug02aLtsIwEisKX3nFK77C1cX668k3oUYSnHJDBbaVuKeuHsH0COnuq73qNxn8csAFOe6bkB0wQ0JSlzfIuoujzZjmYF5unkFbApD41WV/Pc9b6tmQnFOF09QJfS4/Obqm2WRl5KL1JA2K46+w7RzRr7OtTRX9Hw3aPBX9qysZ3FNo29BHBp '
+               'saurabhiu@Saurabhs-MacBook-Pro.local',
+ 'source': 'ssh',
+ 'type': 'ssh-rsa',
+ 'uri': 'file:///Users/saurabhiu/.ssh/id_rsa.pub'}
+uploading the key: saurabhs -> aws
+PASSED
+tests/cloud/test_03_key_upload.py::Test_Key::test_list_key_from_cloud 
+[35m
+# ######################################################################
+# test_list_key_from_cloud /tests/cloud/test_03_key_upload.py 77
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_03_key_upload.py::Test_Key::test_benchmark 
++-----------------------------------------------------------------+--------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| timer                                                           | time   | start               | tag | node                            | user      | system | mac_version | win_version |
++-----------------------------------------------------------------+--------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 1.438  | 2019-12-14 03:43:07 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| benchmark_start_stop                                            | 0.0    | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_cms_init                        | 10.489 | 2019-12-14 03:43:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.11   | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.002  | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_database                         | 0.09   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_cloud                            | 0.113  | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_list_key_from_cloud                            | 0.104  | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_delete_key_from_cloud                          | 0.103  | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_upload_key_to_database                  | 0.088  | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_upload_key_to_cloud                     | 0.098  | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_list_key_from_cloud                     | 0.106  | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
++-----------------------------------------------------------------+--------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,1.438,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,benchmark_start_stop,0.0,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_cms_init,10.489,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.11,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.002,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_database,0.09,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_cloud,0.113,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_list_key_from_cloud,0.104,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_delete_key_from_cloud,0.103,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_upload_key_to_database,0.088,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_upload_key_to_cloud,0.098,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_list_key_from_cloud,0.106,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+
+PASSED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_empty_database 
+[35m
+# ######################################################################
+# test_empty_database /tests/cloud/test_04_flavor.py 37
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_provider_flavor 
+[35m
+# ######################################################################
+# test_provider_flavor /tests/cloud/test_04_flavor.py 43
+# ######################################################################
+[0m
+fetch: https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/index.json
+fetch: https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/region_index.json
+fetch: https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/20191211205100/us-east-1/index.json
+PASSED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_provider_flavor_update 
+[35m
+# ######################################################################
+# test_provider_flavor_update /tests/cloud/test_04_flavor.py 50
+# ######################################################################
+[0m
+fetch: https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/index.json
+fetch: https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/region_index.json
+fetch: https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/20191211205100/us-east-1/index.json
+PASSED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_cms_flavor_refresh 
+[35m
+# ######################################################################
+# test_cms_flavor_refresh /tests/cloud/test_04_flavor.py 59
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_cms_flavor 
+[35m
+# ######################################################################
+# test_cms_flavor /tests/cloud/test_04_flavor.py 67
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_benchmark 
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| timer                                                           | time    | start               | tag | node                            | user      | system | mac_version | win_version |
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 1.438   | 2019-12-14 03:43:07 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| benchmark_start_stop                                            | 0.0     | 2019-12-14 04:07:27 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_cms_init                        | 10.489  | 2019-12-14 03:43:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.11    | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.002   | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_database                         | 0.09    | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_cloud                            | 0.113   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_list_key_from_cloud                            | 0.104   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_delete_key_from_cloud                          | 0.103   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_upload_key_to_database                  | 0.088   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_upload_key_to_cloud                     | 0.098   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_list_key_from_cloud                     | 0.106   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_empty_database                              | 0.241   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_provider_flavor                             | 204.711 | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_provider_flavor_update                      | 834.376 | 2019-12-14 03:46:46 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_cms_flavor_refresh                          | 399.626 | 2019-12-14 04:00:41 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_cms_flavor                                  | 6.15    | 2019-12-14 04:07:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,1.438,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,benchmark_start_stop,0.0,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_cms_init,10.489,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.11,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.002,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_database,0.09,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_cloud,0.113,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_list_key_from_cloud,0.104,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_delete_key_from_cloud,0.103,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_upload_key_to_database,0.088,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_upload_key_to_cloud,0.098,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_list_key_from_cloud,0.106,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_empty_database,0.241,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_provider_flavor,204.711,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_provider_flavor_update,834.376,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_cms_flavor_refresh,399.626,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_cms_flavor,6.15,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_empty_database 
+[35m
+# ######################################################################
+# test_empty_database /tests/cloud/test_05_image.py 37
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_provider_image 
+[35m
+# ######################################################################
+# test_provider_image /tests/cloud/test_05_image.py 43
+# ######################################################################
+[0m
+Getting the list of images for aws cloud, this might take a few minutes ...
+[32mImages list for aws cloud retrieved successfully[0m
+Saving the data to file 
+Importing the saved data to database
+In shell run2
+2019-12-13T21:09:58.516-0700	connected to: localhost
+2019-12-13T21:09:58.530-0700	dropping: cloudmesh.aws-image
+2019-12-13T21:10:00.723-0700	imported 94275 documents
+
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_provider_image_update 
+[35m
+# ######################################################################
+# test_provider_image_update /tests/cloud/test_05_image.py 50
+# ######################################################################
+[0m
+Getting the list of images for aws cloud, this might take a few minutes ...
+[32mImages list for aws cloud retrieved successfully[0m
+Collection aws-image dropped to be rewritten
+Saving the data to file 
+Importing the saved data to database
+In shell run2
+2019-12-13T21:12:08.465-0700	connected to: localhost
+2019-12-13T21:12:08.479-0700	dropping: cloudmesh.aws-image
+2019-12-13T21:12:10.627-0700	imported 94275 documents
+
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_cms_image_refresh 
+[35m
+# ######################################################################
+# test_cms_image_refresh /tests/cloud/test_05_image.py 59
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_cms_image 
+[35m
+# ######################################################################
+# test_cms_image /tests/cloud/test_05_image.py 67
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_benchmark 
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| timer                                                           | time    | start               | tag | node                            | user      | system | mac_version | win_version |
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 1.438   | 2019-12-14 03:43:07 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| benchmark_start_stop                                            | 0.0     | 2019-12-14 04:14:48 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_cms_init                        | 10.489  | 2019-12-14 03:43:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.11    | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.002   | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_database                         | 0.09    | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_cloud                            | 0.113   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_list_key_from_cloud                            | 0.104   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_delete_key_from_cloud                          | 0.103   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_upload_key_to_database                  | 0.088   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_upload_key_to_cloud                     | 0.098   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_list_key_from_cloud                     | 0.106   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_empty_database                              | 0.241   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_provider_flavor                             | 204.711 | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_provider_flavor_update                      | 834.376 | 2019-12-14 03:46:46 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_cms_flavor_refresh                          | 399.626 | 2019-12-14 04:00:41 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_cms_flavor                                  | 6.15    | 2019-12-14 04:07:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_empty_database                               | 0.035   | 2019-12-14 04:07:27 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_provider_image                               | 153.988 | 2019-12-14 04:07:27 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_provider_image_update                        | 129.916 | 2019-12-14 04:10:01 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_cms_image_refresh                            | 137.696 | 2019-12-14 04:12:11 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_cms_image                                    | 19.705  | 2019-12-14 04:14:28 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,1.438,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,benchmark_start_stop,0.0,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_cms_init,10.489,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.11,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.002,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_database,0.09,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_cloud,0.113,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_list_key_from_cloud,0.104,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_delete_key_from_cloud,0.103,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_upload_key_to_database,0.088,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_upload_key_to_cloud,0.098,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_list_key_from_cloud,0.106,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_empty_database,0.241,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_provider_flavor,204.711,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_provider_flavor_update,834.376,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_cms_flavor_refresh,399.626,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_cms_flavor,6.15,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_empty_database,0.035,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_provider_image,153.988,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_provider_image_update,129.916,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_cms_image_refresh,137.696,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_cms_image,19.705,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_clear PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_group_add 
+[35m
+# ######################################################################
+# test_group_add /tests/cloud/test_06_sec_command.py 70
+# ######################################################################
+[0m
+In shell run
+Timer: 0.0000s (sec group add deleteme empty empty)
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_group_delete 
+[35m
+# ######################################################################
+# test_group_delete /tests/cloud/test_06_sec_command.py 80
+# ######################################################################
+[0m
+In shell run
+Timer: 0.0000s (sec group delete deleteme)
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_init 
+[35m
+# ######################################################################
+# test_sec_init /tests/cloud/test_06_sec_command.py 89
+# ######################################################################
+[0m
+
+In shell run
+Timer: 0.0000s (sec rule add deleteme 101 101 tcp 10.0.0.0/0)
+
+In shell run
+Timer: 0.0000s (sec group add wrong nothing wrong)
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_add_group_wrong 
+[35m
+# ######################################################################
+# test_sec_add_group_wrong /tests/cloud/test_06_sec_command.py 108
+# ######################################################################
+[0m
+In shell run
+INFO: Security group doesn't exist
+Timer: 1.0000s (sec group load wrong --cloud=aws)
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_list 
+[35m
+# ######################################################################
+# test_sec_list /tests/cloud/test_06_sec_command.py 116
+# ######################################################################
+[0m
+In shell run
++---------+-------------------------------+------------------------+
+| Name    | Rules                         | Description            |
++---------+-------------------------------+------------------------+
+| default | ssh, icmp, http, https        | Default security group |
+| flask   | ssh, icmp, http, https, flask | Flask security group   |
+| wrong   | nothing                       | wrong                  |
++---------+-------------------------------+------------------------+
++----------+----------+-----------+------------+
+| Name     | Protocol | Ports     | IP Range   |
++----------+----------+-----------+------------+
+| ssh      | tcp      | 22:22     | 0.0.0.0/0  |
+| icmp     | icmp     |           | 0.0.0.0/0  |
+| flask    | tcp      | 8000:8000 | 0.0.0.0/0  |
+| http     | tcp      | 80:80     | 0.0.0.0/0  |
+| https    | tcp      | 443:443   | 0.0.0.0/0  |
+| deleteme | tcp      | 101:101   | 10.0.0.0/0 |
++----------+----------+-----------+------------+
+Timer: 0.0000s (sec list)
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_group_list_local 
+[35m
+# ######################################################################
+# test_sec_group_list_local /tests/cloud/test_06_sec_command.py 131
+# ######################################################################
+[0m
+In shell run
++---------+-------------------------------+------------------------+
+| Name    | Rules                         | Description            |
++---------+-------------------------------+------------------------+
+| default | ssh, icmp, http, https        | Default security group |
+| flask   | ssh, icmp, http, https, flask | Flask security group   |
+| wrong   | nothing                       | wrong                  |
++---------+-------------------------------+------------------------+
+Timer: 0.0000s (sec group list)
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_sec_group_list_cloud 
+[35m
+# ######################################################################
+# test_sec_group_list_cloud /tests/cloud/test_06_sec_command.py 142
+# ######################################################################
+[0m
+In shell run
+cloud aws
++---------+-----------+-----------+----------------+----------------+----------+-----------+-----------------+
+| Name    | Direction | Ethertype | Port range max | Port range min | Protocol | Range     | Remote group id |
++---------+-----------+-----------+----------------+----------------+----------+-----------+-----------------+
+| default | Inbound   |           |                |                | -1       | 0.0.0.0/0 |                 |
++---------+-----------+-----------+----------------+----------------+----------+-----------+-----------------+
+Timer: 2.0000s (sec group list --cloud=aws)
+
+PASSED
+tests/cloud/test_06_sec_command.py::TestSecCLI::test_benchmark 
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| timer                                                           | time    | start               | tag | node                            | user      | system | mac_version | win_version |
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 1.438   | 2019-12-14 03:43:07 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| benchmark_start_stop                                            | 0.0     | 2019-12-14 04:15:05 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_cms_init                        | 10.489  | 2019-12-14 03:43:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.11    | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.002   | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_database                         | 0.09    | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_cloud                            | 0.113   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_list_key_from_cloud                            | 0.104   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_delete_key_from_cloud                          | 0.103   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_upload_key_to_database                  | 0.088   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_upload_key_to_cloud                     | 0.098   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_list_key_from_cloud                     | 0.106   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_empty_database                              | 0.241   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_provider_flavor                             | 204.711 | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_provider_flavor_update                      | 834.376 | 2019-12-14 03:46:46 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_cms_flavor_refresh                          | 399.626 | 2019-12-14 04:00:41 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_cms_flavor                                  | 6.15    | 2019-12-14 04:07:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_empty_database                               | 0.035   | 2019-12-14 04:07:27 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_provider_image                               | 153.988 | 2019-12-14 04:07:27 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_provider_image_update                        | 129.916 | 2019-12-14 04:10:01 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_cms_image_refresh                            | 137.696 | 2019-12-14 04:12:11 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_cms_image                                    | 19.705  | 2019-12-14 04:14:28 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_group_add                              | 1.867   | 2019-12-14 04:14:48 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_group_delete                           | 1.842   | 2019-12-14 04:14:50 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_sec_list                               | 1.853   | 2019-12-14 04:14:58 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_sec_group_list_local                   | 1.816   | 2019-12-14 04:15:00 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_sec_group_list_cloud                   | 3.398   | 2019-12-14 04:15:02 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,1.438,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,benchmark_start_stop,0.0,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_cms_init,10.489,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.11,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.002,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_database,0.09,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_cloud,0.113,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_list_key_from_cloud,0.104,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_delete_key_from_cloud,0.103,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_upload_key_to_database,0.088,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_upload_key_to_cloud,0.098,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_list_key_from_cloud,0.106,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_empty_database,0.241,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_provider_flavor,204.711,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_provider_flavor_update,834.376,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_cms_flavor_refresh,399.626,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_cms_flavor,6.15,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_empty_database,0.035,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_provider_image,153.988,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_provider_image_update,129.916,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_cms_image_refresh,137.696,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_cms_image,19.705,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_group_add,1.867,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_group_delete,1.842,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_sec_list,1.853,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_sec_group_list_local,1.816,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_sec_group_list_cloud,3.398,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_load 
+[35m
+# ######################################################################
+# test_load /tests/cloud/test_07_secgroup_provider.py 56
+# ######################################################################
+[0m
+
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_list_variables 
+[35m
+# ######################################################################
+# test_list_variables /tests/cloud/test_07_secgroup_provider.py 72
+# ######################################################################
+[0m
+saurabhs
+aws
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_list_secgroups 
+[35m
+# ######################################################################
+# test_list_secgroups /tests/cloud/test_07_secgroup_provider.py 80
+# ######################################################################
+[0m
+{
+    "0": {
+        "Description": "default VPC security group",
+        "GroupId": "sg-25d9a15b",
+        "GroupName": "default",
+        "IpPermissions": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [
+                    {
+                        "CidrIpv6": "::/0"
+                    }
+                ],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "163672752821",
+        "VpcId": "vpc-6c2e360b"
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_list_secgroups_rules 
+[35m
+# ######################################################################
+# test_list_secgroups_rules /tests/cloud/test_07_secgroup_provider.py 87
+# ######################################################################
+[0m
+{
+    "0": {
+        "IpProtocol": "-1",
+        "IpRanges": [
+            {
+                "CidrIp": "0.0.0.0/0"
+            }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_secgroups_add 
+[35m
+# ######################################################################
+# test_secgroups_add /tests/cloud/test_07_secgroup_provider.py 94
+# ######################################################################
+[0m
+[32mSecurity Group Created sg-08c1d1a836e1bb952 in vpcvpc-6c2e360b[0m
+{
+    "0": {
+        "Description": "security group crated at 2019-12-14 04:15:06.968176 by saurabhs",
+        "GroupId": "sg-08c1d1a836e1bb952",
+        "GroupName": "Test_Sec_Group",
+        "IpPermissions": [],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "163672752821",
+        "VpcId": "vpc-6c2e360b"
+    },
+    "1": {
+        "Description": "default VPC security group",
+        "GroupId": "sg-25d9a15b",
+        "GroupName": "default",
+        "IpPermissions": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [
+                    {
+                        "CidrIpv6": "::/0"
+                    }
+                ],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "163672752821",
+        "VpcId": "vpc-6c2e360b"
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_upload_secgroup 
+[35m
+# ######################################################################
+# test_upload_secgroup /tests/cloud/test_07_secgroup_provider.py 103
+# ######################################################################
+[0m
+Warning group already exists
+[34m
+# ----------------------------------------------------------------------
+# rules
+# ----------------------------------------------------------------------
+# 305:upload_secgroup ./cloudmesh/compute/aws/Provider.py
+# ----------------------------------------------------------------------
+# [{'cm': {'cloud': 'local',
+#          'collection': 'local-secrule',
+#          'created': '2019-12-14 04:15:06.002899',
+#          'kind': 'secrule',
+#          'modified': '2019-12-14 04:15:06.002899',
+#          'name': 'ssh'},
+#   'ip_range': '0.0.0.0/0',
+#   'name': 'ssh',
+#   'ports': '22:22',
+#   'protocol': 'tcp'},
+#  {'cm': {'cloud': 'local',
+#          'collection': 'local-secrule',
+#          'created': '2019-12-14 04:15:06.003980',
+#          'kind': 'secrule',
+#          'modified': '2019-12-14 04:15:06.003980',
+#          'name': 'icmp'},
+#   'ip_range': '0.0.0.0/0',
+#   'name': 'icmp',
+#   'ports': '',
+#   'protocol': 'icmp'},
+#  {'cm': {'cloud': 'local',
+#          'collection': 'local-secrule',
+#          'created': '2019-12-14 04:15:06.005042',
+#          'kind': 'secrule',
+#          'modified': '2019-12-14 04:15:06.005042',
+#          'name': 'flask'},
+#   'ip_range': '0.0.0.0/0',
+#   'name': 'flask',
+#   'ports': '8000:8000',
+#   'protocol': 'tcp'},
+#  {'cm': {'cloud': 'local',
+#          'collection': 'local-secrule',
+#          'created': '2019-12-14 04:15:06.006168',
+#          'kind': 'secrule',
+#          'modified': '2019-12-14 04:15:06.006168',
+#          'name': 'http'},
+#   'ip_range': '0.0.0.0/0',
+#   'name': 'http',
+#   'ports': '80:80',
+#   'protocol': 'tcp'},
+#  {'cm': {'cloud': 'local',
+#          'collection': 'local-secrule',
+#          'created': '2019-12-14 04:15:06.007433',
+#          'kind': 'secrule',
+#          'modified': '2019-12-14 04:15:06.007433',
+#          'name': 'https'},
+#   'ip_range': '0.0.0.0/0',
+#   'name': 'https',
+#   'ports': '443:443',
+#   'protocol': 'tcp'}]
+# ----------------------------------------------------------------------
+[0m
+[34m
+# ----------------------------------------------------------------------
+# groups
+# ----------------------------------------------------------------------
+# 310:upload_secgroup ./cloudmesh/compute/aws/Provider.py
+# ----------------------------------------------------------------------
+# [{'cm': {'cloud': 'local',
+#          'collection': 'local-secgroup',
+#          'created': '2019-12-14 04:15:06.000599',
+#          'kind': 'secgroup',
+#          'modified': '2019-12-14 04:15:06.000599',
+#          'name': 'default'},
+#   'description': 'Default security group',
+#   'name': 'default',
+#   'rules': ['ssh', 'icmp', 'http', 'https']},
+#  {'cm': {'cloud': 'local',
+#          'collection': 'local-secgroup',
+#          'created': '2019-12-14 04:15:06.001807',
+#          'kind': 'secgroup',
+#          'modified': '2019-12-14 04:15:06.001807',
+#          'name': 'flask'},
+#   'description': 'Flask security group',
+#   'name': 'flask',
+#   'rules': ['ssh', 'icmp', 'http', 'https', 'flask']}]
+# ----------------------------------------------------------------------
+[0m
+upload group: Test_Sec_Group
+     rule: ssh
+[32mIngress Successfully Set as {'ResponseMetadata': {'RequestId': 'c3fcc964-0b01-490d-bd2f-0b95b3b2944a', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '259', 'date': 'Sat, 14 Dec 2019 04:15:07 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}[0m
+     rule: icmp
+[32mIngress Successfully Set as {'ResponseMetadata': {'RequestId': 'e349a813-a976-4f72-bbda-8c9a896140d7', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '259', 'date': 'Sat, 14 Dec 2019 04:15:07 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}[0m
+     rule: http
+[32mIngress Successfully Set as {'ResponseMetadata': {'RequestId': 'dd92adfb-d342-4c4e-b88a-2eb1fe6f4d9f', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '259', 'date': 'Sat, 14 Dec 2019 04:15:07 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}[0m
+     rule: https
+[32mIngress Successfully Set as {'ResponseMetadata': {'RequestId': 'bd7d83be-54ca-425a-8953-eb26aa0a1c6b', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '259', 'date': 'Sat, 14 Dec 2019 04:15:08 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}[0m
+     rule: flask
+[32mIngress Successfully Set as {'ResponseMetadata': {'RequestId': '20951b02-844d-49be-a221-5678e139812e', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '259', 'date': 'Sat, 14 Dec 2019 04:15:08 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}[0m
+{
+    "0": {
+        "Description": "security group crated at 2019-12-14 04:15:06.968176 by saurabhs",
+        "GroupId": "sg-08c1d1a836e1bb952",
+        "GroupName": "Test_Sec_Group",
+        "IpPermissions": [
+            {
+                "FromPort": 80,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "ToPort": 80,
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": 8000,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "ToPort": 8000,
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": 22,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "ToPort": 22,
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": 443,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "ToPort": 443,
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": -1,
+                "IpProtocol": "icmp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "ToPort": -1,
+                "UserIdGroupPairs": []
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "163672752821",
+        "VpcId": "vpc-6c2e360b"
+    },
+    "1": {
+        "Description": "default VPC security group",
+        "GroupId": "sg-25d9a15b",
+        "GroupName": "default",
+        "IpPermissions": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [
+                    {
+                        "CidrIpv6": "::/0"
+                    }
+                ],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "163672752821",
+        "VpcId": "vpc-6c2e360b"
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_secgroups_delete 
+[35m
+# ######################################################################
+# test_secgroups_delete /tests/cloud/test_07_secgroup_provider.py 112
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# response
+# ----------------------------------------------------------------------
+# 284:remove_secgroup ./cloudmesh/compute/aws/Provider.py
+# ----------------------------------------------------------------------
+# {'ResponseMetadata': {'HTTPHeaders': {'content-length': '239',
+#                                       'content-type': 'text/xml;charset=UTF-8',
+#                                       'date': 'Sat, 14 Dec 2019 04:15:08 GMT',
+#                                       'server': 'AmazonEC2'},
+#                       'HTTPStatusCode': 200,
+#                       'RequestId': '052f3aa1-47ac-4449-ab5a-b6536ea49f7a',
+#                       'RetryAttempts': 0}}
+# ----------------------------------------------------------------------
+[0m
+default
+{
+    "0": {
+        "Description": "default VPC security group",
+        "GroupId": "sg-25d9a15b",
+        "GroupName": "default",
+        "IpPermissions": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [
+                    {
+                        "CidrIpv6": "::/0"
+                    }
+                ],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "163672752821",
+        "VpcId": "vpc-6c2e360b"
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_secgroups_delete_again 
+[35m
+# ######################################################################
+# test_secgroups_delete_again /tests/cloud/test_07_secgroup_provider.py 131
+# ######################################################################
+[0m
+[34mINFO: Security group couldn't be removed as it doesn't exist[0m
+default
+{
+    "0": {
+        "Description": "default VPC security group",
+        "GroupId": "sg-25d9a15b",
+        "GroupName": "default",
+        "IpPermissions": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [
+                    {
+                        "CidrIpv6": "::/0"
+                    }
+                ],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "163672752821",
+        "VpcId": "vpc-6c2e360b"
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_benchmark 
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| timer                                                           | time    | start               | tag | node                            | user      | system | mac_version | win_version |
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 1.438   | 2019-12-14 03:43:07 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| benchmark_start_stop                                            | 0.0     | 2019-12-14 04:15:09 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_cms_init                        | 10.489  | 2019-12-14 03:43:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.11    | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.002   | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_database                         | 0.09    | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_cloud                            | 0.113   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_list_key_from_cloud                            | 0.104   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_delete_key_from_cloud                          | 0.103   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_upload_key_to_database                  | 0.088   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_upload_key_to_cloud                     | 0.098   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_list_key_from_cloud                     | 0.106   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_empty_database                              | 0.241   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_provider_flavor                             | 204.711 | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_provider_flavor_update                      | 834.376 | 2019-12-14 03:46:46 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_cms_flavor_refresh                          | 399.626 | 2019-12-14 04:00:41 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_cms_flavor                                  | 6.15    | 2019-12-14 04:07:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_empty_database                               | 0.035   | 2019-12-14 04:07:27 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_provider_image                               | 153.988 | 2019-12-14 04:07:27 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_provider_image_update                        | 129.916 | 2019-12-14 04:10:01 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_cms_image_refresh                            | 137.696 | 2019-12-14 04:12:11 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_cms_image                                    | 19.705  | 2019-12-14 04:14:28 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_group_add                              | 1.867   | 2019-12-14 04:14:48 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_group_delete                           | 1.842   | 2019-12-14 04:14:50 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_sec_list                               | 1.853   | 2019-12-14 04:14:58 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_sec_group_list_local                   | 1.816   | 2019-12-14 04:15:00 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_sec_group_list_cloud                   | 3.398   | 2019-12-14 04:15:02 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_load                             | 0.045   | 2019-12-14 04:15:05 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_list_variables                   | 0.002   | 2019-12-14 04:15:06 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_list_secgroups                   | 0.22    | 2019-12-14 04:15:06 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_list_secgroups_rules             | 0.104   | 2019-12-14 04:15:06 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_secgroups_add                    | 0.254   | 2019-12-14 04:15:06 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_upload_secgroup                  | 1.555   | 2019-12-14 04:15:07 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_secgroups_delete                 | 0.174   | 2019-12-14 04:15:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_secgroups_delete_again           | 0.081   | 2019-12-14 04:15:09 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,1.438,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,benchmark_start_stop,0.0,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_cms_init,10.489,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.11,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.002,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_database,0.09,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_cloud,0.113,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_list_key_from_cloud,0.104,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_delete_key_from_cloud,0.103,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_upload_key_to_database,0.088,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_upload_key_to_cloud,0.098,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_list_key_from_cloud,0.106,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_empty_database,0.241,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_provider_flavor,204.711,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_provider_flavor_update,834.376,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_cms_flavor_refresh,399.626,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_cms_flavor,6.15,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_empty_database,0.035,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_provider_image,153.988,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_provider_image_update,129.916,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_cms_image_refresh,137.696,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_cms_image,19.705,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_group_add,1.867,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_group_delete,1.842,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_sec_list,1.853,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_sec_group_list_local,1.816,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_sec_group_list_cloud,3.398,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_load,0.045,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_list_variables,0.002,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_list_secgroups,0.22,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_list_secgroups_rules,0.104,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_secgroups_add,0.254,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_upload_secgroup,1.555,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_secgroups_delete,0.174,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_secgroups_delete_again,0.081,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+
+PASSED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_create
+[35m
+# ######################################################################
+# test_provider_vm_create /tests/cloud/test_08_vm_provider.py 55
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# Create Server
+# ----------------------------------------------------------------------
+[0m
+    Name:    test-saurabhs-vm-2
+    IP:      None
+    Image:   ami-0dd655843c87b6930
+    Size:    t2.micro
+    Public:  None
+    Key:     saurabhs
+    location:None
+    timeout: 360
+    secgroup:None
+    group:   cloudmesh
+
+[32mInstance created...[0m
+
+Waiting for the Public IP address assignment ...
+    Public IP:   54.183.60.135
+    Private IP:  172.31.8.38
+{'AmiLaunchIndex': 0,
+ 'Architecture': 'x86_64',
+ 'BlockDeviceMappings': [],
+ 'CapacityReservationSpecification': {'CapacityReservationPreference': 'open'},
+ 'ClientToken': '',
+ 'CpuOptions': {'CoreCount': 1, 'ThreadsPerCore': 1},
+ 'EbsOptimized': False,
+ 'EnaSupport': True,
+ 'HibernationOptions': {'Configured': False},
+ 'Hypervisor': 'xen',
+ 'ImageId': 'ami-0dd655843c87b6930',
+ 'InstanceId': 'i-014a04c3be2f9fd2c',
+ 'InstanceType': 't2.micro',
+ 'KeyName': 'saurabhs',
+ 'LaunchTime': datetime.datetime(2019, 12, 14, 4, 15, 10, tzinfo=tzutc()),
+ 'Monitoring': {'State': 'disabled'},
+ 'NetworkInterfaces': [{'Association': {'IpOwnerId': 'amazon',
+                                        'PublicDnsName': 'ec2-54-183-60-135.us-west-1.compute.amazonaws.com',
+                                        'PublicIp': '54.183.60.135'},
+                        'Attachment': {'AttachTime': datetime.datetime(2019, 12, 14, 4, 15, 10, tzinfo=tzutc()),
+                                       'AttachmentId': 'eni-attach-05c9554b835cf8f39',
+                                       'DeleteOnTermination': True,
+                                       'DeviceIndex': 0,
+                                       'Status': 'attaching'},
+                        'Description': '',
+                        'Groups': [{'GroupId': 'sg-25d9a15b',
+                                    'GroupName': 'default'}],
+                        'InterfaceType': 'interface',
+                        'Ipv6Addresses': [],
+                        'MacAddress': '06:55:96:2d:ee:b9',
+                        'NetworkInterfaceId': 'eni-02d668b204f7fcd82',
+                        'OwnerId': '163672752821',
+                        'PrivateDnsName': 'ip-172-31-8-38.us-west-1.compute.internal',
+                        'PrivateIpAddress': '172.31.8.38',
+                        'PrivateIpAddresses': [{'Association': {'IpOwnerId': 'amazon',
+                                                                'PublicDnsName': 'ec2-54-183-60-135.us-west-1.compute.amazonaws.com',
+                                                                'PublicIp': '54.183.60.135'},
+                                                'Primary': True,
+                                                'PrivateDnsName': 'ip-172-31-8-38.us-west-1.compute.internal',
+                                                'PrivateIpAddress': '172.31.8.38'}],
+                        'SourceDestCheck': True,
+                        'Status': 'in-use',
+                        'SubnetId': 'subnet-c6c2259c',
+                        'VpcId': 'vpc-6c2e360b'}],
+ 'Placement': {'AvailabilityZone': 'us-west-1c',
+               'GroupName': '',
+               'Tenancy': 'default'},
+ 'PrivateDnsName': 'ip-172-31-8-38.us-west-1.compute.internal',
+ 'PrivateIpAddress': '172.31.8.38',
+ 'ProductCodes': [],
+ 'PublicDnsName': 'ec2-54-183-60-135.us-west-1.compute.amazonaws.com',
+ 'PublicIpAddress': '54.183.60.135',
+ 'RootDeviceName': '/dev/sda1',
+ 'RootDeviceType': 'ebs',
+ 'SecurityGroups': [{'GroupId': 'sg-25d9a15b', 'GroupName': 'default'}],
+ 'SourceDestCheck': True,
+ 'State': {'Code': 0, 'Name': 'pending'},
+ 'StateTransitionReason': '',
+ 'SubnetId': 'subnet-c6c2259c',
+ 'Tags': [{'Key': 'cm.flavor', 'Value': 't2.micro'},
+          {'Key': 'cm.status', 'Value': 'BOOTING'},
+          {'Key': 'cm.kind', 'Value': 'vm'},
+          {'Key': 'cm.image', 'Value': 'ami-0dd655843c87b6930'},
+          {'Key': 'cm.user', 'Value': 'saurabhs'},
+          {'Key': 'cm.name', 'Value': 'test-saurabhs-vm-2'},
+          {'Key': 'Name', 'Value': 'test-saurabhs-vm-2'}],
+ 'VirtualizationType': 'hvm',
+ 'VpcId': 'vpc-6c2e360b',
+ 'cm': {'cloud': 'aws',
+        'created': '2019-12-14 04:15:11.869135',
+        'driver': 'aws',
+        'kind': 'vm',
+        'name': ('t2.micro',),
+        'updated': '2019-12-14 04:15:11.869135'},
+ 'created': ('12/14/2019, 04:15:10',),
+ 'image': ('ami-0dd655843c87b6930',),
+ 'instance_id': ('i-014a04c3be2f9fd2c',),
+ 'key_name': ('saurabhs',),
+ 'kind': 'aws',
+ 'name': ('t2.micro',),
+ 'private_ips': '172.31.8.38',
+ 'public_ips': '54.183.60.135',
+ 'status': ('pending',),
+ 'updated': ('12/14/2019, 04:15:10',)}
+[34m
+# ----------------------------------------------------------------------
+# created
+# ----------------------------------------------------------------------
+# 218:create ./cloudmesh/compute/vm/Provider.py
+# ----------------------------------------------------------------------
+# [{'AmiLaunchIndex': 0,
+#   'Architecture': 'x86_64',
+#   'BlockDeviceMappings': [],
+#   'CapacityReservationSpecification': {'CapacityReservationPreference': 'open'},
+#   'ClientToken': '',
+#   'CpuOptions': {'CoreCount': 1, 'ThreadsPerCore': 1},
+#   'EbsOptimized': False,
+#   'EnaSupport': True,
+#   'HibernationOptions': {'Configured': False},
+#   'Hypervisor': 'xen',
+#   'ImageId': 'ami-0dd655843c87b6930',
+#   'InstanceId': 'i-014a04c3be2f9fd2c',
+#   'InstanceType': 't2.micro',
+#   'KeyName': 'saurabhs',
+#   'LaunchTime': datetime.datetime(2019, 12, 14, 4, 15, 10, tzinfo=tzutc()),
+#   'Monitoring': {'State': 'disabled'},
+#   'NetworkInterfaces': [{'Association': {'IpOwnerId': 'amazon',
+#                                          'PublicDnsName': 'ec2-54-183-60-135.us-west-1.compute.amazonaws.com',
+#                                          'PublicIp': '54.183.60.135'},
+#                          'Attachment': {'AttachTime': datetime.datetime(2019, 12, 14, 4, 15, 10, tzinfo=tzutc()),
+#                                         'AttachmentId': 'eni-attach-05c9554b835cf8f39',
+#                                         'DeleteOnTermination': True,
+#                                         'DeviceIndex': 0,
+#                                         'Status': 'attaching'},
+#                          'Description': '',
+#                          'Groups': [{'GroupId': 'sg-25d9a15b',
+#                                      'GroupName': 'default'}],
+#                          'InterfaceType': 'interface',
+#                          'Ipv6Addresses': [],
+#                          'MacAddress': '06:55:96:2d:ee:b9',
+#                          'NetworkInterfaceId': 'eni-02d668b204f7fcd82',
+#                          'OwnerId': '163672752821',
+#                          'PrivateDnsName': 'ip-172-31-8-38.us-west-1.compute.internal',
+#                          'PrivateIpAddress': '172.31.8.38',
+#                          'PrivateIpAddresses': [{'Association': {'IpOwnerId': 'amazon',
+#                                                                  'PublicDnsName': 'ec2-54-183-60-135.us-west-1.compute.amazonaws.com',
+#                                                                  'PublicIp': '54.183.60.135'},
+#                                                  'Primary': True,
+#                                                  'PrivateDnsName': 'ip-172-31-8-38.us-west-1.compute.internal',
+#                                                  'PrivateIpAddress': '172.31.8.38'}],
+#                          'SourceDestCheck': True,
+#                          'Status': 'in-use',
+#                          'SubnetId': 'subnet-c6c2259c',
+#                          'VpcId': 'vpc-6c2e360b'}],
+#   'Placement': {'AvailabilityZone': 'us-west-1c',
+#                 'GroupName': '',
+#                 'Tenancy': 'default'},
+#   'PrivateDnsName': 'ip-172-31-8-38.us-west-1.compute.internal',
+#   'PrivateIpAddress': '172.31.8.38',
+#   'ProductCodes': [],
+#   'PublicDnsName': 'ec2-54-183-60-135.us-west-1.compute.amazonaws.com',
+#   'PublicIpAddress': '54.183.60.135',
+#   'RootDeviceName': '/dev/sda1',
+#   'RootDeviceType': 'ebs',
+#   'SecurityGroups': [{'GroupId': 'sg-25d9a15b', 'GroupName': 'default'}],
+#   'SourceDestCheck': True,
+#   'State': {'Code': 0, 'Name': 'pending'},
+#   'StateTransitionReason': '',
+#   'SubnetId': 'subnet-c6c2259c',
+#   'Tags': [{'Key': 'cm.flavor', 'Value': 't2.micro'},
+#            {'Key': 'cm.status', 'Value': 'BOOTING'},
+#            {'Key': 'cm.kind', 'Value': 'vm'},
+#            {'Key': 'cm.image', 'Value': 'ami-0dd655843c87b6930'},
+#            {'Key': 'cm.user', 'Value': 'saurabhs'},
+#            {'Key': 'cm.name', 'Value': 'test-saurabhs-vm-2'},
+#            {'Key': 'Name', 'Value': 'test-saurabhs-vm-2'}],
+#   'VirtualizationType': 'hvm',
+#   'VpcId': 'vpc-6c2e360b',
+#   '_id': ObjectId('5df461cd56af9fa1311f7e10'),
+#   'cm': {'cloud': 'aws',
+#          'collection': 'aws-vm',
+#          'created': '2019-12-14 04:15:09.745889',
+#          'creation_time': '2.00',
+#          'group': 'cloudmesh',
+#          'kind': 'vm',
+#          'modified': '2019-12-14 04:15:12.284123',
+#          'name': 'test-saurabhs-vm-2',
+#          'status': 'available'},
+#   'created': ('12/14/2019, 04:15:10',),
+#   'image': ('ami-0dd655843c87b6930',),
+#   'instance_id': ('i-014a04c3be2f9fd2c',),
+#   'key_name': ('saurabhs',),
+#   'kind': 'aws',
+#   'metadata': "{'cm': {'kind': 'vm', 'name': 'test-saurabhs-vm-2', 'group': "
+#               "'cloudmesh', 'cloud': 'aws', 'status': 'booting', 'collection': "
+#               "'aws-vm', 'created': '2019-12-14 04:15:09.745889', 'modified': "
+#               "'2019-12-14 04:15:09.745889', 'creation_time': '2.00'}, "
+#               "'image': 'ami-0dd655843c87b6930', 'size': 't2.micro'}",
+#   'name': ('t2.micro',),
+#   'private_ips': '172.31.8.38',
+#   'public_ips': '54.183.60.135',
+#   'status': ('pending',),
+#   'updated': ('12/14/2019, 04:15:10',)}]
+# ----------------------------------------------------------------------
+[0m
+name is test-saurabhs-vm-2
+status: {'name': 'test-saurabhs-vm-2', 'status:': 'pending', 'cm.status': 'BOOTING'}
+status is {'name': 'test-saurabhs-vm-2', 'status:': 'pending', 'cm.status': 'BOOTING'}
+PASSED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vmprovider_vm_list
+[35m
+# ######################################################################
+# test_provider_vmprovider_vm_list /tests/cloud/test_08_vm_provider.py 76
+# ######################################################################
+[0m
++--------------------+-------+---------------------+------------+-----------------------+------------+-------------+----------------------+------+
+| Name               | Cloud | Instance ID         | Status     | Image                 | Public IPs | Private IPs | Started at           | Kind |
++--------------------+-------+---------------------+------------+-----------------------+------------+-------------+----------------------+------+
+| test-saurabhs-vm-2 | aws   | i-014a04c3be2f9fd2c | pending    | ami-0dd655843c87b6930 |            | 172.31.8.38 | 12/14/2019, 04:15:10 | vm   |
+| test-saurabhs-vm-3 | aws   | i-0f9cb6eb7367229f3 | terminated | ami-0dd655843c87b6930 |            |             | 12/14/2019, 03:41:05 | vm   |
++--------------------+-------+---------------------+------------+-----------------------+------------+-------------+----------------------+------+
+None
+PASSED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_wait
+[35m
+# ######################################################################
+# test_provider_vm_wait /tests/cloud/test_08_vm_provider.py 84
+# ######################################################################
+[0m
+[34mINFO: waiting for instance to be reachable: Interval: 5, Timeout: 360[0m
+command is ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /Users/saurabhiu/.ssh/id_rsa ubuntu@13.57.213.189 echo IAmReady
+result is
+ERROR: [b'ssh: connect to host 13.57.213.189 port 22: Connection refused\r\n']
+command is ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /Users/saurabhiu/.ssh/id_rsa ubuntu@13.57.213.189 echo IAmReady
+result is IAmReady
+
+r is IAmReady
+PASSED
+
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_ssh
+[35m
+# ######################################################################
+# test_provider_vm_ssh /tests/cloud/test_08_vm_provider.py 92
+# ######################################################################
+[0m
+vm is {'_id': ObjectId('5df46ee0a095a0c346eae939'), 'kind': 'aws', 'KeyName': 'saurabhs', 'status': 'running', 'created': '12/14/2019, 05:10:57', 'updated': '12/14/2019, 05:10:57', 'name': 'test-saurabhs-vm-11', 'instance_id': 'i-0ddc1d5a991a8f384', 'instance_tag': 'vm', 'image': 'ami-0dd655843c87b6930', 'public_ips': '13.57.213.189', 'private_ips': '172.31.5.214', 'cm': {'kind': 'vm', 'name': 'test-saurabhs-vm-11', 'group': 'cloudmesh', 'cloud': 'aws', 'status': 'available', 'collection': 'aws-vm', 'created': '2019-12-14 05:11:18.535428', 'modified': '2019-12-14 05:11:18.559826', 'creation_time': '20.00', 'driver': 'aws', 'updated': '2019-12-14 05:11:18.535428'}}
+command is ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /Users/saurabhiu/.ssh/id_rsa ubuntu@13.57.213.189 "echo IAmAlive"
+result is IAmAlive
+
+[34m
+# ----------------------------------------------------------------------
+# data
+# ----------------------------------------------------------------------
+# 102:test_provider_vm_ssh ./tests/cloud/test_08_vm_provider.py
+# ----------------------------------------------------------------------
+# 'IAmAlive\n'
+# ----------------------------------------------------------------------
+[0m
+PASSED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_info
+[35m
+# ######################################################################
+# test_provider_vm_info /tests/cloud/test_08_vm_provider.py 108
+# ######################################################################
+[0m
+dry run info():
+[{'AmiLaunchIndex': 0,
+  'Architecture': 'x86_64',
+  'BlockDeviceMappings': [{'DeviceName': '/dev/sda1',
+                           'Ebs': {'AttachTime': datetime.datetime(2019, 12, 14, 4, 15, 11, tzinfo=tzutc()),
+                                   'DeleteOnTermination': True,
+                                   'Status': 'attached',
+                                   'VolumeId': 'vol-00ff8cced93625fdf'}}],
+  'CapacityReservationSpecification': {'CapacityReservationPreference': 'open'},
+  'ClientToken': '',
+  'CpuOptions': {'CoreCount': 1, 'ThreadsPerCore': 1},
+  'EbsOptimized': False,
+  'EnaSupport': True,
+  'HibernationOptions': {'Configured': False},
+  'Hypervisor': 'xen',
+  'ImageId': 'ami-0dd655843c87b6930',
+  'InstanceId': 'i-014a04c3be2f9fd2c',
+  'InstanceType': 't2.micro',
+  'KeyName': 'saurabhs',
+  'LaunchTime': datetime.datetime(2019, 12, 14, 4, 15, 10, tzinfo=tzutc()),
+  'Monitoring': {'State': 'disabled'},
+  'NetworkInterfaces': [{'Association': {'IpOwnerId': 'amazon',
+                                         'PublicDnsName': 'ec2-54-183-60-135.us-west-1.compute.amazonaws.com',
+                                         'PublicIp': '54.183.60.135'},
+                         'Attachment': {'AttachTime': datetime.datetime(2019, 12, 14, 4, 15, 10, tzinfo=tzutc()),
+                                        'AttachmentId': 'eni-attach-05c9554b835cf8f39',
+                                        'DeleteOnTermination': True,
+                                        'DeviceIndex': 0,
+                                        'Status': 'attached'},
+                         'Description': '',
+                         'Groups': [{'GroupId': 'sg-25d9a15b',
+                                     'GroupName': 'default'}],
+                         'InterfaceType': 'interface',
+                         'Ipv6Addresses': [],
+                         'MacAddress': '06:55:96:2d:ee:b9',
+                         'NetworkInterfaceId': 'eni-02d668b204f7fcd82',
+                         'OwnerId': '163672752821',
+                         'PrivateDnsName': 'ip-172-31-8-38.us-west-1.compute.internal',
+                         'PrivateIpAddress': '172.31.8.38',
+                         'PrivateIpAddresses': [{'Association': {'IpOwnerId': 'amazon',
+                                                                 'PublicDnsName': 'ec2-54-183-60-135.us-west-1.compute.amazonaws.com',
+                                                                 'PublicIp': '54.183.60.135'},
+                                                 'Primary': True,
+                                                 'PrivateDnsName': 'ip-172-31-8-38.us-west-1.compute.internal',
+                                                 'PrivateIpAddress': '172.31.8.38'}],
+                         'SourceDestCheck': True,
+                         'Status': 'in-use',
+                         'SubnetId': 'subnet-c6c2259c',
+                         'VpcId': 'vpc-6c2e360b'}],
+  'Placement': {'AvailabilityZone': 'us-west-1c',
+                'GroupName': '',
+                'Tenancy': 'default'},
+  'PrivateDnsName': 'ip-172-31-8-38.us-west-1.compute.internal',
+  'PrivateIpAddress': '172.31.8.38',
+  'ProductCodes': [],
+  'PublicDnsName': 'ec2-54-183-60-135.us-west-1.compute.amazonaws.com',
+  'PublicIpAddress': '54.183.60.135',
+  'RootDeviceName': '/dev/sda1',
+  'RootDeviceType': 'ebs',
+  'SecurityGroups': [{'GroupId': 'sg-25d9a15b', 'GroupName': 'default'}],
+  'SourceDestCheck': True,
+  'State': {'Code': 16, 'Name': 'running'},
+  'StateTransitionReason': '',
+  'SubnetId': 'subnet-c6c2259c',
+  'Tags': [{'Key': 'cm.flavor', 'Value': 't2.micro'},
+           {'Key': 'cm.status', 'Value': 'BOOTING'},
+           {'Key': 'cm.kind', 'Value': 'vm'},
+           {'Key': 'cm.image', 'Value': 'ami-0dd655843c87b6930'},
+           {'Key': 'cm.user', 'Value': 'saurabhs'},
+           {'Key': 'cm.name', 'Value': 'test-saurabhs-vm-2'},
+           {'Key': 'Name', 'Value': 'test-saurabhs-vm-2'}],
+  'VirtualizationType': 'hvm',
+  'VpcId': 'vpc-6c2e360b',
+  'cm': {'flavor': 't2.micro',
+         'image': 'ami-0dd655843c87b6930',
+         'kind': 'vm',
+         'name': 'test-saurabhs-vm-2',
+         'status': 'BOOTING',
+         'user': 'saurabhs'},
+  'name': 'test-saurabhs-vm-2',
+  'status': 'running'}]
+PASSED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_vm_status
+[35m
+# ######################################################################
+# test_vm_status /tests/cloud/test_08_vm_provider.py 117
+# ######################################################################
+[0m
+{'name': 'test-saurabhs-vm-2', 'status:': 'running', 'cm.status': 'BOOTING'}
+PASSED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_stop
+[35m
+# ######################################################################
+# test_provider_vm_stop /tests/cloud/test_08_vm_provider.py 133
+# ######################################################################
+[0m
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+Stopping Instance..Please wait...
+[32mInstance having Tag:test-saurabhs-vm-2 and Instance-Id:{each_instance.instance_id} stopped[0m
+[34m
+# ----------------------------------------------------------------------
+# print(status
+# ----------------------------------------------------------------------
+# 147:test_provider_vm_stop ./tests/cloud/test_08_vm_provider.py
+# ----------------------------------------------------------------------
+# []
+# ----------------------------------------------------------------------
+[0m
+{'name': 'test-saurabhs-vm-2', 'status:': 'stopped', 'cm.status': 'STOPPED'}
+PASSED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_start
+[35m
+# ######################################################################
+# test_provider_vm_start /tests/cloud/test_08_vm_provider.py 151
+# ######################################################################
+[0m
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+Starting Instance..Please wait...
+[32mInstance having Tag:test-saurabhs-vm-2 and Instance-Id:i-014a04c3be2f9fd2c started[0m
+PASSED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_terminate
+[35m
+# ######################################################################
+# test_provider_vm_terminate /tests/cloud/test_08_vm_provider.py 171
+# ######################################################################
+[0m
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+Terminating Instance..Please wait...
+[32mInstance having Tag:test-saurabhs-vm-2 and Instance-Id:i-014a04c3be2f9fd2c terminated[0m
+PASSED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_benchmark
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| timer                                                           | time    | start               | tag | node                            | user      | system | mac_version | win_version |
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 1.438   | 2019-12-14 03:43:07 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| benchmark_start_stop                                            | 0.0     | 2019-12-14 04:23:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_cms_init                        | 10.489  | 2019-12-14 03:43:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.11    | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.002   | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_database                         | 0.09    | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_cloud                            | 0.113   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_list_key_from_cloud                            | 0.104   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_delete_key_from_cloud                          | 0.103   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_upload_key_to_database                  | 0.088   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_upload_key_to_cloud                     | 0.098   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_list_key_from_cloud                     | 0.106   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_empty_database                              | 0.241   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_provider_flavor                             | 204.711 | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_provider_flavor_update                      | 834.376 | 2019-12-14 03:46:46 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_cms_flavor_refresh                          | 399.626 | 2019-12-14 04:00:41 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_cms_flavor                                  | 6.15    | 2019-12-14 04:07:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_empty_database                               | 0.035   | 2019-12-14 04:07:27 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_provider_image                               | 153.988 | 2019-12-14 04:07:27 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_provider_image_update                        | 129.916 | 2019-12-14 04:10:01 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_cms_image_refresh                            | 137.696 | 2019-12-14 04:12:11 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_cms_image                                    | 19.705  | 2019-12-14 04:14:28 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_group_add                              | 1.867   | 2019-12-14 04:14:48 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_group_delete                           | 1.842   | 2019-12-14 04:14:50 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_sec_list                               | 1.853   | 2019-12-14 04:14:58 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_sec_group_list_local                   | 1.816   | 2019-12-14 04:15:00 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_sec_group_list_cloud                   | 3.398   | 2019-12-14 04:15:02 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_load                             | 0.045   | 2019-12-14 04:15:05 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_list_variables                   | 0.002   | 2019-12-14 04:15:06 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_list_secgroups                   | 0.22    | 2019-12-14 04:15:06 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_list_secgroups_rules             | 0.104   | 2019-12-14 04:15:06 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_secgroups_add                    | 0.254   | 2019-12-14 04:15:06 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_upload_secgroup                  | 1.555   | 2019-12-14 04:15:07 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_secgroups_delete                 | 0.174   | 2019-12-14 04:15:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_secgroups_delete_again           | 0.081   | 2019-12-14 04:15:09 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vm_create                     | 3.605   | 2019-12-14 04:15:09 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| create vm test-saurabhs-vm-2                                    | 2.16    | 2019-12-14 04:15:09 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vmprovider_vm_list            | 0.318   | 2019-12-14 04:15:13 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vm_wait                       |         | 2019-12-14 04:15:13 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vm_ssh                        |         | 2019-12-14 04:21:18 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vm_info                       | 0.478   | 2019-12-14 04:21:18 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_vm_status                              | 0.185   | 2019-12-14 04:21:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vm_stop                       | 31.145  | 2019-12-14 04:21:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vm_start                      | 31.082  | 2019-12-14 04:21:55 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vm_terminate                  | 30.842  | 2019-12-14 04:22:31 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,1.438,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,benchmark_start_stop,0.0,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_cms_init,10.489,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.11,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.002,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_database,0.09,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_cloud,0.113,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_list_key_from_cloud,0.104,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_delete_key_from_cloud,0.103,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_upload_key_to_database,0.088,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_upload_key_to_cloud,0.098,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_list_key_from_cloud,0.106,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_empty_database,0.241,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_provider_flavor,204.711,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_provider_flavor_update,834.376,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_cms_flavor_refresh,399.626,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_cms_flavor,6.15,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_empty_database,0.035,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_provider_image,153.988,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_provider_image_update,129.916,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_cms_image_refresh,137.696,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_cms_image,19.705,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_group_add,1.867,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_group_delete,1.842,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_sec_list,1.853,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_sec_group_list_local,1.816,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_sec_group_list_cloud,3.398,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_load,0.045,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_list_variables,0.002,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_list_secgroups,0.22,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_list_secgroups_rules,0.104,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_secgroups_add,0.254,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_upload_secgroup,1.555,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_secgroups_delete,0.174,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_secgroups_delete_again,0.081,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vm_create,3.605,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,create vm test-saurabhs-vm-2,2.16,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vmprovider_vm_list,0.318,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vm_wait,None,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vm_ssh,None,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vm_info,0.478,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_vm_status,0.185,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vm_stop,31.145,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vm_start,31.082,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vm_terminate,30.842,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_collection
+[35m
+# ######################################################################
+# test_cm_find_collection /tests/cloud/test_09_cm_names_find.py 33
+# ######################################################################
+[0m
+Number of entries [vm] 2
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_loop
+[35m
+# ######################################################################
+# test_cm_find_loop /tests/cloud/test_09_cm_names_find.py 44
+# ######################################################################
+[0m
+Number of entries [flavor 15023
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_loop
+[35m
+# ######################################################################
+# test_cm_loop /tests/cloud/test_09_cm_names_find.py 60
+# ######################################################################
+[0m
+Number of entries [flavor] 15023
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_image_name_cloud
+[35m
+# ######################################################################
+# test_cm_image_name_cloud /tests/cloud/test_09_cm_names_find.py 73
+# ######################################################################
+[0m
+Number of entries [image 94275
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_image_name_collection
+[35m
+# ######################################################################
+# test_cm_image_name_collection /tests/cloud/test_09_cm_names_find.py 85
+# ######################################################################
+[0m
+Number of entries [image 94275
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_names_regexp
+[35m
+# ######################################################################
+# test_names_regexp /tests/cloud/test_09_cm_names_find.py 96
+# ######################################################################
+[0m
+Number of entries [image 683
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vms
+[35m
+# ######################################################################
+# test_cm_find_vms /tests/cloud/test_09_cm_names_find.py 117
+# ######################################################################
+[0m
+Number of entries [vm 2
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_ubuntu_in_images
+[35m
+# ######################################################################
+# test_cm_find_ubuntu_in_images /tests/cloud/test_09_cm_names_find.py 128
+# ######################################################################
+[0m
+
+{'name': {'$regex': '.*Ubuntu.*'}}
+Number of entries [image 683
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_cloud_name_attributes
+[35m
+# ######################################################################
+# test_cm_find_cloud_name_attributes /tests/cloud/test_09_cm_names_find.py 167
+# ######################################################################
+[0m
+
+Number of entries [vm 2
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vm_collections
+[35m
+# ######################################################################
+# test_cm_find_vm_collections /tests/cloud/test_09_cm_names_find.py 183
+# ######################################################################
+[0m
+Number of entries [collections] 7
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vm_collections_vm
+[35m
+# ######################################################################
+# test_cm_find_vm_collections_vm /tests/cloud/test_09_cm_names_find.py 196
+# ######################################################################
+[0m
+Number of entries [collections] 1
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vm_collection_form_parameter
+[35m
+# ######################################################################
+# test_cm_find_vm_collection_form_parameter /tests/cloud/test_09_cm_names_find.py 208
+# ######################################################################
+[0m
+Number of entries [collections] 2
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_benchmark
+[35m
+# ######################################################################
+# test_benchmark /tests/cloud/test_09_cm_names_find.py 223
+# ######################################################################
+[0m
+
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| timer                                                           | time    | start               | tag | node                            | user      | system | mac_version | win_version |
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 1.438   | 2019-12-14 03:43:07 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| benchmark_start_stop                                            | 0.0     | 2019-12-14 04:23:11 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_cms_init                        | 10.489  | 2019-12-14 03:43:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.11    | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.002   | 2019-12-14 03:43:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_database                         | 0.09    | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_upload_key_to_cloud                            | 0.113   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_list_key_from_cloud                            | 0.104   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_02_key/test_delete_key_from_cloud                          | 0.103   | 2019-12-14 03:43:20 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_upload_key_to_database                  | 0.088   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_upload_key_to_cloud                     | 0.098   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_03_key_upload/test_list_key_from_cloud                     | 0.106   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_empty_database                              | 0.241   | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_provider_flavor                             | 204.711 | 2019-12-14 03:43:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_provider_flavor_update                      | 834.376 | 2019-12-14 03:46:46 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_cms_flavor_refresh                          | 399.626 | 2019-12-14 04:00:41 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_04_flavor/test_cms_flavor                                  | 6.15    | 2019-12-14 04:07:21 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_empty_database                               | 0.035   | 2019-12-14 04:07:27 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_provider_image                               | 153.988 | 2019-12-14 04:07:27 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_provider_image_update                        | 129.916 | 2019-12-14 04:10:01 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_cms_image_refresh                            | 137.696 | 2019-12-14 04:12:11 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_05_image/test_cms_image                                    | 19.705  | 2019-12-14 04:14:28 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_group_add                              | 1.867   | 2019-12-14 04:14:48 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_group_delete                           | 1.842   | 2019-12-14 04:14:50 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_sec_list                               | 1.853   | 2019-12-14 04:14:58 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_sec_group_list_local                   | 1.816   | 2019-12-14 04:15:00 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_06_sec_command/test_sec_group_list_cloud                   | 3.398   | 2019-12-14 04:15:02 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_load                             | 0.045   | 2019-12-14 04:15:05 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_list_variables                   | 0.002   | 2019-12-14 04:15:06 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_list_secgroups                   | 0.22    | 2019-12-14 04:15:06 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_list_secgroups_rules             | 0.104   | 2019-12-14 04:15:06 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_secgroups_add                    | 0.254   | 2019-12-14 04:15:06 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_upload_secgroup                  | 1.555   | 2019-12-14 04:15:07 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_secgroups_delete                 | 0.174   | 2019-12-14 04:15:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_07_secgroup_provider/test_secgroups_delete_again           | 0.081   | 2019-12-14 04:15:09 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vm_create                     | 3.605   | 2019-12-14 04:15:09 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| create vm test-saurabhs-vm-2                                    | 2.16    | 2019-12-14 04:15:09 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vmprovider_vm_list            | 0.318   | 2019-12-14 04:15:13 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vm_wait                       |         | 2019-12-14 04:15:13 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vm_ssh                        |         | 2019-12-14 04:21:18 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vm_info                       | 0.478   | 2019-12-14 04:21:18 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_vm_status                              | 0.185   | 2019-12-14 04:21:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vm_stop                       | 31.145  | 2019-12-14 04:21:19 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vm_start                      | 31.082  | 2019-12-14 04:21:55 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_08_vm_provider/test_provider_vm_terminate                  | 30.842  | 2019-12-14 04:22:31 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_09_cm_names_find/test_cm_find_collection                   | 0.026   | 2019-12-14 04:23:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_09_cm_names_find/test_cm_find_loop                         | 1.684   | 2019-12-14 04:23:08 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_09_cm_names_find/test_cm_image_name_cloud                  | 0.289   | 2019-12-14 04:23:10 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_09_cm_names_find/test_cm_image_name_collection             | 0.291   | 2019-12-14 04:23:11 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_09_cm_names_find/test_names_regexp                         | 0.252   | 2019-12-14 04:23:11 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_09_cm_names_find/test_cm_find_vms                          | 0.019   | 2019-12-14 04:23:11 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_09_cm_names_find/test_cm_find_ubuntu_in_images             | 0.172   | 2019-12-14 04:23:11 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_09_cm_names_find/test_cm_find_cloud_name_attributes        | 0.018   | 2019-12-14 04:23:11 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_09_cm_names_find/test_cm_find_vm_collections               | 0.02    | 2019-12-14 04:23:11 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_09_cm_names_find/test_cm_find_vm_collections_vm            | 0.019   | 2019-12-14 04:23:11 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
+| test_09_cm_names_find/test_cm_find_vm_collection_form_parameter | 0.019   | 2019-12-14 04:23:11 | aws | ('Saurabhs-MacBook-Pro.local',) | saurabhiu | Darwin | 10.15.1     |             |
++-----------------------------------------------------------------+---------+---------------------+-----+---------------------------------+-----------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,1.438,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,benchmark_start_stop,0.0,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_cms_init,10.489,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.11,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.002,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_database,0.09,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_upload_key_to_cloud,0.113,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_list_key_from_cloud,0.104,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_02_key/test_delete_key_from_cloud,0.103,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_upload_key_to_database,0.088,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_upload_key_to_cloud,0.098,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_03_key_upload/test_list_key_from_cloud,0.106,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_empty_database,0.241,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_provider_flavor,204.711,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_provider_flavor_update,834.376,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_cms_flavor_refresh,399.626,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_04_flavor/test_cms_flavor,6.15,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_empty_database,0.035,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_provider_image,153.988,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_provider_image_update,129.916,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_cms_image_refresh,137.696,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_05_image/test_cms_image,19.705,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_group_add,1.867,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_group_delete,1.842,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_sec_list,1.853,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_sec_group_list_local,1.816,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_06_sec_command/test_sec_group_list_cloud,3.398,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_load,0.045,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_list_variables,0.002,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_list_secgroups,0.22,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_list_secgroups_rules,0.104,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_secgroups_add,0.254,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_upload_secgroup,1.555,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_secgroups_delete,0.174,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_07_secgroup_provider/test_secgroups_delete_again,0.081,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vm_create,3.605,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,create vm test-saurabhs-vm-2,2.16,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vmprovider_vm_list,0.318,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vm_wait,None,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vm_ssh,None,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vm_info,0.478,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_vm_status,0.185,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vm_stop,31.145,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vm_start,31.082,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_08_vm_provider/test_provider_vm_terminate,30.842,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_09_cm_names_find/test_cm_find_collection,0.026,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_09_cm_names_find/test_cm_find_loop,1.684,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_09_cm_names_find/test_cm_image_name_cloud,0.289,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_09_cm_names_find/test_cm_image_name_collection,0.291,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_09_cm_names_find/test_names_regexp,0.252,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_09_cm_names_find/test_cm_find_vms,0.019,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_09_cm_names_find/test_cm_find_ubuntu_in_images,0.172,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_09_cm_names_find/test_cm_find_cloud_name_attributes,0.018,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_09_cm_names_find/test_cm_find_vm_collections,0.02,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_09_cm_names_find/test_cm_find_vm_collections_vm,0.019,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+#csv,test_09_cm_names_find/test_cm_find_vm_collection_form_parameter,0.019,None,('Saurabhs-MacBook-Pro.local',),saurabhiu,Darwin,10.15.1,
+
+PASSED
+
+==================== 71 passed in 2408.88 seconds ====================
