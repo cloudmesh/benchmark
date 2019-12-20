@@ -1,0 +1,2636 @@
+============================= test session starts =============================
+platform win32 -- Python 3.8.0, pytest-5.3.0, py-1.8.0, pluggy-0.13.0 -- C:\Users\srika\ENV3\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\srika\cm\cloudmesh-storage, inifile: pytest.ini
+collecting ... collected 15 items
+
+tests/test_storage_oracle.py::TestStorageOracle::test_create_source oracle
+
+
+[35m
+# ######################################################################
+# test_create_source \tests\test_storage_oracle.py 42
+# ######################################################################
+[0m
+PASSED
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get oracle
+
+
+[35m
+# ######################################################################
+# test_put_and_get \tests\test_storage_oracle.py 67
+# ######################################################################
+[0m
+{'action': 'put',
+ 'destination': 'a1.txt',
+ 'recursive': False,
+ 'source': 'C:\\Users\\srika\\.cloudmesh\\storage\\test/a/a1.txt'}
+{'action': 'put',
+ 'destination': 'a1.txt',
+ 'message': 'Source uploaded',
+ 'objlist': [{'contentLength': '19',
+              'fileName': 'a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:06 GMT'}],
+ 'recursive': False,
+ 'source': 'C:\\Users\\srika\\.cloudmesh\\storage\\test/a/a1.txt'}
+PASSED
+tests/test_storage_oracle.py::TestStorageOracle::test_list oracle
+
+
+[35m
+# ######################################################################
+# test_list \tests\test_storage_oracle.py 83
+# ######################################################################
+[0m
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:00:45.720100',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.752291',
+        'name': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\a1.txt'},
+ 'contentLength': '19',
+ 'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\a1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:19:17 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:00:45.721098',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.753289',
+        'name': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\a2.txt'},
+ 'contentLength': '19',
+ 'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\a2.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:19:17 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:00:45.723105',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.754286',
+        'name': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\a3.txt'},
+ 'contentLength': '19',
+ 'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\a3.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:19:17 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:00:45.724120',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.756281',
+        'name': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\b1.txt'},
+ 'contentLength': '21',
+ 'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\b1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:19:17 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:00:45.725087',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.758275',
+        'name': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\b2.txt'},
+ 'contentLength': '21',
+ 'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\b2.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:19:18 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:00:45.727081',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.759272',
+        'name': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\b3.txt'},
+ 'contentLength': '21',
+ 'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\b3.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:19:18 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:00:45.732096',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.761267',
+        'name': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\d\\a1.txt'},
+ 'contentLength': '23',
+ 'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\d\\a1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:19:18 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:00:45.735061',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.762264',
+        'name': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\d\\d1.txt'},
+ 'contentLength': '23',
+ 'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\d\\d1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:19:19 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:00:45.736086',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.763261',
+        'name': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\d\\d2.txt'},
+ 'contentLength': '23',
+ 'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\d\\d2.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:19:19 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:00:45.737055',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.765256',
+        'name': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\d\\d3.txt'},
+ 'contentLength': '23',
+ 'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\d\\d3.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:19:19 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:00:45.739049',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.766253',
+        'name': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\get\\a'},
+ 'contentLength': '19',
+ 'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\get\\a',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:19:19 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:00:45.740046',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.767252',
+        'name': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\hello.txt'},
+ 'contentLength': '19',
+ 'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\hello.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:19:19 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 17:33:38.553309',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.769246',
+        'name': 'C:\\Users\\srika\\Downloads\\Check\\DSC00011 copy.jpg'},
+ 'contentLength': '243301',
+ 'fileName': 'C:\\Users\\srika\\Downloads\\Check\\DSC00011 copy.jpg',
+ 'lastModificationDate': 'Thu, 12 Dec 2019 14:51:56 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 17:33:38.561253',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.770243',
+        'name': 'C:\\Users\\srika\\Downloads\\Check\\fromcode.txt'},
+ 'contentLength': '14',
+ 'fileName': 'C:\\Users\\srika\\Downloads\\Check\\fromcode.txt',
+ 'lastModificationDate': 'Thu, 12 Dec 2019 14:51:56 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 17:33:38.562251',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.771241',
+        'name': 'C:\\Users\\srika\\Downloads\\Check\\hi change my '
+                'namesample.txt'},
+ 'contentLength': '12',
+ 'fileName': 'C:\\Users\\srika\\Downloads\\Check\\hi change my namesample.txt',
+ 'lastModificationDate': 'Thu, 12 Dec 2019 14:51:56 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 17:33:38.563248',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.774235',
+        'name': 'C:\\Users\\srika\\Downloads\\Check\\sample.txt'},
+ 'contentLength': '14',
+ 'fileName': 'C:\\Users\\srika\\Downloads\\Check\\sample.txt',
+ 'lastModificationDate': 'Thu, 12 Dec 2019 14:51:57 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 17:33:38.565242',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.775230',
+        'name': 'C:\\Users\\srika\\Downloads\\Check\\test_something.logsample.txt'},
+ 'contentLength': '12',
+ 'fileName': 'C:\\Users\\srika\\Downloads\\Check\\test_something.logsample.txt',
+ 'lastModificationDate': 'Thu, 12 Dec 2019 14:51:57 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 17:26:14.489461',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.776239',
+        'name': '\\'},
+ 'contentLength': '19',
+ 'fileName': '\\',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 17:26:13 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 17:30:04.634546',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.777224',
+        'name': 'a1.txt'},
+ 'contentLength': '19',
+ 'fileName': 'a1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:45:06 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:31:28.337517',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.778222',
+        'name': 'a\\a'},
+ 'contentLength': '19',
+ 'fileName': 'a\\a',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:31:22 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:31:28.340508',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.779219',
+        'name': 'a\\a1.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\a1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:31:22 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:31:28.341505',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.780216',
+        'name': 'a\\a2.txt'},
+ 'contentLength': '19',
+ 'fileName': 'a\\a2.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:31:20 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:31:28.342532',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.782211',
+        'name': 'a\\a3.txt'},
+ 'contentLength': '19',
+ 'fileName': 'a\\a3.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:31:20 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:36:00.788560',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.783209',
+        'name': 'a\\a\\a1.txt'},
+ 'contentLength': '19',
+ 'fileName': 'a\\a\\a1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:41:59 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:36:00.789553',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.784206',
+        'name': 'a\\a\\a2.txt'},
+ 'contentLength': '19',
+ 'fileName': 'a\\a\\a2.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:41:59 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:36:00.790550',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.785203',
+        'name': 'a\\a\\a3.txt'},
+ 'contentLength': '19',
+ 'fileName': 'a\\a\\a3.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:41:59 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:36:00.791548',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.786201',
+        'name': 'a\\a\\b\\b1.txt'},
+ 'contentLength': '21',
+ 'fileName': 'a\\a\\b\\b1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:41:59 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:36:00.793542',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.787198',
+        'name': 'a\\a\\b\\b2.txt'},
+ 'contentLength': '21',
+ 'fileName': 'a\\a\\b\\b2.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:00 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:36:00.795537',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.788195',
+        'name': 'a\\a\\b\\b3.txt'},
+ 'contentLength': '21',
+ 'fileName': 'a\\a\\b\\b3.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:00 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:36:00.796534',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.790191',
+        'name': 'a\\a\\b\\c\\c1.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\a\\b\\c\\c1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:00 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.189652',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.791188',
+        'name': 'a\\a\\b\\c\\c2.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\a\\b\\c\\c2.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:00 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.191646',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.792185',
+        'name': 'a\\a\\b\\c\\c3.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\a\\b\\c\\c3.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:01 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.193640',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.794179',
+        'name': 'a\\a\\b\\d\\a1.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\a\\b\\d\\a1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:01 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.194648',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.795177',
+        'name': 'a\\a\\b\\d\\d1.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\a\\b\\d\\d1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:01 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.196631',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.796174',
+        'name': 'a\\a\\b\\d\\d2.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\a\\b\\d\\d2.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:01 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.199623',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.797181',
+        'name': 'a\\a\\b\\d\\d3.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\a\\b\\d\\d3.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:01 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:31:28.353474',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.798169',
+        'name': 'a\\b1.txt'},
+ 'contentLength': '21',
+ 'fileName': 'a\\b1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:31:20 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:31:28.354471',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.799166',
+        'name': 'a\\b2.txt'},
+ 'contentLength': '21',
+ 'fileName': 'a\\b2.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:31:20 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:31:28.356466',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.801161',
+        'name': 'a\\b3.txt'},
+ 'contentLength': '21',
+ 'fileName': 'a\\b3.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:31:21 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:31:28.357492',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.802158',
+        'name': 'a\\c1.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\c1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:31:21 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:31:28.358489',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.803155',
+        'name': 'a\\c2.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\c2.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:31:21 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:31:28.359487',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.804152',
+        'name': 'a\\c3.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\c3.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:31:21 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:31:28.360484',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.806150',
+        'name': 'a\\d1.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\d1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:31:22 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:31:28.361481',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.807145',
+        'name': 'a\\d2.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\d2.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:31:22 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:31:28.364486',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.809139',
+        'name': 'a\\d3.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\d3.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:31:22 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.200620',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.810136',
+        'name': 'a\\get\\a'},
+ 'contentLength': '19',
+ 'fileName': 'a\\get\\a',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:02 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.201633',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.811134',
+        'name': 'a\\get\\a1.txt'},
+ 'contentLength': '19',
+ 'fileName': 'a\\get\\a1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:02 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.202632',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.813129',
+        'name': 'a\\get\\a2.txt'},
+ 'contentLength': '19',
+ 'fileName': 'a\\get\\a2.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:02 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.204610',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.814126',
+        'name': 'a\\get\\a3.txt'},
+ 'contentLength': '19',
+ 'fileName': 'a\\get\\a3.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:02 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.205609',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.815135',
+        'name': 'a\\get\\b1.txt'},
+ 'contentLength': '21',
+ 'fileName': 'a\\get\\b1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:03 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.206618',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.817118',
+        'name': 'a\\get\\b2.txt'},
+ 'contentLength': '21',
+ 'fileName': 'a\\get\\b2.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:03 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.207602',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.818115',
+        'name': 'a\\get\\b3.txt'},
+ 'contentLength': '21',
+ 'fileName': 'a\\get\\b3.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:03 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.208599',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.819113',
+        'name': 'a\\get\\c1.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\get\\c1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:03 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.210594',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.820110',
+        'name': 'a\\get\\c2.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\get\\c2.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:04 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.211591',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.821107',
+        'name': 'a\\get\\c3.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\get\\c3.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:04 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.212589',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.823111',
+        'name': 'a\\get\\d1.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\get\\d1.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:04 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.213586',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.824100',
+        'name': 'a\\get\\d2.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\get\\d2.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:04 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.215608',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.826094',
+        'name': 'a\\get\\d3.txt'},
+ 'contentLength': '23',
+ 'fileName': 'a\\get\\d3.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:04 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 18:42:06.216578',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.827091',
+        'name': 'a\\hello.txt'},
+ 'contentLength': '19',
+ 'fileName': 'a\\hello.txt',
+ 'lastModificationDate': 'Sun, 15 Dec 2019 18:42:05 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 17:33:38.569233',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.828088',
+        'name': 'big-data\\mnist-deep-learning.py'},
+ 'contentLength': '2108',
+ 'fileName': 'big-data\\mnist-deep-learning.py',
+ 'lastModificationDate': 'Fri, 13 Dec 2019 15:29:45 GMT'}
+{'cm': {'cloud': 'oracle',
+        'collection': 'oracle-storage',
+        'created': '2019-12-15 17:33:38.571227',
+        'kind': 'storage',
+        'modified': '2019-12-15 18:45:13.829086',
+        'name': 'hello.txt'},
+ 'contentLength': '14',
+ 'fileName': 'hello.txt',
+ 'lastModificationDate': 'Wed, 11 Dec 2019 22:34:37 GMT'}
+PASSED
+tests/test_storage_oracle.py::TestStorageOracle::test_create_dir oracle
+
+
+[35m
+# ######################################################################
+# test_create_dir \tests\test_storage_oracle.py 98
+# ######################################################################
+[0m
+Creating directories without creating a file is not supported in Oracle
+PASSED
+tests/test_storage_oracle.py::TestStorageOracle::test_search oracle
+
+
+[35m
+# ######################################################################
+# test_search \tests\test_storage_oracle.py 106
+# ######################################################################
+[0m
+{'directory': None,
+ 'filename': 'a1.txt',
+ 'message': 'File found',
+ 'objlist': [{'contentLength': '19',
+              'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:19:17 GMT'},
+             {'contentLength': '23',
+              'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\d\\a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:19:18 GMT'},
+             {'contentLength': '19',
+              'fileName': 'a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:06 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:31:22 GMT'},
+             {'contentLength': '19',
+              'fileName': 'a\\a\\a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:41:59 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\a\\b\\d\\a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:42:01 GMT'},
+             {'contentLength': '19',
+              'fileName': 'a\\get\\a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:42:02 GMT'}],
+ 'recursive': True,
+ 'search': 'search'}
+[{'cm': {'cloud': 'oracle',
+         'kind': 'storage',
+         'name': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\a1.txt'},
+  'contentLength': '19',
+  'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\a1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:19:17 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'kind': 'storage',
+         'name': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\d\\a1.txt'},
+  'contentLength': '23',
+  'fileName': 'C:\\Users\\srika\\.cloudmesh\\storage\\test\\a\\b\\d\\a1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:19:18 GMT'},
+ {'cm': {'cloud': 'oracle', 'kind': 'storage', 'name': 'a1.txt'},
+  'contentLength': '19',
+  'fileName': 'a1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:06 GMT'},
+ {'cm': {'cloud': 'oracle', 'kind': 'storage', 'name': 'a\\a1.txt'},
+  'contentLength': '23',
+  'fileName': 'a\\a1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:31:22 GMT'},
+ {'cm': {'cloud': 'oracle', 'kind': 'storage', 'name': 'a\\a\\a1.txt'},
+  'contentLength': '19',
+  'fileName': 'a\\a\\a1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:41:59 GMT'},
+ {'cm': {'cloud': 'oracle', 'kind': 'storage', 'name': 'a\\a\\b\\d\\a1.txt'},
+  'contentLength': '23',
+  'fileName': 'a\\a\\b\\d\\a1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:42:01 GMT'},
+ {'cm': {'cloud': 'oracle', 'kind': 'storage', 'name': 'a\\get\\a1.txt'},
+  'contentLength': '19',
+  'fileName': 'a\\get\\a1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:42:02 GMT'}]
+PASSED
+tests/test_storage_oracle.py::TestStorageOracle::test_delete oracle
+
+
+[35m
+# ######################################################################
+# test_delete \tests\test_storage_oracle.py 116
+# ######################################################################
+[0m
+{'action': 'put',
+ 'destination': 'a/created_dir/a1.txt',
+ 'recursive': False,
+ 'source': 'C:\\Users\\srika\\.cloudmesh\\storage\\test/a/a1.txt'}
+{'action': 'put',
+ 'destination': 'a/created_dir/a1.txt',
+ 'message': 'Source uploaded',
+ 'objlist': [{'contentLength': '19',
+              'fileName': 'a\\created_dir\\a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:14 GMT'}],
+ 'recursive': False,
+ 'source': 'C:\\Users\\srika\\.cloudmesh\\storage\\test/a/a1.txt'}
+KKKK: [{'fileName': 'a\\created_dir\\a1.txt', 'lastModificationDate': 'Sun, 15 Dec 2019 18:45:14 GMT', 'contentLength': '19', 'cm': {'kind': 'storage', 'cloud': 'oracle', 'name': 'a\\created_dir\\a1.txt', 'collection': 'oracle-storage', 'created': '2019-12-15 18:00:40.828193', 'modified': '2019-12-15 18:45:16.339373'}}]
+PASSED
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put oracle
+
+{'action': 'put',
+ 'destination': 'a',
+ 'recursive': True,
+ 'source': 'C:\\Users\\srika\\.cloudmesh\\storage\\test'}
+{'action': 'put',
+ 'destination': 'a',
+ 'message': 'Source uploaded',
+ 'objlist': [{'contentLength': '19',
+              'fileName': 'a\\a\\a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+             {'contentLength': '19',
+              'fileName': 'a\\a\\a2.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+             {'contentLength': '19',
+              'fileName': 'a\\a\\a3.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+             {'contentLength': '21',
+              'fileName': 'a\\a\\b\\b1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+             {'contentLength': '21',
+              'fileName': 'a\\a\\b\\b2.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+             {'contentLength': '21',
+              'fileName': 'a\\a\\b\\b3.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\a\\b\\c\\c1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\a\\b\\c\\c2.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\a\\b\\c\\c3.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\a\\b\\d\\a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\a\\b\\d\\d1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\a\\b\\d\\d2.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\a\\b\\d\\d3.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'},
+             {'contentLength': '19',
+              'fileName': 'a\\get\\a',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'},
+             {'contentLength': '19',
+              'fileName': 'a\\get\\a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'},
+             {'contentLength': '19',
+              'fileName': 'a\\get\\a2.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+             {'contentLength': '19',
+              'fileName': 'a\\get\\a3.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+             {'contentLength': '21',
+              'fileName': 'a\\get\\b1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+             {'contentLength': '21',
+              'fileName': 'a\\get\\b2.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+             {'contentLength': '21',
+              'fileName': 'a\\get\\b3.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\get\\c1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\get\\c2.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\get\\c3.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\get\\d1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\get\\d2.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\get\\d3.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+             {'contentLength': '19',
+              'fileName': 'a\\get\\hello.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+             {'contentLength': '19',
+              'fileName': 'a\\hello.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:21 GMT'}],
+ 'recursive': True,
+ 'source': 'C:\\Users\\srika\\.cloudmesh\\storage\\test'}
+[{'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:36:00.788560',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.821712',
+         'name': 'a\\a\\a1.txt'},
+  'contentLength': '19',
+  'fileName': 'a\\a\\a1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:36:00.789553',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.824703',
+         'name': 'a\\a\\a2.txt'},
+  'contentLength': '19',
+  'fileName': 'a\\a\\a2.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:36:00.790550',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.825700',
+         'name': 'a\\a\\a3.txt'},
+  'contentLength': '19',
+  'fileName': 'a\\a\\a3.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:36:00.791548',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.827695',
+         'name': 'a\\a\\b\\b1.txt'},
+  'contentLength': '21',
+  'fileName': 'a\\a\\b\\b1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:36:00.793542',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.829690',
+         'name': 'a\\a\\b\\b2.txt'},
+  'contentLength': '21',
+  'fileName': 'a\\a\\b\\b2.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:36:00.795537',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.830687',
+         'name': 'a\\a\\b\\b3.txt'},
+  'contentLength': '21',
+  'fileName': 'a\\a\\b\\b3.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:36:00.796534',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.832682',
+         'name': 'a\\a\\b\\c\\c1.txt'},
+  'contentLength': '23',
+  'fileName': 'a\\a\\b\\c\\c1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.189652',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.833690',
+         'name': 'a\\a\\b\\c\\c2.txt'},
+  'contentLength': '23',
+  'fileName': 'a\\a\\b\\c\\c2.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.191646',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.835675',
+         'name': 'a\\a\\b\\c\\c3.txt'},
+  'contentLength': '23',
+  'fileName': 'a\\a\\b\\c\\c3.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.193640',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.836672',
+         'name': 'a\\a\\b\\d\\a1.txt'},
+  'contentLength': '23',
+  'fileName': 'a\\a\\b\\d\\a1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.194648',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.838667',
+         'name': 'a\\a\\b\\d\\d1.txt'},
+  'contentLength': '23',
+  'fileName': 'a\\a\\b\\d\\d1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.196631',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.841658',
+         'name': 'a\\a\\b\\d\\d2.txt'},
+  'contentLength': '23',
+  'fileName': 'a\\a\\b\\d\\d2.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.199623',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.842655',
+         'name': 'a\\a\\b\\d\\d3.txt'},
+  'contentLength': '23',
+  'fileName': 'a\\a\\b\\d\\d3.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.200620',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.844650',
+         'name': 'a\\get\\a'},
+  'contentLength': '19',
+  'fileName': 'a\\get\\a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.201633',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.845647',
+         'name': 'a\\get\\a1.txt'},
+  'contentLength': '19',
+  'fileName': 'a\\get\\a1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.202632',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.847642',
+         'name': 'a\\get\\a2.txt'},
+  'contentLength': '19',
+  'fileName': 'a\\get\\a2.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.204610',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.849638',
+         'name': 'a\\get\\a3.txt'},
+  'contentLength': '19',
+  'fileName': 'a\\get\\a3.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.205609',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.851631',
+         'name': 'a\\get\\b1.txt'},
+  'contentLength': '21',
+  'fileName': 'a\\get\\b1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.206618',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.852628',
+         'name': 'a\\get\\b2.txt'},
+  'contentLength': '21',
+  'fileName': 'a\\get\\b2.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.207602',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.855628',
+         'name': 'a\\get\\b3.txt'},
+  'contentLength': '21',
+  'fileName': 'a\\get\\b3.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.208599',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.858613',
+         'name': 'a\\get\\c1.txt'},
+  'contentLength': '23',
+  'fileName': 'a\\get\\c1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.210594',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.860608',
+         'name': 'a\\get\\c2.txt'},
+  'contentLength': '23',
+  'fileName': 'a\\get\\c2.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.211591',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.861605',
+         'name': 'a\\get\\c3.txt'},
+  'contentLength': '23',
+  'fileName': 'a\\get\\c3.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.212589',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.863600',
+         'name': 'a\\get\\d1.txt'},
+  'contentLength': '23',
+  'fileName': 'a\\get\\d1.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.213586',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.864599',
+         'name': 'a\\get\\d2.txt'},
+  'contentLength': '23',
+  'fileName': 'a\\get\\d2.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.215608',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.866614',
+         'name': 'a\\get\\d3.txt'},
+  'contentLength': '23',
+  'fileName': 'a\\get\\d3.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+ {'_id': ObjectId('5df67f410c500f99a206093f'),
+  'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:45:21.867589',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.867589',
+         'name': 'a\\get\\hello.txt'},
+  'contentLength': '19',
+  'fileName': 'a\\get\\hello.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 18:42:06.216578',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:21.869583',
+         'name': 'a\\hello.txt'},
+  'contentLength': '19',
+  'fileName': 'a\\hello.txt',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:21 GMT'}]
+PASSED
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get oracle
+
+[{'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.751202',
+         'name': 'a'},
+  'contentLength': '19',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:06 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.760187',
+         'name': 'a'},
+  'contentLength': '19',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:31:22 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.761175',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:31:22 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.762172',
+         'name': 'a'},
+  'contentLength': '19',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:31:20 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.764169',
+         'name': 'a'},
+  'contentLength': '19',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:31:20 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.765166',
+         'name': 'a'},
+  'contentLength': '19',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.767160',
+         'name': 'a'},
+  'contentLength': '19',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.768157',
+         'name': 'a'},
+  'contentLength': '19',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.769154',
+         'name': 'a'},
+  'contentLength': '21',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.772150',
+         'name': 'a'},
+  'contentLength': '21',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.774143',
+         'name': 'a'},
+  'contentLength': '21',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.775138',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.776136',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.778132',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.779128',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.780125',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.782119',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.783116',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.785111',
+         'name': 'a'},
+  'contentLength': '21',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:31:20 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.786108',
+         'name': 'a'},
+  'contentLength': '21',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:31:20 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.788105',
+         'name': 'a'},
+  'contentLength': '21',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:31:21 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.790098',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:31:21 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.791097',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:31:21 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.793090',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:31:21 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.794087',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:31:22 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.795084',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:31:22 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.797079',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:31:22 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.798080',
+         'name': 'a'},
+  'contentLength': '19',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.800071',
+         'name': 'a'},
+  'contentLength': '19',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.801068',
+         'name': 'a'},
+  'contentLength': '19',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.802066',
+         'name': 'a'},
+  'contentLength': '19',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.804060',
+         'name': 'a'},
+  'contentLength': '21',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.806056',
+         'name': 'a'},
+  'contentLength': '21',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.808050',
+         'name': 'a'},
+  'contentLength': '21',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.809048',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.810071',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.812040',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.814034',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.822014',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.824008',
+         'name': 'a'},
+  'contentLength': '23',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.825005',
+         'name': 'a'},
+  'contentLength': '19',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:20 GMT'},
+ {'cm': {'cloud': 'oracle',
+         'collection': 'oracle-storage',
+         'created': '2019-12-15 17:48:22.434892',
+         'kind': 'storage',
+         'modified': '2019-12-15 18:45:25.826999',
+         'name': 'a'},
+  'contentLength': '19',
+  'fileName': 'a',
+  'lastModificationDate': 'Sun, 15 Dec 2019 18:45:21 GMT'}]
+PASSED
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete oracle
+
+PASSED
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list oracle
+
+PASSED
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list oracle
+
+PASSED
+tests/test_storage_oracle.py::TestStorageOracle::test_search_b1 oracle
+
+{'directory': 'a',
+ 'filename': 'b1.txt',
+ 'message': 'File found',
+ 'objlist': [{'contentLength': '21',
+              'fileName': 'a\\a\\b\\b1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+             {'contentLength': '21',
+              'fileName': 'a\\b1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:31:20 GMT'},
+             {'contentLength': '21',
+              'fileName': 'a\\get\\b1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:19 GMT'}],
+ 'recursive': True,
+ 'search': 'search'}
+PASSED
+tests/test_storage_oracle.py::TestStorageOracle::test_search_b1_dir oracle
+
+{'directory': 'a',
+ 'filename': 'b/b1.txt',
+ 'message': 'File not found',
+ 'objlist': [],
+ 'recursive': True,
+ 'search': 'search'}
+PASSED
+tests/test_storage_oracle.py::TestStorageOracle::test_search_a1 oracle
+
+{'directory': 'a',
+ 'filename': 'a1.txt',
+ 'message': 'File found',
+ 'objlist': [{'contentLength': '19',
+              'fileName': 'a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:06 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:31:22 GMT'},
+             {'contentLength': '19',
+              'fileName': 'a\\a\\a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:16 GMT'},
+             {'contentLength': '23',
+              'fileName': 'a\\a\\b\\d\\a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:17 GMT'},
+             {'contentLength': '19',
+              'fileName': 'a\\get\\a1.txt',
+              'lastModificationDate': 'Sun, 15 Dec 2019 18:45:18 GMT'}],
+ 'recursive': True,
+ 'search': 'search'}
+PASSED
+tests/test_storage_oracle.py::TestStorageOracle::test_results oracle
+
+
+[35m
+# ######################################################################
+# test_results \tests\test_storage_oracle.py 204
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# Benchmark results for oracle Storage
+# ----------------------------------------------------------------------
+[0m
+
++-------------------+--------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                          |
++-------------------+--------------------------------------------------------------------------------+
+| cpu_count         | 4                                                                              |
+| mac_version       |                                                                                |
+| machine           | ('AMD64',)                                                                     |
+| mem_available     | 945.9 MiB                                                                      |
+| mem_free          | 945.9 MiB                                                                      |
+| mem_percent       | 88.3%                                                                          |
+| mem_total         | 7.9 GiB                                                                        |
+| mem_used          | 6.9 GiB                                                                        |
+| node              | ('DESKTOP-495J5G9',)                                                           |
+| platform          | Windows-10-10.0.18362-SP0                                                      |
+| processor         | ('Intel64 Family 6 Model 158 Stepping 9, GenuineIntel',)                       |
+| processors        | Windows                                                                        |
+| python            | 3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:21:23) [MSC v.1916 32 bit (Intel)] |
+| release           | ('10',)                                                                        |
+| sys               | win32                                                                          |
+| system            | Windows                                                                        |
+| user              |                                                                                |
+| version           | 10.0.18362                                                                     |
+| win_version       | ('10', '10.0.18362', 'SP0', '')                                                |
++-------------------+--------------------------------------------------------------------------------+
++---------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                           | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++---------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| PUT file                        | 0.794 | 2019-12-15 18:45:07 |     | ('DESKTOP-495J5G9',) |      | Windows |             | ('10', '10.0.18362', 'SP0', '') |
+| GET file                        | 0.51  | 2019-12-15 18:45:07 |     | ('DESKTOP-495J5G9',) |      | Windows |             | ('10', '10.0.18362', 'SP0', '') |
+| LIST Directory                  | 5.134 | 2019-12-15 18:45:08 |     | ('DESKTOP-495J5G9',) |      | Windows |             | ('10', '10.0.18362', 'SP0', '') |
+| CREATE DIR                      | 0.0   | 2019-12-15 18:45:14 |     | ('DESKTOP-495J5G9',) |      | Windows |             | ('10', '10.0.18362', 'SP0', '') |
+| SEARCH file                     | 0.667 | 2019-12-15 18:45:14 |     | ('DESKTOP-495J5G9',) |      | Windows |             | ('10', '10.0.18362', 'SP0', '') |
+| DELETE Directory                | 0.519 | 2019-12-15 18:45:15 |     | ('DESKTOP-495J5G9',) |      | Windows |             | ('10', '10.0.18362', 'SP0', '') |
+| PUT Directory --recursive       | 5.263 | 2019-12-15 18:45:16 |     | ('DESKTOP-495J5G9',) |      | Windows |             | ('10', '10.0.18362', 'SP0', '') |
+| GET Directory --recursive       | 3.705 | 2019-12-15 18:45:22 |     | ('DESKTOP-495J5G9',) |      | Windows |             | ('10', '10.0.18362', 'SP0', '') |
+| DELETE Sub-directory            | 0.689 | 2019-12-15 18:45:26 |     | ('DESKTOP-495J5G9',) |      | Windows |             | ('10', '10.0.18362', 'SP0', '') |
+| LIST Directory --recursive      | 2.844 | 2019-12-15 18:45:27 |     | ('DESKTOP-495J5G9',) |      | Windows |             | ('10', '10.0.18362', 'SP0', '') |
+| LIST Sub-directory --recursive  | 0.723 | 2019-12-15 18:45:30 |     | ('DESKTOP-495J5G9',) |      | Windows |             | ('10', '10.0.18362', 'SP0', '') |
+| SEARCH file --recursive         | 0.243 | 2019-12-15 18:45:31 |     | ('DESKTOP-495J5G9',) |      | Windows |             | ('10', '10.0.18362', 'SP0', '') |
+| SEARCH file under a sub-dir --r | 0.064 | 2019-12-15 18:45:31 |     | ('DESKTOP-495J5G9',) |      | Windows |             | ('10', '10.0.18362', 'SP0', '') |
+| SEARCH file under root dir --r  | 0.379 | 2019-12-15 18:45:31 |     | ('DESKTOP-495J5G9',) |      | Windows |             | ('10', '10.0.18362', 'SP0', '') |
++---------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,PUT file,0.794,None,('DESKTOP-495J5G9',),,Windows,,('10', '10.0.18362', 'SP0', '')
+#csv,GET file,0.51,None,('DESKTOP-495J5G9',),,Windows,,('10', '10.0.18362', 'SP0', '')
+#csv,LIST Directory,5.134,None,('DESKTOP-495J5G9',),,Windows,,('10', '10.0.18362', 'SP0', '')
+#csv,CREATE DIR,0.0,None,('DESKTOP-495J5G9',),,Windows,,('10', '10.0.18362', 'SP0', '')
+#csv,SEARCH file,0.667,None,('DESKTOP-495J5G9',),,Windows,,('10', '10.0.18362', 'SP0', '')
+#csv,DELETE Directory,0.519,None,('DESKTOP-495J5G9',),,Windows,,('10', '10.0.18362', 'SP0', '')
+#csv,PUT Directory --recursive,5.263,None,('DESKTOP-495J5G9',),,Windows,,('10', '10.0.18362', 'SP0', '')
+#csv,GET Directory --recursive,3.705,None,('DESKTOP-495J5G9',),,Windows,,('10', '10.0.18362', 'SP0', '')
+#csv,DELETE Sub-directory,0.689,None,('DESKTOP-495J5G9',),,Windows,,('10', '10.0.18362', 'SP0', '')
+#csv,LIST Directory --recursive,2.844,None,('DESKTOP-495J5G9',),,Windows,,('10', '10.0.18362', 'SP0', '')
+#csv,LIST Sub-directory --recursive,0.723,None,('DESKTOP-495J5G9',),,Windows,,('10', '10.0.18362', 'SP0', '')
+#csv,SEARCH file --recursive,0.243,None,('DESKTOP-495J5G9',),,Windows,,('10', '10.0.18362', 'SP0', '')
+#csv,SEARCH file under a sub-dir --r,0.064,None,('DESKTOP-495J5G9',),,Windows,,('10', '10.0.18362', 'SP0', '')
+#csv,SEARCH file under root dir --r,0.379,None,('DESKTOP-495J5G9',),,Windows,,('10', '10.0.18362', 'SP0', '')
+
+PASSED
+
+============================== warnings summary ===============================
+C:\Users\srika\ENV3\lib\site-packages\pymongo\message.py:771
+C:\Users\srika\ENV3\lib\site-packages\pymongo\message.py:771
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+  C:\Users\srika\ENV3\lib\site-packages\pymongo\message.py:771: DeprecationWarning: PY_SSIZE_T_CLEAN will be required for '#' formats
+    return _query_uncompressed(options, collection_name, num_to_skip,
+
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+  C:\Users\srika\ENV3\lib\site-packages\oci\_vendor\requests\utils.py:132: FileModeWarning: Requests has determined the content-length for this request using the binary size of the file: however, the file has been opened in text mode (i.e. without the 'b' flag in the mode). This may lead to an incorrect content-length. In Requests 3.0, support will be removed for files in text mode.
+    warnings.warn((
+
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+  C:\Users\srika\ENV3\lib\site-packages\pymongo\message.py:703: DeprecationWarning: PY_SSIZE_T_CLEAN will be required for '#' formats
+    return _op_msg_uncompressed(
+
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_put_and_get
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_list
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_put
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_get
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_recursive_delete
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_exhaustive_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+tests/test_storage_oracle.py::TestStorageOracle::test_selective_list
+  C:\Users\srika\ENV3\lib\site-packages\bson\__init__.py:1098: DeprecationWarning: PY_SSIZE_T_CLEAN will be required for '#' formats
+    return decode_all(data, codec_options)
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+===================== 15 passed, 1065 warnings in 29.66s ======================
