@@ -1,14 +1,34 @@
 ============================= test session starts ==============================
-platform linux -- Python 3.7.3, pytest-5.3.2, py-1.8.0, pluggy-0.13.1
+platform linux -- Python 3.7.3, pytest-5.3.2, py-1.8.0, pluggy-0.13.1 -- /usr/bin/python3
+cachedir: .pytest_cache
 rootdir: /cloudmesh/cloudmesh-cloud, inifile: pytest.ini
-collected 3 items
+collecting ... collected 3 items
 
-tests/2_local/test_ssh.py FF.                                            [100%]
+tests/2_local/test_ssh.py::TestSsh::test_internal_ssh 
+FAILED
+tests/2_local/test_ssh.py::TestSsh::test_ssh_processors 
+Processors: 1
+FAILED
+tests/2_local/test_ssh.py::TestSsh::test_benchmark 
++----------------------+------+---------------------+-------+-------------------+------+--------+-------------+-------------+
+| timer                | time | start               | tag   | node              | user | system | mac_version | win_version |
++----------------------+------+---------------------+-------+-------------------+------+--------+-------------+-------------+
+| total _ssh           |      | 2019-12-22 21:06:13 | local | ('ab839da54eed',) |      | Linux  |             |             |
+| total p=1 c=1        |      | 2019-12-22 21:06:14 | local | ('ab839da54eed',) |      | Linux  |             |             |
+| benchmark_start_stop | 0.0  | 2019-12-22 21:06:14 | local | ('ab839da54eed',) |      | Linux  |             |             |
++----------------------+------+---------------------+-------+-------------------+------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,total _ssh,None,None,('ab839da54eed',),,Linux,,
+#csv,total p=1 c=1,None,None,('ab839da54eed',),,Linux,,
+#csv,benchmark_start_stop,0.0,None,('ab839da54eed',),,Linux,,
+
+PASSED
 
 =================================== FAILURES ===================================
 __________________________ TestSsh.test_internal_ssh ___________________________
 
-self = <test_ssh.TestSsh object at 0x7fb3912c0080>
+self = <test_ssh.TestSsh object at 0x7f3dc18a6160>
 
     def test_internal_ssh(self):
         print()
@@ -38,11 +58,9 @@ key = 'USER'
 E           KeyError: 'USER'
 
 /usr/lib/python3.7/os.py:678: KeyError
------------------------------ Captured stdout call -----------------------------
-
 _________________________ TestSsh.test_ssh_processors __________________________
 
-self = <test_ssh.TestSsh object at 0x7fb3912252b0>
+self = <test_ssh.TestSsh object at 0x7f3dc16bf2e8>
 
     def test_ssh_processors(self):
     
@@ -71,7 +89,4 @@ key = 'USER'
 E           KeyError: 'USER'
 
 /usr/lib/python3.7/os.py:678: KeyError
------------------------------ Captured stdout call -----------------------------
-
-Processors: 1
-========================= 2 failed, 1 passed in 0.85s ==========================
+========================= 2 failed, 1 passed in 1.21s ==========================
