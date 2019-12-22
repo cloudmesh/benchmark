@@ -1,0 +1,53 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.3, pytest-5.3.2, py-1.8.0, pluggy-0.13.1
+rootdir: /cloudmesh/cloudmesh-cloud, inifile: pytest.ini
+collected 58 items
+
+tests/1_local/test_cms.py ....                                           [  6%]
+tests/1_local/test_config.py .........                                   [ 22%]
+tests/1_local/test_data.py ...                                           [ 27%]
+tests/1_local/test_group.py ....                                         [ 34%]
+tests/1_local/test_key.py ..                                             [ 37%]
+tests/1_local/test_name.py ........                                      [ 51%]
+tests/1_local/test_ping.py ...                                           [ 56%]
+tests/1_local/test_sec_command.py ..........                             [ 74%]
+tests/1_local/test_secgroup_database.py .........                        [ 89%]
+tests/1_local/test_shell.py ....F.                                       [100%]
+
+=================================== FAILURES ===================================
+_______________________________ TestName.test_ls _______________________________
+
+self = <test_shell.TestName object at 0x7f0e8fa40be0>
+
+    def test_ls(self):
+        HEADING()
+        Benchmark.Start()
+>       r = Shell.ls(".", "*")
+
+tests/1_local/test_shell.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cls = <class 'cloudmesh.common.Shell.Shell'>, path = '.', match = '*'
+
+    @classmethod
+    # @NotImplementedInWindows
+    def ls(cls, path, match):
+        """
+        executes ls with the given arguments
+        :param args:
+        :return:
+        """
+        NotImplementedInWindows()
+        # TODO: replace with glob
+>       d = glob.glob(path_expand(path), match)
+E       TypeError: glob() takes 1 positional argument but 2 were given
+
+../cloudmesh-common/cloudmesh/common/Shell.py:364: TypeError
+----------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_ls /tests/1_local/test_shell.py 46
+# ######################################################################
+[0m
+=================== 1 failed, 57 passed in 83.25s (0:01:23) ====================

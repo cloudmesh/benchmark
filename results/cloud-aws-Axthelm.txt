@@ -1,0 +1,426 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.3, pytest-5.3.2, py-1.8.0, pluggy-0.13.1
+rootdir: /cloudmesh/cloudmesh-cloud, inifile: pytest.ini
+collected 69 items
+
+tests/cloud/test_00_sys.py ..                                            [  2%]
+tests/cloud/test_01_clean_local_remote.py ....                           [  8%]
+tests/cloud/test_02_key.py ........                                      [ 20%]
+tests/cloud/test_04_flavor.py ......                                     [ 28%]
+tests/cloud/test_05_image.py ......                                      [ 37%]
+tests/cloud/test_06_sec_command-broken.py .........                      [ 50%]
+tests/cloud/test_07_secgroup_provider.py .........                       [ 63%]
+tests/cloud/test_08_vm_provider.py .FFFFF.FFFF.                          [ 81%]
+tests/cloud/test_09_cm_names_find.py .............                       [100%]
+
+=================================== FAILURES ===================================
+____________________ Test_provider_vm.test_find_largest_id _____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7fc2be7691d0>
+
+    def test_find_largest_id(self):
+        name = Name()
+        counter = 1
+>       if self.find_counter() is not None:
+
+tests/cloud/test_08_vm_provider.py:80: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7fc2be7691d0>
+
+    def find_counter(self):
+        name = str(Name())
+        print(name)
+        vms = provider.list()
+        print(f'VM is {vms}')
+        if vms is not None:
+            numbers = []
+            names = []
+            for vm in vms:
+                names.append(vm['name'])
+                numbers.append(int(vm['name'].rsplit("-", 1)[1]))
+            numbers.sort()
+>           return numbers[-1]
+E           IndexError: list index out of range
+
+tests/cloud/test_08_vm_provider.py:75: IndexError
+----------------------------- Captured stdout call -----------------------------
+test-AAxthelm-vm
+VM is []
+___________________ Test_provider_vm.test_provider_vm_create ___________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7fc2be7595f8>
+
+    def test_provider_vm_create(self):
+        HEADING()
+        os.system(f"cms vm list --cloud={cloud}")
+        name_generator.incr()
+        Benchmark.Start()
+>       data = provider.create(key=key)
+
+tests/cloud/test_08_vm_provider.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+cloudmesh/mongo/DataBaseDecorator.py:87: in wrapper
+    current = f(*args, **kwargs)
+cloudmesh/compute/vm/Provider.py:216: in create
+    created = self.loop(self._create, **arguments)
+cloudmesh/compute/vm/Provider.py:112: in loop
+    vm = func(**parameters)
+cloudmesh/compute/vm/Provider.py:251: in _create
+    data = self.p.create(**arguments)
+cloudmesh/compute/aws/Provider.py:1116: in create
+    'Tags': metadata}]
+/usr/local/lib/python3.7/dist-packages/boto3/resources/factory.py:520: in do_action
+    response = action(self, *args, **kwargs)
+/usr/local/lib/python3.7/dist-packages/boto3/resources/action.py:83: in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+/usr/local/lib/python3.7/dist-packages/botocore/client.py:276: in _api_call
+    return self._make_api_call(operation_name, kwargs)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <botocore.client.EC2 object at 0x7fc2be7ebe10>
+operation_name = 'RunInstances'
+api_params = {'ImageId': 'ami-0f65671a86f061fcd', 'InstanceType': 't2.micro', 'KeyName': 'AAxthelm', 'MaxCount': 1, ...}
+
+    def _make_api_call(self, operation_name, api_params):
+        operation_model = self._service_model.operation_model(operation_name)
+        service_name = self._service_model.service_name
+        history_recorder.record('API_CALL', {
+            'service': service_name,
+            'operation': operation_name,
+            'params': api_params,
+        })
+        if operation_model.deprecated:
+            logger.debug('Warning: %s.%s() is deprecated',
+                         service_name, operation_name)
+        request_context = {
+            'client_region': self.meta.region_name,
+            'client_config': self.meta.config,
+            'has_streaming_input': operation_model.has_streaming_input,
+            'auth_type': operation_model.auth_type,
+        }
+        request_dict = self._convert_to_request_dict(
+            api_params, operation_model, context=request_context)
+    
+        service_id = self._service_model.service_id.hyphenize()
+        handler, event_response = self.meta.events.emit_until_response(
+            'before-call.{service_id}.{operation_name}'.format(
+                service_id=service_id,
+                operation_name=operation_name),
+            model=operation_model, params=request_dict,
+            request_signer=self._request_signer, context=request_context)
+    
+        if event_response is not None:
+            http, parsed_response = event_response
+        else:
+            http, parsed_response = self._make_request(
+                operation_model, request_dict, request_context)
+    
+        self.meta.events.emit(
+            'after-call.{service_id}.{operation_name}'.format(
+                service_id=service_id,
+                operation_name=operation_name),
+            http_response=http, parsed=parsed_response,
+            model=operation_model, context=request_context
+        )
+    
+        if http.status_code >= 300:
+            error_code = parsed_response.get("Error", {}).get("Code")
+            error_class = self.exceptions.from_code(error_code)
+>           raise error_class(parsed_response, operation_name)
+E           botocore.exceptions.ClientError: An error occurred (InvalidAMIID.NotFound) when calling the RunInstances operation: The image id '[ami-0f65671a86f061fcd]' does not exist
+
+/usr/local/lib/python3.7/dist-packages/botocore/client.py:586: ClientError
+----------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vm_create /tests/cloud/test_08_vm_provider.py 87
+# ######################################################################
+[0m
+ERROR: you need to specify a vm
+List aws
+None
+[34m
+# ----------------------------------------------------------------------
+# Create Server
+# ----------------------------------------------------------------------
+[0m
+    Name:     test-AAxthelm-vm-2
+    User:     None
+    IP:       None
+    Image:    ami-0f65671a86f061fcd
+    Size:     t2.micro
+    Public:   None
+    Key:      AAxthelm
+    Location: None
+    Timeout:  360
+    Secgroup: None
+    Group:    cloudmesh
+
+______________ Test_provider_vm.test_provider_vmprovider_vm_list _______________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7fc29819ef28>
+
+    def test_provider_vmprovider_vm_list(self):
+        # list should be after create() since it would return empty and
+        # len(data) would be 0
+        HEADING()
+        Benchmark.Start()
+        data = provider.list()
+>       assert len(data) > 0
+E       assert 0 > 0
+E        +  where 0 = len([])
+
+tests/cloud/test_08_vm_provider.py:112: AssertionError
+----------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vmprovider_vm_list /tests/cloud/test_08_vm_provider.py 108
+# ######################################################################
+[0m
+____________________ Test_provider_vm.test_provider_vm_wait ____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7fc2994576d8>
+
+    def test_provider_vm_wait(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        cm = CmDatabase()
+        vm = cm.find_name(name, kind="vm")[0]
+>       assert provider.wait(vm=vm), "cms wait timed out ..."
+E       AssertionError: cms wait timed out ...
+E       assert False
+E        +  where False = <bound method Provider.wait of <cloudmesh.compute.vm.Provider.Provider object at 0x7fc2bf0b2cc0>>(vm={'_id': ObjectId('5dffc0a5a09f35f6a7b436d7'), 'cm': {'cloud': 'aws', 'collection': 'aws-vm', 'created': '2019-12-22 19:14:45.529028', 'group': 'cloudmesh', ...}, 'name': 'test-AAxthelm-vm-2'})
+E        +    where <bound method Provider.wait of <cloudmesh.compute.vm.Provider.Provider object at 0x7fc2bf0b2cc0>> = <cloudmesh.compute.vm.Provider.Provider object at 0x7fc2bf0b2cc0>.wait
+
+tests/cloud/test_08_vm_provider.py:122: AssertionError
+----------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vm_wait /tests/cloud/test_08_vm_provider.py 116
+# ######################################################################
+[0m
+[34mINFO: waiting for instance to be reachable: Interval: 5, Timeout: 360[0m
+____________________ Test_provider_vm.test_provider_vm_ssh _____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7fc29bf52ba8>
+
+    def test_provider_vm_ssh(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        cm = CmDatabase()
+        vm = cm.find_name(name, kind="vm")[0]
+>       data = provider.ssh(vm=vm, command='\"echo IAmAlive\"')
+
+tests/cloud/test_08_vm_provider.py:131: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+cloudmesh/compute/vm/Provider.py:446: in ssh
+    return self.p.ssh(vm=vm, command=command)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cloudmesh.compute.aws.Provider.Provider object at 0x7fc2bf0b2cf8>
+vm = {'_id': ObjectId('5dffc0a5a09f35f6a7b436d7'), 'cm': {'cloud': 'aws', 'collection': 'aws-vm', 'created': '2019-12-22 19:14:45.529028', 'group': 'cloudmesh', ...}, 'name': 'test-AAxthelm-vm-2'}
+command = '"echo IAmAlive"'
+
+    def ssh(self, vm=None, command=None):
+    
+        def key_selector(keys):
+            '''
+           This is a helper method for ssh key selection
+           THIS IS JUST A SAFETY MEASURE, PLEASE DON'T MIND IT
+            :param keys:
+            :return:
+            '''
+            tmp_keys = keys[:]
+            # indices = range(1,len(tmp_keys)+1)
+            for key_idx, key in enumerate(keys):
+                key['idx'] = key_idx + 1
+            print(Printer.flatwrite(tmp_keys,
+                                    sort_keys=["idx"],
+                                    order=['idx', 'KeyName', 'KeyFingerprint'],
+                                    header=['Index', 'Key Name',
+                                            "Key Fingerprint"],
+                                    output="table",
+                                    humanize=None)
+                  )
+            # Console.msg("Please select one of the AWS key indices from the table above: ")
+            picked = 0
+            while picked < 1 or picked > len(keys):
+                try:
+                    picked = int(input(
+                        "Please select one of the AWS key indices from the table above: "))
+                except ValueError:
+                    pass
+            return keys[picked - 1]
+    
+        cm = CmDatabase()
+>       ip = vm['public_ips']
+E       KeyError: 'public_ips'
+
+cloudmesh/compute/aws/Provider.py:657: KeyError
+----------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vm_ssh /tests/cloud/test_08_vm_provider.py 125
+# ######################################################################
+[0m
+_______________________ Test_provider_vm.test_vm_status ________________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7fc2bc439198>
+
+    def test_vm_status(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+>       data = provider.status(name=name)
+
+tests/cloud/test_08_vm_provider.py:152: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cloudmesh.compute.vm.Provider.Provider object at 0x7fc2bf0b2cc0>
+name = 'test-AAxthelm-vm-2'
+
+    def status(self, name=None):
+        r = self.info(name=name)
+    
+        status = []
+        for entry in r:
+>           state = {'name': entry['name'],
+                     'status:': entry['status'],
+                     'cm.status': entry['cm']['status']}
+E           KeyError: 'name'
+
+cloudmesh/compute/vm/Provider.py:314: KeyError
+----------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_vm_status /tests/cloud/test_08_vm_provider.py 148
+# ######################################################################
+[0m
+____________________ Test_provider_vm.test_provider_vm_stop ____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7fc2341e6240>
+
+    def test_provider_vm_stop(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        data = provider.stop(name=name)
+        Benchmark.Stop()
+        stop_timeout = 360
+        time = 0
+        while time <= stop_timeout:
+            sleep(5)
+            time += 5
+>           status = provider.status(name=name)[0]
+
+tests/cloud/test_08_vm_provider.py:175: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cloudmesh.compute.vm.Provider.Provider object at 0x7fc2bf0b2cc0>
+name = 'test-AAxthelm-vm-2'
+
+    def status(self, name=None):
+        r = self.info(name=name)
+    
+        status = []
+        for entry in r:
+>           state = {'name': entry['name'],
+                     'status:': entry['status'],
+                     'cm.status': entry['cm']['status']}
+E           KeyError: 'name'
+
+cloudmesh/compute/vm/Provider.py:314: KeyError
+----------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vm_stop /tests/cloud/test_08_vm_provider.py 164
+# ######################################################################
+[0m
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+___________________ Test_provider_vm.test_provider_vm_start ____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7fc2bd89e6a0>
+
+    def test_provider_vm_start(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        data = provider.start(name=name)
+        Benchmark.Stop()
+        start_timeout = 360
+        time = 0
+        while time <= start_timeout:
+            sleep(5)
+            time += 5
+>           status = provider.status(name=name)[0]
+
+tests/cloud/test_08_vm_provider.py:193: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cloudmesh.compute.vm.Provider.Provider object at 0x7fc2bf0b2cc0>
+name = 'test-AAxthelm-vm-2'
+
+    def status(self, name=None):
+        r = self.info(name=name)
+    
+        status = []
+        for entry in r:
+>           state = {'name': entry['name'],
+                     'status:': entry['status'],
+                     'cm.status': entry['cm']['status']}
+E           KeyError: 'name'
+
+cloudmesh/compute/vm/Provider.py:314: KeyError
+----------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vm_start /tests/cloud/test_08_vm_provider.py 182
+# ######################################################################
+[0m
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+_________________ Test_provider_vm.test_provider_vm_terminate __________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7fc2be6eb710>
+
+    def test_provider_vm_terminate(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        data = provider.destroy(name=name)
+        Benchmark.Stop()
+    
+        pprint(data)
+    
+        termination_timeout = 360
+        time = 0
+        while time <= termination_timeout:
+            sleep(5)
+            time += 5
+            if cloud == 'chameleon' and len(provider.info(name=name)) == 0:
+                break
+            elif cloud == 'aws' and (len(provider.info(name=name)) == 0 or
+>                                    provider.info(name=name)[0]["cm"][
+                                         "status"] in ['TERMINATED']):
+E                                        KeyError: 'cm'
+
+tests/cloud/test_08_vm_provider.py:221: KeyError
+----------------------------- Captured stdout call -----------------------------
+
+[35m
+# ######################################################################
+# test_provider_vm_terminate /tests/cloud/test_08_vm_provider.py 204
+# ######################################################################
+[0m
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+None
+================== 9 failed, 60 passed in 2538.72s (0:42:18) ===================

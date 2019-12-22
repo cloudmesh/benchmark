@@ -1,0 +1,77 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.3, pytest-5.3.2, py-1.8.0, pluggy-0.13.1
+rootdir: /cloudmesh/cloudmesh-cloud, inifile: pytest.ini
+collected 3 items
+
+tests/2_local/test_ssh.py FF.                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________ TestSsh.test_internal_ssh ___________________________
+
+self = <test_ssh.TestSsh object at 0x7fb3912c0080>
+
+    def test_internal_ssh(self):
+        print()
+        StopWatch.start("total _ssh")
+    
+        for host in hosts:
+            location = {
+                'host': host,
+>               'username': os.environ['USER'],
+                'key': '~/.ssh/id_rsa.pub',
+                'command': 'uname -a'
+    
+            }
+
+tests/2_local/test_ssh.py:72: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = environ({'HOSTNAME': 'ab839da54eed', 'PWD': '/cloudmesh/cloudmesh-cloud', 'TZ': 'Etc/UTC', 'HOME': '/root', 'LS_COLORS...pytest', 'LC_CTYPE': 'C.UTF-8', 'PYTEST_CURRENT_TEST': 'tests/2_local/test_ssh.py::TestSsh::test_internal_ssh (call)'})
+key = 'USER'
+
+    def __getitem__(self, key):
+        try:
+            value = self._data[self.encodekey(key)]
+        except KeyError:
+            # raise KeyError with the original key value
+>           raise KeyError(key) from None
+E           KeyError: 'USER'
+
+/usr/lib/python3.7/os.py:678: KeyError
+----------------------------- Captured stdout call -----------------------------
+
+_________________________ TestSsh.test_ssh_processors __________________________
+
+self = <test_ssh.TestSsh object at 0x7fb3912252b0>
+
+    def test_ssh_processors(self):
+    
+        print()
+        for processors in range(1, len(hosts)):
+            print("Processors:", processors)
+>           results = self.ssh(processors=processors)
+
+tests/2_local/test_ssh.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/2_local/test_ssh.py:60: in ssh
+    processors=processors)
+cloudmesh/common3/host.py:60: in ssh
+    username = os.environ['USER']
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = environ({'HOSTNAME': 'ab839da54eed', 'PWD': '/cloudmesh/cloudmesh-cloud', 'TZ': 'Etc/UTC', 'HOME': '/root', 'LS_COLORS...test', 'LC_CTYPE': 'C.UTF-8', 'PYTEST_CURRENT_TEST': 'tests/2_local/test_ssh.py::TestSsh::test_ssh_processors (call)'})
+key = 'USER'
+
+    def __getitem__(self, key):
+        try:
+            value = self._data[self.encodekey(key)]
+        except KeyError:
+            # raise KeyError with the original key value
+>           raise KeyError(key) from None
+E           KeyError: 'USER'
+
+/usr/lib/python3.7/os.py:678: KeyError
+----------------------------- Captured stdout call -----------------------------
+
+Processors: 1
+========================= 2 failed, 1 passed in 0.85s ==========================
