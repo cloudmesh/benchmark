@@ -1,0 +1,2019 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.3, pytest-5.3.2, py-1.8.0, pluggy-0.13.1 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /cloudmesh/cloudmesh-cloud, inifile: pytest.ini
+collecting ... Test run for aws
+Test run for aws
+Test run for aws on key test-key
+Test run for aws
+Test run for aws
+[34m
+# ----------------------------------------------------------------------
+# variables.dict()
+# ----------------------------------------------------------------------
+# 28:<module> ./tests/cloud/test_07_secgroup_provider.py
+# ----------------------------------------------------------------------
+# {'cloud': 'aws',
+#  'cluster': 'clustera',
+#  'debug': 'True',
+#  'experiment': 'base',
+#  'group': 'cloudmesh',
+#  'key': 'AAxthelm',
+#  'refresh': 'False',
+#  'timer': 'False',
+#  'trace': 'True',
+#  'verbose': '10'}
+# ----------------------------------------------------------------------
+[0m
+Test run for aws
+[34m
+# ----------------------------------------------------------------------
+# variables.dict()
+# ----------------------------------------------------------------------
+# 28:<module> ./tests/cloud/test_08_vm_provider.py
+# ----------------------------------------------------------------------
+# {'cloud': 'aws',
+#  'cluster': 'clustera',
+#  'debug': 'True',
+#  'experiment': 'base',
+#  'group': 'cloudmesh',
+#  'key': 'AAxthelm',
+#  'refresh': 'False',
+#  'timer': 'False',
+#  'trace': 'True',
+#  'verbose': '10'}
+# ----------------------------------------------------------------------
+[0m
+Test run for aws
+collected 69 items
+
+tests/cloud/test_00_sys.py::Test_Sys::test_cms_help 
+[35m
+# ######################################################################
+# test_cms_help /tests/cloud/test_00_sys.py 30
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# result
+# ----------------------------------------------------------------------
+# 36:test_cms_help ./tests/cloud/test_00_sys.py
+# ----------------------------------------------------------------------
+# ('Documented commands (type help <topic>):\n'
+#  '========================================\n'
+#  'EOF        data     host       man       quit      source     '
+#  'vbox          \n'
+#  'admin      debug    image      open      register  ssh        '
+#  'vcluster      \n'
+#  'banner     default  info       pause     sec       start      '
+#  'version       \n'
+#  'clear      echo     init       plugin    service   stop       '
+#  'vm            \n'
+#  'commands   flavor   inventory  provider  set       stopwatch  '
+#  'workflow_draft\n'
+#  'config     group    ip         py        shell     sys      \n'
+#  'container  help     key        q         sleep     var')
+# ----------------------------------------------------------------------
+[0m
+PASSED
+tests/cloud/test_00_sys.py::Test_Sys::test_benchmark 
++---------------------+------------------------------------------------------------------+
+| Machine Attribute   | Value                                                            |
++---------------------+------------------------------------------------------------------+
+| BUG_REPORT_URL      | "https://bugs.launchpad.net/ubuntu/"                             |
+| DISTRIB_CODENAME    | disco                                                            |
+| DISTRIB_DESCRIPTION | "Ubuntu 19.04"                                                   |
+| DISTRIB_ID          | Ubuntu                                                           |
+| DISTRIB_RELEASE     | 19.04                                                            |
+| HOME_URL            | "https://www.ubuntu.com/"                                        |
+| ID                  | ubuntu                                                           |
+| ID_LIKE             | debian                                                           |
+| NAME                | "Ubuntu"                                                         |
+| PRETTY_NAME         | "Ubuntu 19.04"                                                   |
+| PRIVACY_POLICY_URL  | "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy" |
+| SUPPORT_URL         | "https://help.ubuntu.com/"                                       |
+| UBUNTU_CODENAME     | disco                                                            |
+| VERSION             | "19.04 (Disco Dingo)"                                            |
+| VERSION_CODENAME    | disco                                                            |
+| VERSION_ID          | "19.04"                                                          |
+| cpu_count           | 2                                                                |
+| mac_version         |                                                                  |
+| machine             | ('x86_64',)                                                      |
+| mem_active          | 511.1 MiB                                                        |
+| mem_available       | 1.3 GiB                                                          |
+| mem_free            | 1.1 GiB                                                          |
+| mem_inactive        | 270.9 MiB                                                        |
+| mem_percent         | 31.3%                                                            |
+| mem_total           | 2.0 GiB                                                          |
+| mem_used            | 484.0 MiB                                                        |
+| node                | ('ab839da54eed',)                                                |
+| platform            | Linux-4.9.184-linuxkit-x86_64-with-Ubuntu-19.04-disco            |
+| processor           | ('x86_64',)                                                      |
+| processors          | Linux                                                            |
+| python              | 3.7.3 (default, Oct  7 2019, 12:56:13)                           |
+|                     | [GCC 8.3.0]                                                      |
+| release             | ('4.9.184-linuxkit',)                                            |
+| sys                 | linux                                                            |
+| system              | Linux                                                            |
+| user                |                                                                  |
+| version             | #1 SMP Tue Jul 2 22:58:16 UTC 2019                               |
+| win_version         |                                                                  |
++---------------------+------------------------------------------------------------------+
++---------------------------+-------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| timer                     | time  | start               | tag | node              | user | system | mac_version | win_version |
++---------------------------+-------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| test_00_sys/test_cms_help | 5.295 | 2019-12-22 20:43:47 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| benchmark_start_stop      | 0.0   | 2019-12-22 20:43:52 | aws | ('ab839da54eed',) |      | Linux  |             |             |
++---------------------------+-------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,5.295,None,('ab839da54eed',),,Linux,,
+#csv,benchmark_start_stop,0.0,None,('ab839da54eed',),,Linux,,
+
+PASSED
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_cms_init MongoDB stop
+server should be down...
+MongoDB folder deleted
+Set key
+Config Security Initialization
+MongoDB create
+MongoDB create
+INFO: Starting mongo without authentication ... 
+about to fork child process, waiting until server is ready for connections.
+forked process: 4937
+child process started successfully, parent exiting
+
+None
+INFO: Creating admin user ... 
+Administrative user created.
+INFO: Stopping the service ... 
+server should be down...
+MongoDB start
+ERROR: Mongo could not be started.Command 'mongod --auth --bind_ip 127.0.0.1 --dbpath /root/.cloudmesh/mongodb --logpath /root/.cloudmesh/mongodb/log/mongod.log --fork' returned non-zero exit status 48.
+None
+
+about to fork child process, waiting until server is ready for connections.
+forked process: 5072
+child process started successfully, parent exiting
+
+None
++---------+-------+----------+-----------+-----------+
+| Group   | Rule  | Protocol | Ports     | IP Range  |
++---------+-------+----------+-----------+-----------+
+| default | ssh   | tcp      | 22:22     | 0.0.0.0/0 |
+| default | icmp  | icmp     |           | 0.0.0.0/0 |
+| default | http  | tcp      | 80:80     | 0.0.0.0/0 |
+| default | https | tcp      | 443:443   | 0.0.0.0/0 |
+| flask   | ssh   | tcp      | 22:22     | 0.0.0.0/0 |
+| flask   | icmp  | icmp     |           | 0.0.0.0/0 |
+| flask   | http  | tcp      | 80:80     | 0.0.0.0/0 |
+| flask   | https | tcp      | 443:443   | 0.0.0.0/0 |
+| flask   | flask | tcp      | 8000:8000 | 0.0.0.0/0 |
++---------+-------+----------+-----------+-----------+
+
+Variables
+
+    trace=True
+    debug=True
+    group=cloudmesh
+    experiment=base
+    cloud=aws
+    cluster=clustera
+    timer=False
+    verbose=10
+    refresh=False
+    key=AAxthelm
+
+[35m
+# ######################################################################
+# test_cms_init /tests/cloud/test_01_clean_local_remote.py 36
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_delete_all_keys_from_cloud 
+[35m
+# ######################################################################
+# test_delete_all_keys_from_cloud /tests/cloud/test_01_clean_local_remote.py 42
+# ######################################################################
+[0m
+deleting the key: AAxthelm -> aws
+None
+PASSED
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_delete_all_secgroups_from_cloud 
+[35m
+# ######################################################################
+# test_delete_all_secgroups_from_cloud /tests/cloud/test_01_clean_local_remote.py 59
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_01_clean_local_remote.py::Test_Clean_Local_Remote::test_benchmark 
++-----------------------------------------------------------------+--------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| timer                                                           | time   | start               | tag | node              | user | system | mac_version | win_version |
++-----------------------------------------------------------------+--------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 5.295  | 2019-12-22 20:43:47 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| benchmark_start_stop                                            | 0.0    | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_cms_init                        | 56.888 | 2019-12-22 20:43:52 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.166  | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.011  | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
++-----------------------------------------------------------------+--------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_upload_key_to_database 
+[35m
+# ######################################################################
+# test_upload_key_to_database /tests/cloud/test_02_key.py 43
+# ######################################################################
+[0m
+<cloudmesh.key.Key.Key object at 0x7f566b7bde48>
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_upload_key_to_cloud 
+[35m
+# ######################################################################
+# test_upload_key_to_cloud /tests/cloud/test_02_key.py 54
+# ######################################################################
+[0m
+{'_id': ObjectId('5dffd5c26687e43ddb443489'),
+ 'cm': {'cloud': 'local',
+        'collection': 'local-key',
+        'created': '2019-12-22 20:44:50.555818',
+        'kind': 'key',
+        'modified': '2019-12-22 20:44:50.555818',
+        'name': 'test-key'},
+ 'comment': 'root@39ad7ab48eef',
+ 'fingerprint': '25:1f:9d:09:dd:4c:4c:fc:c1:e3:71:49:16:03:97:6a',
+ 'key': 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC+YRkXBd9rib3ScK6A4luydkAQzUKIpxDOTKdQQdTPzwig8l3ptuwaeoBkrWDIWTa0DoCecVKn5YPOx2Py/iluY8nxrVMVB6buDBiT/NTRGvcOYuETq0b4YL7iQfGrgxeHcbWHV49R9kPCNl+9cpqzZZPjym6R3k3rIv352DyLfqNazY5R0lxiJGUDBHGXUZNppmDdOURIr48DZfrm3MEHEXe31kgOzbQyoecaKMCTb9EhwWDXBNZBgDHIn5bCyV3OZE5VOCba3uWlr/qWYwWOaLfFISkV6pqrVBrAQ1TCzWLE6qsaIErRHJvpBj30Oj3PFrt7cU8kLxqSfE89l2It',
+ 'location': {'private': '/root/.ssh/id_rsa',
+              'public': '/root/.ssh/id_rsa.pub'},
+ 'name': 'test-key',
+ 'path': '/root/.ssh/id_rsa.pub',
+ 'profile': {'email': 'AAxthelm@indiana.edu',
+             'firstname': 'Alex',
+             'github': 'AlexAxthelm,',
+             'lastname': 'Axthelm',
+             'publickey': '~/.ssh/id_rsa.pub',
+             'user': 'AAxthelm'},
+ 'public_key': 'ssh-rsa '
+               'AAAAB3NzaC1yc2EAAAADAQABAAABAQC+YRkXBd9rib3ScK6A4luydkAQzUKIpxDOTKdQQdTPzwig8l3ptuwaeoBkrWDIWTa0DoCecVKn5YPOx2Py/iluY8nxrVMVB6buDBiT/NTRGvcOYuETq0b4YL7iQfGrgxeHcbWHV49R9kPCNl+9cpqzZZPjym6R3k3rIv352DyLfqNazY5R0lxiJGUDBHGXUZNppmDdOURIr48DZfrm3MEHEXe31kgOzbQyoecaKMCTb9EhwWDXBNZBgDHIn5bCyV3OZE5VOCba3uWlr/qWYwWOaLfFISkV6pqrVBrAQ1TCzWLE6qsaIErRHJvpBj30Oj3PFrt7cU8kLxqSfE89l2It '
+               'root@39ad7ab48eef',
+ 'source': 'ssh',
+ 'type': 'ssh-rsa',
+ 'uri': 'file:///root/.ssh/id_rsa.pub'}
+uploading the key: test-key -> aws
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_list_key_from_cloud 
+[35m
+# ######################################################################
+# test_list_key_from_cloud /tests/cloud/test_02_key.py 74
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_delete_key_from_cloud 
+[35m
+# ######################################################################
+# test_delete_key_from_cloud /tests/cloud/test_02_key.py 92
+# ######################################################################
+[0m
+deleting the key: test-key -> aws
+None
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_get_key_from_cloud 
+[35m
+# ######################################################################
+# test_get_key_from_cloud /tests/cloud/test_02_key.py 102
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_key_delete 
+[35m
+# ######################################################################
+# test_key_delete /tests/cloud/test_02_key.py 106
+# ######################################################################
+[0m
+deleting the key: test-key -> aws
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_benchmark 
++-----------------------------------------------------------------+--------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| timer                                                           | time   | start               | tag | node              | user | system | mac_version | win_version |
++-----------------------------------------------------------------+--------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 5.295  | 2019-12-22 20:43:47 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| benchmark_start_stop                                            | 0.0    | 2019-12-22 20:44:52 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_cms_init                        | 56.888 | 2019-12-22 20:43:52 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.166  | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.011  | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_upload_key_to_database                         | 0.087  | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_upload_key_to_cloud                            | 0.439  | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_list_key_from_cloud                            | 0.236  | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_delete_key_from_cloud                          | 0.234  | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
++-----------------------------------------------------------------+--------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,5.295,None,('ab839da54eed',),,Linux,,
+#csv,benchmark_start_stop,0.0,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_cms_init,56.888,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.166,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.011,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_upload_key_to_database,0.087,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_upload_key_to_cloud,0.439,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_list_key_from_cloud,0.236,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_delete_key_from_cloud,0.234,None,('ab839da54eed',),,Linux,,
+
+PASSED
+tests/cloud/test_02_key.py::Test_Key::test_list +----------+---------+-------------------------------------------------+-------------------+
+| Name     | Type    | Fingerprint                                     | Comment           |
++----------+---------+-------------------------------------------------+-------------------+
+| AAxthelm | ssh-rsa | 25:1f:9d:09:dd:4c:4c:fc:c1:e3:71:49:16:03:97:6a | root@39ad7ab48eef |
++----------+---------+-------------------------------------------------+-------------------+
+PASSED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_empty_database 
+[35m
+# ######################################################################
+# test_empty_database /tests/cloud/test_04_flavor.py 37
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_provider_flavor 
+[35m
+# ######################################################################
+# test_provider_flavor /tests/cloud/test_04_flavor.py 43
+# ######################################################################
+[0m
+FAILED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_provider_flavor_update 
+[35m
+# ######################################################################
+# test_provider_flavor_update /tests/cloud/test_04_flavor.py 50
+# ######################################################################
+[0m
+FAILED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_cms_flavor_refresh 
+[35m
+# ######################################################################
+# test_cms_flavor_refresh /tests/cloud/test_04_flavor.py 59
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_cms_flavor 
+[35m
+# ######################################################################
+# test_cms_flavor /tests/cloud/test_04_flavor.py 67
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_04_flavor.py::Test_Flavor::test_benchmark 
++-----------------------------------------------------------------+--------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| timer                                                           | time   | start               | tag | node              | user | system | mac_version | win_version |
++-----------------------------------------------------------------+--------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 5.295  | 2019-12-22 20:43:47 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| benchmark_start_stop                                            | 0.0    | 2019-12-22 20:45:23 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_cms_init                        | 56.888 | 2019-12-22 20:43:52 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.166  | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.011  | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_upload_key_to_database                         | 0.087  | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_upload_key_to_cloud                            | 0.439  | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_list_key_from_cloud                            | 0.236  | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_delete_key_from_cloud                          | 0.234  | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_empty_database                              | 0.029  | 2019-12-22 20:45:07 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_provider_flavor                             |        | 2019-12-22 20:45:07 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_provider_flavor_update                      |        | 2019-12-22 20:45:08 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_cms_flavor_refresh                          | 8.426  | 2019-12-22 20:45:09 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_cms_flavor                                  | 6.129  | 2019-12-22 20:45:17 | aws | ('ab839da54eed',) |      | Linux  |             |             |
++-----------------------------------------------------------------+--------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,5.295,None,('ab839da54eed',),,Linux,,
+#csv,benchmark_start_stop,0.0,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_cms_init,56.888,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.166,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.011,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_upload_key_to_database,0.087,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_upload_key_to_cloud,0.439,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_list_key_from_cloud,0.236,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_delete_key_from_cloud,0.234,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_empty_database,0.029,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_provider_flavor,None,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_provider_flavor_update,None,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_cms_flavor_refresh,8.426,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_cms_flavor,6.129,None,('ab839da54eed',),,Linux,,
+
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_empty_database 
+[35m
+# ######################################################################
+# test_empty_database /tests/cloud/test_05_image.py 37
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_provider_image 
+[35m
+# ######################################################################
+# test_provider_image /tests/cloud/test_05_image.py 43
+# ######################################################################
+[0m
+Getting the list of images for aws cloud, this might take a few minutes ...
+[32mImages list for aws cloud retrieved successfully[0m
+Saving the data to file 
+Importing the saved data to database
+2019-12-22T20:47:08.416+0000	connected to: localhost
+2019-12-22T20:47:08.440+0000	dropping: cloudmesh.aws-image
+2019-12-22T20:47:11.388+0000	[#######.................] cloudmesh.aws-image	36.1MB/112MB (32.1%)
+2019-12-22T20:47:14.389+0000	[##############..........] cloudmesh.aws-image	69.4MB/112MB (61.8%)
+2019-12-22T20:47:17.388+0000	[######################..] cloudmesh.aws-image	103MB/112MB (92.0%)
+2019-12-22T20:47:18.061+0000	[########################] cloudmesh.aws-image	112MB/112MB (100.0%)
+2019-12-22T20:47:18.062+0000	imported 107892 documents
+
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_provider_image_update 
+[35m
+# ######################################################################
+# test_provider_image_update /tests/cloud/test_05_image.py 50
+# ######################################################################
+[0m
+Getting the list of images for aws cloud, this might take a few minutes ...
+[32mImages list for aws cloud retrieved successfully[0m
+Collection aws-image dropped to be rewritten
+Saving the data to file 
+Importing the saved data to database
+2019-12-22T20:48:54.854+0000	connected to: localhost
+2019-12-22T20:48:54.881+0000	dropping: cloudmesh.aws-image
+2019-12-22T20:48:57.827+0000	[#######.................] cloudmesh.aws-image	33.4MB/112MB (29.7%)
+2019-12-22T20:49:00.829+0000	[##############..........] cloudmesh.aws-image	68.8MB/112MB (61.3%)
+2019-12-22T20:49:03.796+0000	[#####################...] cloudmesh.aws-image	101MB/112MB (90.4%)
+2019-12-22T20:49:04.864+0000	[########################] cloudmesh.aws-image	112MB/112MB (100.0%)
+2019-12-22T20:49:04.864+0000	imported 107892 documents
+
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_cms_image_refresh 
+[35m
+# ######################################################################
+# test_cms_image_refresh /tests/cloud/test_05_image.py 59
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_cms_image 
+[35m
+# ######################################################################
+# test_cms_image /tests/cloud/test_05_image.py 67
+# ######################################################################
+[0m
+PASSED
+tests/cloud/test_05_image.py::Test_Image::test_benchmark 
++-----------------------------------------------------------------+---------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| timer                                                           | time    | start               | tag | node              | user | system | mac_version | win_version |
++-----------------------------------------------------------------+---------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 5.295   | 2019-12-22 20:43:47 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| benchmark_start_stop                                            | 0.0     | 2019-12-22 20:51:33 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_cms_init                        | 56.888  | 2019-12-22 20:43:52 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.166   | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.011   | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_upload_key_to_database                         | 0.087   | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_upload_key_to_cloud                            | 0.439   | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_list_key_from_cloud                            | 0.236   | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_delete_key_from_cloud                          | 0.234   | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_empty_database                              | 0.029   | 2019-12-22 20:45:07 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_provider_flavor                             |         | 2019-12-22 20:45:07 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_provider_flavor_update                      |         | 2019-12-22 20:45:08 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_cms_flavor_refresh                          | 8.426   | 2019-12-22 20:45:09 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_cms_flavor                                  | 6.129   | 2019-12-22 20:45:17 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_empty_database                               | 0.029   | 2019-12-22 20:45:23 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_provider_image                               | 115.136 | 2019-12-22 20:45:24 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_provider_image_update                        | 106.644 | 2019-12-22 20:47:19 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_cms_image_refresh                            | 112.187 | 2019-12-22 20:49:05 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_cms_image                                    | 34.566  | 2019-12-22 20:50:58 | aws | ('ab839da54eed',) |      | Linux  |             |             |
++-----------------------------------------------------------------+---------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,5.295,None,('ab839da54eed',),,Linux,,
+#csv,benchmark_start_stop,0.0,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_cms_init,56.888,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.166,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.011,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_upload_key_to_database,0.087,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_upload_key_to_cloud,0.439,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_list_key_from_cloud,0.236,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_delete_key_from_cloud,0.234,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_empty_database,0.029,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_provider_flavor,None,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_provider_flavor_update,None,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_cms_flavor_refresh,8.426,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_cms_flavor,6.129,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_empty_database,0.029,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_provider_image,115.136,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_provider_image_update,106.644,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_cms_image_refresh,112.187,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_cms_image,34.566,None,('ab839da54eed',),,Linux,,
+
+PASSED
+tests/cloud/test_06_sec_command-broken.py::TestSecCLI::test_sec_clear PASSED
+tests/cloud/test_06_sec_command-broken.py::TestSecCLI::test_group_add 
+[35m
+# ######################################################################
+# test_group_add /tests/cloud/test_06_sec_command-broken.py 70
+# ######################################################################
+[0m
+
+PASSED
+tests/cloud/test_06_sec_command-broken.py::TestSecCLI::test_group_delete 
+[35m
+# ######################################################################
+# test_group_delete /tests/cloud/test_06_sec_command-broken.py 80
+# ######################################################################
+[0m
+
+PASSED
+tests/cloud/test_06_sec_command-broken.py::TestSecCLI::test_sec_init 
+[35m
+# ######################################################################
+# test_sec_init /tests/cloud/test_06_sec_command-broken.py 89
+# ######################################################################
+[0m
+
+
+
+PASSED
+tests/cloud/test_06_sec_command-broken.py::TestSecCLI::test_sec_add_group_wrong 
+[35m
+# ######################################################################
+# test_sec_add_group_wrong /tests/cloud/test_06_sec_command-broken.py 108
+# ######################################################################
+[0m
+INFO: Security group doesn't exist
+
+PASSED
+tests/cloud/test_06_sec_command-broken.py::TestSecCLI::test_sec_list 
+[35m
+# ######################################################################
+# test_sec_list /tests/cloud/test_06_sec_command-broken.py 116
+# ######################################################################
+[0m
++---------+-------------------------------+------------------------+
+| Name    | Rules                         | Description            |
++---------+-------------------------------+------------------------+
+| default | ssh, icmp, http, https        | Default security group |
+| flask   | ssh, icmp, http, https, flask | Flask security group   |
+| wrong   | nothing                       | wrong                  |
++---------+-------------------------------+------------------------+
++----------+----------+-----------+------------+
+| Name     | Protocol | Ports     | IP Range   |
++----------+----------+-----------+------------+
+| ssh      | tcp      | 22:22     | 0.0.0.0/0  |
+| icmp     | icmp     |           | 0.0.0.0/0  |
+| flask    | tcp      | 8000:8000 | 0.0.0.0/0  |
+| http     | tcp      | 80:80     | 0.0.0.0/0  |
+| https    | tcp      | 443:443   | 0.0.0.0/0  |
+| deleteme | tcp      | 101:101   | 10.0.0.0/0 |
++----------+----------+-----------+------------+
+
+PASSED
+tests/cloud/test_06_sec_command-broken.py::TestSecCLI::test_sec_group_list_local 
+[35m
+# ######################################################################
+# test_sec_group_list_local /tests/cloud/test_06_sec_command-broken.py 131
+# ######################################################################
+[0m
++---------+-------------------------------+------------------------+
+| Name    | Rules                         | Description            |
++---------+-------------------------------+------------------------+
+| default | ssh, icmp, http, https        | Default security group |
+| flask   | ssh, icmp, http, https, flask | Flask security group   |
+| wrong   | nothing                       | wrong                  |
++---------+-------------------------------+------------------------+
+
+PASSED
+tests/cloud/test_06_sec_command-broken.py::TestSecCLI::test_sec_group_list_cloud 
+[35m
+# ######################################################################
+# test_sec_group_list_cloud /tests/cloud/test_06_sec_command-broken.py 142
+# ######################################################################
+[0m
+cloud aws
++---------+-----------+-----------+----------------+----------------+----------+-------+-----------------+
+| Name    | Direction | Ethertype | Port range max | Port range min | Protocol | Range | Remote group id |
++---------+-----------+-----------+----------------+----------------+----------+-------+-----------------+
+| default | Inbound   |           |                |                | -1       |       | sg-253e2a62     |
++---------+-----------+-----------+----------------+----------------+----------+-------+-----------------+
+
+PASSED
+tests/cloud/test_06_sec_command-broken.py::TestSecCLI::test_benchmark 
++-----------------------------------------------------------------+---------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| timer                                                           | time    | start               | tag | node              | user | system | mac_version | win_version |
++-----------------------------------------------------------------+---------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 5.295   | 2019-12-22 20:43:47 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| benchmark_start_stop                                            | 0.0     | 2019-12-22 20:52:21 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_cms_init                        | 56.888  | 2019-12-22 20:43:52 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.166   | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.011   | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_upload_key_to_database                         | 0.087   | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_upload_key_to_cloud                            | 0.439   | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_list_key_from_cloud                            | 0.236   | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_delete_key_from_cloud                          | 0.234   | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_empty_database                              | 0.029   | 2019-12-22 20:45:07 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_provider_flavor                             |         | 2019-12-22 20:45:07 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_provider_flavor_update                      |         | 2019-12-22 20:45:08 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_cms_flavor_refresh                          | 8.426   | 2019-12-22 20:45:09 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_cms_flavor                                  | 6.129   | 2019-12-22 20:45:17 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_empty_database                               | 0.029   | 2019-12-22 20:45:23 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_provider_image                               | 115.136 | 2019-12-22 20:45:24 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_provider_image_update                        | 106.644 | 2019-12-22 20:47:19 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_cms_image_refresh                            | 112.187 | 2019-12-22 20:49:05 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_cms_image                                    | 34.566  | 2019-12-22 20:50:58 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_group_add                       | 5.139   | 2019-12-22 20:51:33 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_group_delete                    | 5.0     | 2019-12-22 20:51:39 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_sec_list                        | 5.671   | 2019-12-22 20:52:02 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_sec_group_list_local            | 5.092   | 2019-12-22 20:52:08 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_sec_group_list_cloud            | 7.202   | 2019-12-22 20:52:13 | aws | ('ab839da54eed',) |      | Linux  |             |             |
++-----------------------------------------------------------------+---------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,5.295,None,('ab839da54eed',),,Linux,,
+#csv,benchmark_start_stop,0.0,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_cms_init,56.888,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.166,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.011,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_upload_key_to_database,0.087,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_upload_key_to_cloud,0.439,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_list_key_from_cloud,0.236,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_delete_key_from_cloud,0.234,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_empty_database,0.029,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_provider_flavor,None,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_provider_flavor_update,None,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_cms_flavor_refresh,8.426,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_cms_flavor,6.129,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_empty_database,0.029,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_provider_image,115.136,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_provider_image_update,106.644,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_cms_image_refresh,112.187,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_cms_image,34.566,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_group_add,5.139,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_group_delete,5.0,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_sec_list,5.671,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_sec_group_list_local,5.092,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_sec_group_list_cloud,7.202,None,('ab839da54eed',),,Linux,,
+
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_load 
+[35m
+# ######################################################################
+# test_load /tests/cloud/test_07_secgroup_provider.py 56
+# ######################################################################
+[0m
+
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_list_variables 
+[35m
+# ######################################################################
+# test_list_variables /tests/cloud/test_07_secgroup_provider.py 72
+# ######################################################################
+[0m
+AAxthelm
+aws
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_list_secgroups 
+[35m
+# ######################################################################
+# test_list_secgroups /tests/cloud/test_07_secgroup_provider.py 80
+# ######################################################################
+[0m
+{
+    "0": {
+        "Description": "default VPC security group",
+        "GroupId": "sg-253e2a62",
+        "GroupName": "default",
+        "IpPermissions": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": [
+                    {
+                        "GroupId": "sg-253e2a62",
+                        "UserId": "404811172287"
+                    }
+                ]
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "404811172287",
+        "VpcId": "vpc-5b5fce23"
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_list_secgroups_rules 
+[35m
+# ######################################################################
+# test_list_secgroups_rules /tests/cloud/test_07_secgroup_provider.py 87
+# ######################################################################
+[0m
+{
+    "0": {
+        "IpProtocol": "-1",
+        "IpRanges": [
+            {
+                "CidrIp": "0.0.0.0/0"
+            }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_secgroups_add 
+[35m
+# ######################################################################
+# test_secgroups_add /tests/cloud/test_07_secgroup_provider.py 94
+# ######################################################################
+[0m
+[32mSecurity Group Created sg-05c69d4b1a433c6ed in vpcvpc-5b5fce23[0m
+{
+    "0": {
+        "Description": "security group crated at 2019-12-22 20:52:23.326406 by AAxthelm",
+        "GroupId": "sg-05c69d4b1a433c6ed",
+        "GroupName": "Test_Sec_Group",
+        "IpPermissions": [],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "404811172287",
+        "VpcId": "vpc-5b5fce23"
+    },
+    "1": {
+        "Description": "default VPC security group",
+        "GroupId": "sg-253e2a62",
+        "GroupName": "default",
+        "IpPermissions": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": [
+                    {
+                        "GroupId": "sg-253e2a62",
+                        "UserId": "404811172287"
+                    }
+                ]
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "404811172287",
+        "VpcId": "vpc-5b5fce23"
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_upload_secgroup 
+[35m
+# ######################################################################
+# test_upload_secgroup /tests/cloud/test_07_secgroup_provider.py 103
+# ######################################################################
+[0m
+Warning group already exists
+[34m
+# ----------------------------------------------------------------------
+# rules
+# ----------------------------------------------------------------------
+# 332:upload_secgroup ./cloudmesh/compute/aws/Provider.py
+# ----------------------------------------------------------------------
+# [{'cm': {'cloud': 'local',
+#          'collection': 'local-secrule',
+#          'created': '2019-12-22 20:52:21.173889',
+#          'kind': 'secrule',
+#          'modified': '2019-12-22 20:52:21.173889',
+#          'name': 'ssh'},
+#   'ip_range': '0.0.0.0/0',
+#   'name': 'ssh',
+#   'ports': '22:22',
+#   'protocol': 'tcp'},
+#  {'cm': {'cloud': 'local',
+#          'collection': 'local-secrule',
+#          'created': '2019-12-22 20:52:21.178352',
+#          'kind': 'secrule',
+#          'modified': '2019-12-22 20:52:21.178352',
+#          'name': 'icmp'},
+#   'ip_range': '0.0.0.0/0',
+#   'name': 'icmp',
+#   'ports': '',
+#   'protocol': 'icmp'},
+#  {'cm': {'cloud': 'local',
+#          'collection': 'local-secrule',
+#          'created': '2019-12-22 20:52:21.183751',
+#          'kind': 'secrule',
+#          'modified': '2019-12-22 20:52:21.183751',
+#          'name': 'flask'},
+#   'ip_range': '0.0.0.0/0',
+#   'name': 'flask',
+#   'ports': '8000:8000',
+#   'protocol': 'tcp'},
+#  {'cm': {'cloud': 'local',
+#          'collection': 'local-secrule',
+#          'created': '2019-12-22 20:52:21.188207',
+#          'kind': 'secrule',
+#          'modified': '2019-12-22 20:52:21.188207',
+#          'name': 'http'},
+#   'ip_range': '0.0.0.0/0',
+#   'name': 'http',
+#   'ports': '80:80',
+#   'protocol': 'tcp'},
+#  {'cm': {'cloud': 'local',
+#          'collection': 'local-secrule',
+#          'created': '2019-12-22 20:52:21.191064',
+#          'kind': 'secrule',
+#          'modified': '2019-12-22 20:52:21.191064',
+#          'name': 'https'},
+#   'ip_range': '0.0.0.0/0',
+#   'name': 'https',
+#   'ports': '443:443',
+#   'protocol': 'tcp'}]
+# ----------------------------------------------------------------------
+[0m
+[34m
+# ----------------------------------------------------------------------
+# groups
+# ----------------------------------------------------------------------
+# 337:upload_secgroup ./cloudmesh/compute/aws/Provider.py
+# ----------------------------------------------------------------------
+# [{'cm': {'cloud': 'local',
+#          'collection': 'local-secgroup',
+#          'created': '2019-12-22 20:52:21.160423',
+#          'kind': 'secgroup',
+#          'modified': '2019-12-22 20:52:21.160423',
+#          'name': 'default'},
+#   'description': 'Default security group',
+#   'name': 'default',
+#   'rules': ['ssh', 'icmp', 'http', 'https']},
+#  {'cm': {'cloud': 'local',
+#          'collection': 'local-secgroup',
+#          'created': '2019-12-22 20:52:21.167905',
+#          'kind': 'secgroup',
+#          'modified': '2019-12-22 20:52:21.167905',
+#          'name': 'flask'},
+#   'description': 'Flask security group',
+#   'name': 'flask',
+#   'rules': ['ssh', 'icmp', 'http', 'https', 'flask']}]
+# ----------------------------------------------------------------------
+[0m
+upload group: Test_Sec_Group
+     rule: ssh
+[32mIngress Successfully Set as {'ResponseMetadata': {'RequestId': '90c8734a-c2b8-4dcd-b617-ffc6a330242d', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '259', 'date': 'Sun, 22 Dec 2019 20:52:24 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}[0m
+     rule: icmp
+[32mIngress Successfully Set as {'ResponseMetadata': {'RequestId': '59ed4c7e-581a-46f4-8f93-bdb364995790', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '259', 'date': 'Sun, 22 Dec 2019 20:52:25 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}[0m
+     rule: http
+[32mIngress Successfully Set as {'ResponseMetadata': {'RequestId': '1e93004b-bf03-4539-821f-5f16da2e75b5', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '259', 'date': 'Sun, 22 Dec 2019 20:52:25 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}[0m
+     rule: https
+[32mIngress Successfully Set as {'ResponseMetadata': {'RequestId': '04ebc90b-4d8c-4232-ac5d-7dbba471de75', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '259', 'date': 'Sun, 22 Dec 2019 20:52:25 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}[0m
+     rule: flask
+[32mIngress Successfully Set as {'ResponseMetadata': {'RequestId': '2deda174-8822-4a2c-aa20-32f0d18a2812', 'HTTPStatusCode': 200, 'HTTPHeaders': {'content-type': 'text/xml;charset=UTF-8', 'content-length': '259', 'date': 'Sun, 22 Dec 2019 20:52:26 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}[0m
+{
+    "0": {
+        "Description": "security group crated at 2019-12-22 20:52:23.326406 by AAxthelm",
+        "GroupId": "sg-05c69d4b1a433c6ed",
+        "GroupName": "Test_Sec_Group",
+        "IpPermissions": [
+            {
+                "FromPort": 80,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "ToPort": 80,
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": 8000,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "ToPort": 8000,
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": 22,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "ToPort": 22,
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": 443,
+                "IpProtocol": "tcp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "ToPort": 443,
+                "UserIdGroupPairs": []
+            },
+            {
+                "FromPort": -1,
+                "IpProtocol": "icmp",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "ToPort": -1,
+                "UserIdGroupPairs": []
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "404811172287",
+        "VpcId": "vpc-5b5fce23"
+    },
+    "1": {
+        "Description": "default VPC security group",
+        "GroupId": "sg-253e2a62",
+        "GroupName": "default",
+        "IpPermissions": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": [
+                    {
+                        "GroupId": "sg-253e2a62",
+                        "UserId": "404811172287"
+                    }
+                ]
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "404811172287",
+        "VpcId": "vpc-5b5fce23"
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_secgroups_delete 
+[35m
+# ######################################################################
+# test_secgroups_delete /tests/cloud/test_07_secgroup_provider.py 112
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# response
+# ----------------------------------------------------------------------
+# 311:remove_secgroup ./cloudmesh/compute/aws/Provider.py
+# ----------------------------------------------------------------------
+# {'ResponseMetadata': {'HTTPHeaders': {'content-length': '239',
+#                                       'content-type': 'text/xml;charset=UTF-8',
+#                                       'date': 'Sun, 22 Dec 2019 20:52:26 GMT',
+#                                       'server': 'AmazonEC2'},
+#                       'HTTPStatusCode': 200,
+#                       'RequestId': 'fd2bd0e7-0fdd-4f0a-b368-5765b0ec00b7',
+#                       'RetryAttempts': 0}}
+# ----------------------------------------------------------------------
+[0m
+default
+{
+    "0": {
+        "Description": "default VPC security group",
+        "GroupId": "sg-253e2a62",
+        "GroupName": "default",
+        "IpPermissions": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": [
+                    {
+                        "GroupId": "sg-253e2a62",
+                        "UserId": "404811172287"
+                    }
+                ]
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "404811172287",
+        "VpcId": "vpc-5b5fce23"
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_secgroups_delete_again 
+[35m
+# ######################################################################
+# test_secgroups_delete_again /tests/cloud/test_07_secgroup_provider.py 131
+# ######################################################################
+[0m
+[34mINFO: Security group couldn't be removed as it doesn't exist[0m
+default
+{
+    "0": {
+        "Description": "default VPC security group",
+        "GroupId": "sg-253e2a62",
+        "GroupName": "default",
+        "IpPermissions": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": [
+                    {
+                        "GroupId": "sg-253e2a62",
+                        "UserId": "404811172287"
+                    }
+                ]
+            }
+        ],
+        "IpPermissionsEgress": [
+            {
+                "IpProtocol": "-1",
+                "IpRanges": [
+                    {
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "Ipv6Ranges": [],
+                "PrefixListIds": [],
+                "UserIdGroupPairs": []
+            }
+        ],
+        "OwnerId": "404811172287",
+        "VpcId": "vpc-5b5fce23"
+    }
+}
+PASSED
+tests/cloud/test_07_secgroup_provider.py::Test_secgroup_provider::test_benchmark 
++-----------------------------------------------------------------+---------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| timer                                                           | time    | start               | tag | node              | user | system | mac_version | win_version |
++-----------------------------------------------------------------+---------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 5.295   | 2019-12-22 20:43:47 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| benchmark_start_stop                                            | 0.0     | 2019-12-22 20:52:27 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_cms_init                        | 56.888  | 2019-12-22 20:43:52 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.166   | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.011   | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_upload_key_to_database                         | 0.087   | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_upload_key_to_cloud                            | 0.439   | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_list_key_from_cloud                            | 0.236   | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_delete_key_from_cloud                          | 0.234   | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_empty_database                              | 0.029   | 2019-12-22 20:45:07 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_provider_flavor                             |         | 2019-12-22 20:45:07 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_provider_flavor_update                      |         | 2019-12-22 20:45:08 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_cms_flavor_refresh                          | 8.426   | 2019-12-22 20:45:09 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_cms_flavor                                  | 6.129   | 2019-12-22 20:45:17 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_empty_database                               | 0.029   | 2019-12-22 20:45:23 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_provider_image                               | 115.136 | 2019-12-22 20:45:24 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_provider_image_update                        | 106.644 | 2019-12-22 20:47:19 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_cms_image_refresh                            | 112.187 | 2019-12-22 20:49:05 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_cms_image                                    | 34.566  | 2019-12-22 20:50:58 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_group_add                       | 5.139   | 2019-12-22 20:51:33 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_group_delete                    | 5.0     | 2019-12-22 20:51:39 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_sec_list                        | 5.671   | 2019-12-22 20:52:02 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_sec_group_list_local            | 5.092   | 2019-12-22 20:52:08 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_sec_group_list_cloud            | 7.202   | 2019-12-22 20:52:13 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_load                             | 0.1     | 2019-12-22 20:52:21 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_list_variables                   | 0.009   | 2019-12-22 20:52:21 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_list_secgroups                   | 1.08    | 2019-12-22 20:52:21 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_list_secgroups_rules             | 0.222   | 2019-12-22 20:52:22 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_secgroups_add                    | 0.354   | 2019-12-22 20:52:23 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_upload_secgroup                  | 2.488   | 2019-12-22 20:52:23 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_secgroups_delete                 | 0.278   | 2019-12-22 20:52:26 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_secgroups_delete_again           | 0.185   | 2019-12-22 20:52:27 | aws | ('ab839da54eed',) |      | Linux  |             |             |
++-----------------------------------------------------------------+---------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,5.295,None,('ab839da54eed',),,Linux,,
+#csv,benchmark_start_stop,0.0,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_cms_init,56.888,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.166,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.011,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_upload_key_to_database,0.087,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_upload_key_to_cloud,0.439,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_list_key_from_cloud,0.236,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_delete_key_from_cloud,0.234,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_empty_database,0.029,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_provider_flavor,None,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_provider_flavor_update,None,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_cms_flavor_refresh,8.426,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_cms_flavor,6.129,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_empty_database,0.029,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_provider_image,115.136,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_provider_image_update,106.644,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_cms_image_refresh,112.187,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_cms_image,34.566,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_group_add,5.139,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_group_delete,5.0,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_sec_list,5.671,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_sec_group_list_local,5.092,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_sec_group_list_cloud,7.202,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_load,0.1,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_list_variables,0.009,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_list_secgroups,1.08,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_list_secgroups_rules,0.222,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_secgroups_add,0.354,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_upload_secgroup,2.488,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_secgroups_delete,0.278,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_secgroups_delete_again,0.185,None,('ab839da54eed',),,Linux,,
+
+PASSED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_key_upload +----------+---------+-------------------------------------------------+-------------------+
+| Name     | Type    | Fingerprint                                     | Comment           |
++----------+---------+-------------------------------------------------+-------------------+
+| AAxthelm | ssh-rsa | 25:1f:9d:09:dd:4c:4c:fc:c1:e3:71:49:16:03:97:6a | root@39ad7ab48eef |
++----------+---------+-------------------------------------------------+-------------------+
+cloud aws
+uploading the key: AAxthelm -> aws
+upload key 'AAxthelm successful'. 
+cloud aws
++----------+------+--------+-------------------------------------------------+---------+
+| Name     | Type | Format | Fingerprint                                     | Comment |
++----------+------+--------+-------------------------------------------------+---------+
+| AAxthelm | N/A  | N/A    | 09:df:8e:87:b7:c1:e2:e2:5b:8a:f7:2d:d6:08:21:ab | N/A     |
++----------+------+--------+-------------------------------------------------+---------+
+PASSED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_find_largest_id test-AAxthelm-vm
+VM is []
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_create ERROR: you need to specify a vm
+List aws
+None
+
+[35m
+# ######################################################################
+# test_provider_vm_create /tests/cloud/test_08_vm_provider.py 87
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# Create Server
+# ----------------------------------------------------------------------
+[0m
+    Name:     test-AAxthelm-vm-2
+    User:     None
+    IP:       None
+    Image:    ami-0f65671a86f061fcd
+    Size:     t2.micro
+    Public:   None
+    Key:      AAxthelm
+    Location: None
+    Timeout:  360
+    Secgroup: None
+    Group:    cloudmesh
+
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vmprovider_vm_list 
+[35m
+# ######################################################################
+# test_provider_vmprovider_vm_list /tests/cloud/test_08_vm_provider.py 108
+# ######################################################################
+[0m
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_wait 
+[35m
+# ######################################################################
+# test_provider_vm_wait /tests/cloud/test_08_vm_provider.py 116
+# ######################################################################
+[0m
+[34mINFO: waiting for instance to be reachable: Interval: 5, Timeout: 360[0m
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_ssh 
+[35m
+# ######################################################################
+# test_provider_vm_ssh /tests/cloud/test_08_vm_provider.py 125
+# ######################################################################
+[0m
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_info 
+[35m
+# ######################################################################
+# test_provider_vm_info /tests/cloud/test_08_vm_provider.py 139
+# ######################################################################
+[0m
+dry run info():
+[{}]
+PASSED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_vm_status 
+[35m
+# ######################################################################
+# test_vm_status /tests/cloud/test_08_vm_provider.py 148
+# ######################################################################
+[0m
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_stop 
+[35m
+# ######################################################################
+# test_provider_vm_stop /tests/cloud/test_08_vm_provider.py 164
+# ######################################################################
+[0m
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_start 
+[35m
+# ######################################################################
+# test_provider_vm_start /tests/cloud/test_08_vm_provider.py 182
+# ######################################################################
+[0m
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_provider_vm_terminate 
+[35m
+# ######################################################################
+# test_provider_vm_terminate /tests/cloud/test_08_vm_provider.py 204
+# ######################################################################
+[0m
+ec2.instancesCollection(ec2.ServiceResource(), ec2.Instance)
+None
+FAILED
+tests/cloud/test_08_vm_provider.py::Test_provider_vm::test_benchmark 
++-----------------------------------------------------------------+---------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| timer                                                           | time    | start               | tag | node              | user | system | mac_version | win_version |
++-----------------------------------------------------------------+---------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 5.295   | 2019-12-22 20:43:47 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| benchmark_start_stop                                            | 0.0     | 2019-12-22 20:59:20 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_cms_init                        | 56.888  | 2019-12-22 20:43:52 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.166   | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.011   | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_upload_key_to_database                         | 0.087   | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_upload_key_to_cloud                            | 0.439   | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_list_key_from_cloud                            | 0.236   | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_delete_key_from_cloud                          | 0.234   | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_empty_database                              | 0.029   | 2019-12-22 20:45:07 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_provider_flavor                             |         | 2019-12-22 20:45:07 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_provider_flavor_update                      |         | 2019-12-22 20:45:08 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_cms_flavor_refresh                          | 8.426   | 2019-12-22 20:45:09 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_cms_flavor                                  | 6.129   | 2019-12-22 20:45:17 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_empty_database                               | 0.029   | 2019-12-22 20:45:23 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_provider_image                               | 115.136 | 2019-12-22 20:45:24 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_provider_image_update                        | 106.644 | 2019-12-22 20:47:19 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_cms_image_refresh                            | 112.187 | 2019-12-22 20:49:05 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_cms_image                                    | 34.566  | 2019-12-22 20:50:58 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_group_add                       | 5.139   | 2019-12-22 20:51:33 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_group_delete                    | 5.0     | 2019-12-22 20:51:39 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_sec_list                        | 5.671   | 2019-12-22 20:52:02 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_sec_group_list_local            | 5.092   | 2019-12-22 20:52:08 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_sec_group_list_cloud            | 7.202   | 2019-12-22 20:52:13 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_load                             | 0.1     | 2019-12-22 20:52:21 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_list_variables                   | 0.009   | 2019-12-22 20:52:21 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_list_secgroups                   | 1.08    | 2019-12-22 20:52:21 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_list_secgroups_rules             | 0.222   | 2019-12-22 20:52:22 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_secgroups_add                    | 0.354   | 2019-12-22 20:52:23 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_upload_secgroup                  | 2.488   | 2019-12-22 20:52:23 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_secgroups_delete                 | 0.278   | 2019-12-22 20:52:26 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_secgroups_delete_again           | 0.185   | 2019-12-22 20:52:27 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vm_create                     |         | 2019-12-22 20:53:01 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| create vm test-AAxthelm-vm-2                                    |         | 2019-12-22 20:53:01 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vmprovider_vm_list            |         | 2019-12-22 20:53:02 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vm_wait                       |         | 2019-12-22 20:53:02 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vm_ssh                        |         | 2019-12-22 20:59:03 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vm_info                       | 0.519   | 2019-12-22 20:59:03 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_vm_status                              |         | 2019-12-22 20:59:04 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vm_stop                       | 0.172   | 2019-12-22 20:59:04 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vm_start                      | 0.17    | 2019-12-22 20:59:09 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vm_terminate                  | 0.154   | 2019-12-22 20:59:15 | aws | ('ab839da54eed',) |      | Linux  |             |             |
++-----------------------------------------------------------------+---------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,5.295,None,('ab839da54eed',),,Linux,,
+#csv,benchmark_start_stop,0.0,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_cms_init,56.888,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.166,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.011,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_upload_key_to_database,0.087,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_upload_key_to_cloud,0.439,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_list_key_from_cloud,0.236,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_delete_key_from_cloud,0.234,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_empty_database,0.029,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_provider_flavor,None,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_provider_flavor_update,None,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_cms_flavor_refresh,8.426,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_cms_flavor,6.129,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_empty_database,0.029,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_provider_image,115.136,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_provider_image_update,106.644,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_cms_image_refresh,112.187,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_cms_image,34.566,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_group_add,5.139,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_group_delete,5.0,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_sec_list,5.671,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_sec_group_list_local,5.092,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_sec_group_list_cloud,7.202,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_load,0.1,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_list_variables,0.009,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_list_secgroups,1.08,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_list_secgroups_rules,0.222,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_secgroups_add,0.354,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_upload_secgroup,2.488,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_secgroups_delete,0.278,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_secgroups_delete_again,0.185,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vm_create,None,None,('ab839da54eed',),,Linux,,
+#csv,create vm test-AAxthelm-vm-2,None,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vmprovider_vm_list,None,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vm_wait,None,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vm_ssh,None,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vm_info,0.519,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_vm_status,None,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vm_stop,0.172,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vm_start,0.17,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vm_terminate,0.154,None,('ab839da54eed',),,Linux,,
+
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_collection 
+[35m
+# ######################################################################
+# test_cm_find_collection /tests/cloud/test_09_cm_names_find.py 33
+# ######################################################################
+[0m
+Number of entries [vm] 1
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_loop 
+[35m
+# ######################################################################
+# test_cm_find_loop /tests/cloud/test_09_cm_names_find.py 44
+# ######################################################################
+[0m
+Number of entries [flavor 0
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_loop 
+[35m
+# ######################################################################
+# test_cm_loop /tests/cloud/test_09_cm_names_find.py 60
+# ######################################################################
+[0m
+Number of entries [flavor] 0
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_image_name_cloud 
+[35m
+# ######################################################################
+# test_cm_image_name_cloud /tests/cloud/test_09_cm_names_find.py 73
+# ######################################################################
+[0m
+Number of entries [image 107893
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_image_name_collection 
+[35m
+# ######################################################################
+# test_cm_image_name_collection /tests/cloud/test_09_cm_names_find.py 85
+# ######################################################################
+[0m
+Number of entries [image 107893
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_names_regexp 
+[35m
+# ######################################################################
+# test_names_regexp /tests/cloud/test_09_cm_names_find.py 96
+# ######################################################################
+[0m
+Number of entries [image 818
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vms 
+[35m
+# ######################################################################
+# test_cm_find_vms /tests/cloud/test_09_cm_names_find.py 117
+# ######################################################################
+[0m
+Number of entries [vm 1
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_ubuntu_in_images 
+[35m
+# ######################################################################
+# test_cm_find_ubuntu_in_images /tests/cloud/test_09_cm_names_find.py 128
+# ######################################################################
+[0m
+
+{'name': {'$regex': '.*Ubuntu.*'}}
+Number of entries [image 818
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_cloud_name_attributes 
+[35m
+# ######################################################################
+# test_cm_find_cloud_name_attributes /tests/cloud/test_09_cm_names_find.py 167
+# ######################################################################
+[0m
+
+Number of entries [vm 1
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vm_collections 
+[35m
+# ######################################################################
+# test_cm_find_vm_collections /tests/cloud/test_09_cm_names_find.py 183
+# ######################################################################
+[0m
+Number of entries [collections] 6
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vm_collections_vm 
+[35m
+# ######################################################################
+# test_cm_find_vm_collections_vm /tests/cloud/test_09_cm_names_find.py 196
+# ######################################################################
+[0m
+Number of entries [collections] 1
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_cm_find_vm_collection_form_parameter 
+[35m
+# ######################################################################
+# test_cm_find_vm_collection_form_parameter /tests/cloud/test_09_cm_names_find.py 208
+# ######################################################################
+[0m
+Number of entries [collections] 2
+PASSED
+tests/cloud/test_09_cm_names_find.py::Test_cm_find::test_benchmark 
+[35m
+# ######################################################################
+# test_benchmark /tests/cloud/test_09_cm_names_find.py 223
+# ######################################################################
+[0m
+
++-----------------------------------------------------------------+---------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| timer                                                           | time    | start               | tag | node              | user | system | mac_version | win_version |
++-----------------------------------------------------------------+---------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+| test_00_sys/test_cms_help                                       | 5.295   | 2019-12-22 20:43:47 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| benchmark_start_stop                                            | 0.0     | 2019-12-22 20:59:26 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_cms_init                        | 56.888  | 2019-12-22 20:43:52 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_keys_from_cloud      | 0.166   | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_01_clean_local_remote/test_delete_all_secgroups_from_cloud | 0.011   | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_upload_key_to_database                         | 0.087   | 2019-12-22 20:44:50 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_upload_key_to_cloud                            | 0.439   | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_list_key_from_cloud                            | 0.236   | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_02_key/test_delete_key_from_cloud                          | 0.234   | 2019-12-22 20:44:51 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_empty_database                              | 0.029   | 2019-12-22 20:45:07 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_provider_flavor                             |         | 2019-12-22 20:45:07 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_provider_flavor_update                      |         | 2019-12-22 20:45:08 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_cms_flavor_refresh                          | 8.426   | 2019-12-22 20:45:09 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_04_flavor/test_cms_flavor                                  | 6.129   | 2019-12-22 20:45:17 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_empty_database                               | 0.029   | 2019-12-22 20:45:23 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_provider_image                               | 115.136 | 2019-12-22 20:45:24 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_provider_image_update                        | 106.644 | 2019-12-22 20:47:19 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_cms_image_refresh                            | 112.187 | 2019-12-22 20:49:05 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_05_image/test_cms_image                                    | 34.566  | 2019-12-22 20:50:58 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_group_add                       | 5.139   | 2019-12-22 20:51:33 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_group_delete                    | 5.0     | 2019-12-22 20:51:39 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_sec_list                        | 5.671   | 2019-12-22 20:52:02 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_sec_group_list_local            | 5.092   | 2019-12-22 20:52:08 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_06_sec_command-broken/test_sec_group_list_cloud            | 7.202   | 2019-12-22 20:52:13 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_load                             | 0.1     | 2019-12-22 20:52:21 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_list_variables                   | 0.009   | 2019-12-22 20:52:21 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_list_secgroups                   | 1.08    | 2019-12-22 20:52:21 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_list_secgroups_rules             | 0.222   | 2019-12-22 20:52:22 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_secgroups_add                    | 0.354   | 2019-12-22 20:52:23 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_upload_secgroup                  | 2.488   | 2019-12-22 20:52:23 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_secgroups_delete                 | 0.278   | 2019-12-22 20:52:26 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_07_secgroup_provider/test_secgroups_delete_again           | 0.185   | 2019-12-22 20:52:27 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vm_create                     |         | 2019-12-22 20:53:01 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| create vm test-AAxthelm-vm-2                                    |         | 2019-12-22 20:53:01 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vmprovider_vm_list            |         | 2019-12-22 20:53:02 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vm_wait                       |         | 2019-12-22 20:53:02 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vm_ssh                        |         | 2019-12-22 20:59:03 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vm_info                       | 0.519   | 2019-12-22 20:59:03 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_vm_status                              |         | 2019-12-22 20:59:04 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vm_stop                       | 0.172   | 2019-12-22 20:59:04 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vm_start                      | 0.17    | 2019-12-22 20:59:09 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_08_vm_provider/test_provider_vm_terminate                  | 0.154   | 2019-12-22 20:59:15 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_09_cm_names_find/test_cm_find_collection                   | 0.045   | 2019-12-22 20:59:21 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_09_cm_names_find/test_cm_find_loop                         | 2.426   | 2019-12-22 20:59:21 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_09_cm_names_find/test_cm_image_name_cloud                  | 0.365   | 2019-12-22 20:59:24 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_09_cm_names_find/test_cm_image_name_collection             | 0.383   | 2019-12-22 20:59:25 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_09_cm_names_find/test_names_regexp                         | 0.372   | 2019-12-22 20:59:25 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_09_cm_names_find/test_cm_find_vms                          | 0.034   | 2019-12-22 20:59:25 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_09_cm_names_find/test_cm_find_ubuntu_in_images             | 0.23    | 2019-12-22 20:59:26 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_09_cm_names_find/test_cm_find_cloud_name_attributes        | 0.03    | 2019-12-22 20:59:26 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_09_cm_names_find/test_cm_find_vm_collections               | 0.025   | 2019-12-22 20:59:26 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_09_cm_names_find/test_cm_find_vm_collections_vm            | 0.032   | 2019-12-22 20:59:26 | aws | ('ab839da54eed',) |      | Linux  |             |             |
+| test_09_cm_names_find/test_cm_find_vm_collection_form_parameter | 0.027   | 2019-12-22 20:59:26 | aws | ('ab839da54eed',) |      | Linux  |             |             |
++-----------------------------------------------------------------+---------+---------------------+-----+-------------------+------+--------+-------------+-------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_00_sys/test_cms_help,5.295,None,('ab839da54eed',),,Linux,,
+#csv,benchmark_start_stop,0.0,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_cms_init,56.888,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_delete_all_keys_from_cloud,0.166,None,('ab839da54eed',),,Linux,,
+#csv,test_01_clean_local_remote/test_delete_all_secgroups_from_cloud,0.011,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_upload_key_to_database,0.087,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_upload_key_to_cloud,0.439,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_list_key_from_cloud,0.236,None,('ab839da54eed',),,Linux,,
+#csv,test_02_key/test_delete_key_from_cloud,0.234,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_empty_database,0.029,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_provider_flavor,None,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_provider_flavor_update,None,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_cms_flavor_refresh,8.426,None,('ab839da54eed',),,Linux,,
+#csv,test_04_flavor/test_cms_flavor,6.129,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_empty_database,0.029,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_provider_image,115.136,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_provider_image_update,106.644,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_cms_image_refresh,112.187,None,('ab839da54eed',),,Linux,,
+#csv,test_05_image/test_cms_image,34.566,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_group_add,5.139,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_group_delete,5.0,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_sec_list,5.671,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_sec_group_list_local,5.092,None,('ab839da54eed',),,Linux,,
+#csv,test_06_sec_command-broken/test_sec_group_list_cloud,7.202,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_load,0.1,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_list_variables,0.009,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_list_secgroups,1.08,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_list_secgroups_rules,0.222,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_secgroups_add,0.354,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_upload_secgroup,2.488,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_secgroups_delete,0.278,None,('ab839da54eed',),,Linux,,
+#csv,test_07_secgroup_provider/test_secgroups_delete_again,0.185,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vm_create,None,None,('ab839da54eed',),,Linux,,
+#csv,create vm test-AAxthelm-vm-2,None,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vmprovider_vm_list,None,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vm_wait,None,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vm_ssh,None,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vm_info,0.519,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_vm_status,None,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vm_stop,0.172,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vm_start,0.17,None,('ab839da54eed',),,Linux,,
+#csv,test_08_vm_provider/test_provider_vm_terminate,0.154,None,('ab839da54eed',),,Linux,,
+#csv,test_09_cm_names_find/test_cm_find_collection,0.045,None,('ab839da54eed',),,Linux,,
+#csv,test_09_cm_names_find/test_cm_find_loop,2.426,None,('ab839da54eed',),,Linux,,
+#csv,test_09_cm_names_find/test_cm_image_name_cloud,0.365,None,('ab839da54eed',),,Linux,,
+#csv,test_09_cm_names_find/test_cm_image_name_collection,0.383,None,('ab839da54eed',),,Linux,,
+#csv,test_09_cm_names_find/test_names_regexp,0.372,None,('ab839da54eed',),,Linux,,
+#csv,test_09_cm_names_find/test_cm_find_vms,0.034,None,('ab839da54eed',),,Linux,,
+#csv,test_09_cm_names_find/test_cm_find_ubuntu_in_images,0.23,None,('ab839da54eed',),,Linux,,
+#csv,test_09_cm_names_find/test_cm_find_cloud_name_attributes,0.03,None,('ab839da54eed',),,Linux,,
+#csv,test_09_cm_names_find/test_cm_find_vm_collections,0.025,None,('ab839da54eed',),,Linux,,
+#csv,test_09_cm_names_find/test_cm_find_vm_collections_vm,0.032,None,('ab839da54eed',),,Linux,,
+#csv,test_09_cm_names_find/test_cm_find_vm_collection_form_parameter,0.027,None,('ab839da54eed',),,Linux,,
+
+PASSED
+
+=================================== FAILURES ===================================
+_______________________ Test_Flavor.test_provider_flavor _______________________
+
+self = <test_04_flavor.Test_Flavor object at 0x7f566af1db70>
+
+    def test_provider_flavor(self):
+        HEADING()
+        local = Key()
+        Benchmark.Start()
+>       r = provider.flavors()
+
+tests/cloud/test_04_flavor.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+cloudmesh/mongo/DataBaseDecorator.py:87: in wrapper
+    current = f(*args, **kwargs)
+cloudmesh/compute/vm/Provider.py:137: in flavors
+    return self.p.flavors(**kwargs)
+cloudmesh/compute/aws/Provider.py:1354: in flavors
+    result = flavors.list(data)
+cloudmesh/compute/aws/AwsFlavors.py:80: in list
+    flavors.extend(self.parse_aws_json(s))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+json = {'product': {'attributes': {'capacitystatus': 'AllocatedHost', 'currentGeneration': 'Yes', 'ecu': 'NA', 'enhancedNetwo...B1 Dedicated Host Reservation hours used this month', 'endRange': 'Inf', ...}}, 'sku': '224VWKMPAUPHXYEA', ...}}}, ...}
+
+    @staticmethod
+    def parse_aws_json(json):
+        """
+        To be run on a single json entry returned by the Amazon EC2 Pricing API
+        """
+        # flavor['terms']['OnDemand']['sku_offerTermCode']['priceDimensions']['sku_offerTerm_priceDimension']['pricePerUnit']['USD']
+        parsed = []
+>       for x in list(json['terms']['OnDemand'].keys()):
+E       KeyError: 'OnDemand'
+
+cloudmesh/compute/aws/AwsFlavors.py:56: KeyError
+___________________ Test_Flavor.test_provider_flavor_update ____________________
+
+self = <test_04_flavor.Test_Flavor object at 0x7f568a2c1438>
+
+    def test_provider_flavor_update(self):
+        HEADING()
+        local = Key()
+        Benchmark.Start()
+>       r = provider.flavors()
+
+tests/cloud/test_04_flavor.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+cloudmesh/mongo/DataBaseDecorator.py:87: in wrapper
+    current = f(*args, **kwargs)
+cloudmesh/compute/vm/Provider.py:137: in flavors
+    return self.p.flavors(**kwargs)
+cloudmesh/compute/aws/Provider.py:1354: in flavors
+    result = flavors.list(data)
+cloudmesh/compute/aws/AwsFlavors.py:80: in list
+    flavors.extend(self.parse_aws_json(s))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+json = {'product': {'attributes': {'capacitystatus': 'AllocatedHost', 'currentGeneration': 'Yes', 'ecu': 'NA', 'enhancedNetwo...B1 Dedicated Host Reservation hours used this month', 'endRange': 'Inf', ...}}, 'sku': '224VWKMPAUPHXYEA', ...}}}, ...}
+
+    @staticmethod
+    def parse_aws_json(json):
+        """
+        To be run on a single json entry returned by the Amazon EC2 Pricing API
+        """
+        # flavor['terms']['OnDemand']['sku_offerTermCode']['priceDimensions']['sku_offerTerm_priceDimension']['pricePerUnit']['USD']
+        parsed = []
+>       for x in list(json['terms']['OnDemand'].keys()):
+E       KeyError: 'OnDemand'
+
+cloudmesh/compute/aws/AwsFlavors.py:56: KeyError
+____________________ Test_provider_vm.test_find_largest_id _____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7f566af332b0>
+
+    def test_find_largest_id(self):
+        name = Name()
+        counter = 1
+>       if self.find_counter() is not None:
+
+tests/cloud/test_08_vm_provider.py:80: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7f566af332b0>
+
+    def find_counter(self):
+        name = str(Name())
+        print(name)
+        vms = provider.list()
+        print(f'VM is {vms}')
+        if vms is not None:
+            numbers = []
+            names = []
+            for vm in vms:
+                names.append(vm['name'])
+                numbers.append(int(vm['name'].rsplit("-", 1)[1]))
+            numbers.sort()
+>           return numbers[-1]
+E           IndexError: list index out of range
+
+tests/cloud/test_08_vm_provider.py:75: IndexError
+___________________ Test_provider_vm.test_provider_vm_create ___________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7f55e91329e8>
+
+    def test_provider_vm_create(self):
+        HEADING()
+        os.system(f"cms vm list --cloud={cloud}")
+        name_generator.incr()
+        Benchmark.Start()
+>       data = provider.create(key=key)
+
+tests/cloud/test_08_vm_provider.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+cloudmesh/mongo/DataBaseDecorator.py:87: in wrapper
+    current = f(*args, **kwargs)
+cloudmesh/compute/vm/Provider.py:216: in create
+    created = self.loop(self._create, **arguments)
+cloudmesh/compute/vm/Provider.py:112: in loop
+    vm = func(**parameters)
+cloudmesh/compute/vm/Provider.py:251: in _create
+    data = self.p.create(**arguments)
+cloudmesh/compute/aws/Provider.py:1116: in create
+    'Tags': metadata}]
+/usr/local/lib/python3.7/dist-packages/boto3/resources/factory.py:520: in do_action
+    response = action(self, *args, **kwargs)
+/usr/local/lib/python3.7/dist-packages/boto3/resources/action.py:83: in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+/usr/local/lib/python3.7/dist-packages/botocore/client.py:276: in _api_call
+    return self._make_api_call(operation_name, kwargs)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <botocore.client.EC2 object at 0x7f566b82cd30>
+operation_name = 'RunInstances'
+api_params = {'ImageId': 'ami-0f65671a86f061fcd', 'InstanceType': 't2.micro', 'KeyName': 'AAxthelm', 'MaxCount': 1, ...}
+
+    def _make_api_call(self, operation_name, api_params):
+        operation_model = self._service_model.operation_model(operation_name)
+        service_name = self._service_model.service_name
+        history_recorder.record('API_CALL', {
+            'service': service_name,
+            'operation': operation_name,
+            'params': api_params,
+        })
+        if operation_model.deprecated:
+            logger.debug('Warning: %s.%s() is deprecated',
+                         service_name, operation_name)
+        request_context = {
+            'client_region': self.meta.region_name,
+            'client_config': self.meta.config,
+            'has_streaming_input': operation_model.has_streaming_input,
+            'auth_type': operation_model.auth_type,
+        }
+        request_dict = self._convert_to_request_dict(
+            api_params, operation_model, context=request_context)
+    
+        service_id = self._service_model.service_id.hyphenize()
+        handler, event_response = self.meta.events.emit_until_response(
+            'before-call.{service_id}.{operation_name}'.format(
+                service_id=service_id,
+                operation_name=operation_name),
+            model=operation_model, params=request_dict,
+            request_signer=self._request_signer, context=request_context)
+    
+        if event_response is not None:
+            http, parsed_response = event_response
+        else:
+            http, parsed_response = self._make_request(
+                operation_model, request_dict, request_context)
+    
+        self.meta.events.emit(
+            'after-call.{service_id}.{operation_name}'.format(
+                service_id=service_id,
+                operation_name=operation_name),
+            http_response=http, parsed=parsed_response,
+            model=operation_model, context=request_context
+        )
+    
+        if http.status_code >= 300:
+            error_code = parsed_response.get("Error", {}).get("Code")
+            error_class = self.exceptions.from_code(error_code)
+>           raise error_class(parsed_response, operation_name)
+E           botocore.exceptions.ClientError: An error occurred (InvalidAMIID.NotFound) when calling the RunInstances operation: The image id '[ami-0f65671a86f061fcd]' does not exist
+
+/usr/local/lib/python3.7/dist-packages/botocore/client.py:586: ClientError
+______________ Test_provider_vm.test_provider_vmprovider_vm_list _______________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7f56289a1d30>
+
+    def test_provider_vmprovider_vm_list(self):
+        # list should be after create() since it would return empty and
+        # len(data) would be 0
+        HEADING()
+        Benchmark.Start()
+        data = provider.list()
+>       assert len(data) > 0
+E       assert 0 > 0
+E        +  where 0 = len([])
+
+tests/cloud/test_08_vm_provider.py:112: AssertionError
+____________________ Test_provider_vm.test_provider_vm_wait ____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7f568a268160>
+
+    def test_provider_vm_wait(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        cm = CmDatabase()
+        vm = cm.find_name(name, kind="vm")[0]
+>       assert provider.wait(vm=vm), "cms wait timed out ..."
+E       AssertionError: cms wait timed out ...
+E       assert False
+E        +  where False = <bound method Provider.wait of <cloudmesh.compute.vm.Provider.Provider object at 0x7f5688d428d0>>(vm={'_id': ObjectId('5dffd7ad6687e43ddb4434a1'), 'cm': {'cloud': 'aws', 'collection': 'aws-vm', 'created': '2019-12-22 20:53:01.607870', 'group': 'cloudmesh', ...}, 'name': 'test-AAxthelm-vm-2'})
+E        +    where <bound method Provider.wait of <cloudmesh.compute.vm.Provider.Provider object at 0x7f5688d428d0>> = <cloudmesh.compute.vm.Provider.Provider object at 0x7f5688d428d0>.wait
+
+tests/cloud/test_08_vm_provider.py:122: AssertionError
+____________________ Test_provider_vm.test_provider_vm_ssh _____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7f568a501588>
+
+    def test_provider_vm_ssh(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        cm = CmDatabase()
+        vm = cm.find_name(name, kind="vm")[0]
+>       data = provider.ssh(vm=vm, command='\"echo IAmAlive\"')
+
+tests/cloud/test_08_vm_provider.py:131: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+cloudmesh/compute/vm/Provider.py:446: in ssh
+    return self.p.ssh(vm=vm, command=command)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cloudmesh.compute.aws.Provider.Provider object at 0x7f5688d42e80>
+vm = {'_id': ObjectId('5dffd7ad6687e43ddb4434a1'), 'cm': {'cloud': 'aws', 'collection': 'aws-vm', 'created': '2019-12-22 20:53:01.607870', 'group': 'cloudmesh', ...}, 'name': 'test-AAxthelm-vm-2'}
+command = '"echo IAmAlive"'
+
+    def ssh(self, vm=None, command=None):
+    
+        def key_selector(keys):
+            '''
+           This is a helper method for ssh key selection
+           THIS IS JUST A SAFETY MEASURE, PLEASE DON'T MIND IT
+            :param keys:
+            :return:
+            '''
+            tmp_keys = keys[:]
+            # indices = range(1,len(tmp_keys)+1)
+            for key_idx, key in enumerate(keys):
+                key['idx'] = key_idx + 1
+            print(Printer.flatwrite(tmp_keys,
+                                    sort_keys=["idx"],
+                                    order=['idx', 'KeyName', 'KeyFingerprint'],
+                                    header=['Index', 'Key Name',
+                                            "Key Fingerprint"],
+                                    output="table",
+                                    humanize=None)
+                  )
+            # Console.msg("Please select one of the AWS key indices from the table above: ")
+            picked = 0
+            while picked < 1 or picked > len(keys):
+                try:
+                    picked = int(input(
+                        "Please select one of the AWS key indices from the table above: "))
+                except ValueError:
+                    pass
+            return keys[picked - 1]
+    
+        cm = CmDatabase()
+>       ip = vm['public_ips']
+E       KeyError: 'public_ips'
+
+cloudmesh/compute/aws/Provider.py:657: KeyError
+_______________________ Test_provider_vm.test_vm_status ________________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7f55e90ce2b0>
+
+    def test_vm_status(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+>       data = provider.status(name=name)
+
+tests/cloud/test_08_vm_provider.py:152: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cloudmesh.compute.vm.Provider.Provider object at 0x7f5688d428d0>
+name = 'test-AAxthelm-vm-2'
+
+    def status(self, name=None):
+        r = self.info(name=name)
+    
+        status = []
+        for entry in r:
+>           state = {'name': entry['name'],
+                     'status:': entry['status'],
+                     'cm.status': entry['cm']['status']}
+E           KeyError: 'name'
+
+cloudmesh/compute/vm/Provider.py:314: KeyError
+____________________ Test_provider_vm.test_provider_vm_stop ____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7f568a268940>
+
+    def test_provider_vm_stop(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        data = provider.stop(name=name)
+        Benchmark.Stop()
+        stop_timeout = 360
+        time = 0
+        while time <= stop_timeout:
+            sleep(5)
+            time += 5
+>           status = provider.status(name=name)[0]
+
+tests/cloud/test_08_vm_provider.py:175: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cloudmesh.compute.vm.Provider.Provider object at 0x7f5688d428d0>
+name = 'test-AAxthelm-vm-2'
+
+    def status(self, name=None):
+        r = self.info(name=name)
+    
+        status = []
+        for entry in r:
+>           state = {'name': entry['name'],
+                     'status:': entry['status'],
+                     'cm.status': entry['cm']['status']}
+E           KeyError: 'name'
+
+cloudmesh/compute/vm/Provider.py:314: KeyError
+___________________ Test_provider_vm.test_provider_vm_start ____________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7f568a5715c0>
+
+    def test_provider_vm_start(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        data = provider.start(name=name)
+        Benchmark.Stop()
+        start_timeout = 360
+        time = 0
+        while time <= start_timeout:
+            sleep(5)
+            time += 5
+>           status = provider.status(name=name)[0]
+
+tests/cloud/test_08_vm_provider.py:193: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cloudmesh.compute.vm.Provider.Provider object at 0x7f5688d428d0>
+name = 'test-AAxthelm-vm-2'
+
+    def status(self, name=None):
+        r = self.info(name=name)
+    
+        status = []
+        for entry in r:
+>           state = {'name': entry['name'],
+                     'status:': entry['status'],
+                     'cm.status': entry['cm']['status']}
+E           KeyError: 'name'
+
+cloudmesh/compute/vm/Provider.py:314: KeyError
+_________________ Test_provider_vm.test_provider_vm_terminate __________________
+
+self = <test_08_vm_provider.Test_provider_vm object at 0x7f568a501fd0>
+
+    def test_provider_vm_terminate(self):
+        HEADING()
+        name = str(Name())
+        Benchmark.Start()
+        data = provider.destroy(name=name)
+        Benchmark.Stop()
+    
+        pprint(data)
+    
+        termination_timeout = 360
+        time = 0
+        while time <= termination_timeout:
+            sleep(5)
+            time += 5
+            if cloud == 'chameleon' and len(provider.info(name=name)) == 0:
+                break
+            elif cloud == 'aws' and (len(provider.info(name=name)) == 0 or
+>                                    provider.info(name=name)[0]["cm"][
+                                         "status"] in ['TERMINATED']):
+E                                        KeyError: 'cm'
+
+tests/cloud/test_08_vm_provider.py:221: KeyError
+================== 11 failed, 58 passed in 944.14s (0:15:44) ===================

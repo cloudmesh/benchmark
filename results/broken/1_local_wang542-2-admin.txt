@@ -1,0 +1,1974 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.4, pytest-5.2.2, py-1.8.0, pluggy-0.13.0 -- d:\school\b649_engineeringcloudcomputing\env4\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-cloud, inifile: pytest.ini
+collecting ... ERROR: import grp not supported on your OS. please find altrenative to grp
+ERROR: import grp not supported on your OS. please find altrenative to grp
+
+
+collected 59 items
+
+tests/1_local/test_cms.py::TestName::test_help 
+[35m
+# ######################################################################
+# test_help \tests\1_local\test_cms.py 18
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# result
+# ----------------------------------------------------------------------
+# 24:test_help .\tests\1_local\test_cms.py
+# ----------------------------------------------------------------------
+# ('Documented commands (type help <topic>):\r\n'
+#  '========================================\r\n'
+#  'EOF        data     image      pause     service  stopwatch  '
+#  'vm            \r\n'
+#  'admin      debug    info       plugin    set      storage    '
+#  'workflow_draft\r\n'
+#  'banner     default  init       provider  shell    sys      \r\n'
+#  'chenxu     echo     inventory  py        sleep    var      \r\n'
+#  'clear      flavor   ip         q         source   vbox     \r\n'
+#  'commands   group    key        quit      ssh      vcluster \r\n'
+#  'config     help     man        register  start    vdir     \r\n'
+#  'container  host     open       sec       stop     version')
+# ----------------------------------------------------------------------
+[0m
+PASSED
+tests/1_local/test_cms.py::TestName::test_vm 
+[35m
+# ######################################################################
+# test_vm \tests\1_local\test_cms.py 29
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# result
+# ----------------------------------------------------------------------
+# 34:test_vm .\tests\1_local\test_cms.py
+# ----------------------------------------------------------------------
+# ('Command vm\r\n'
+#  '==========\r\n'
+#  '\r\n'
+#  '::\r\n'
+#  '\r\n'
+#  '    Usage:\r\n'
+#  '        vm ping [NAMES] [--cloud=CLOUDS] [--count=N]\r\n'
+#  '        vm check [NAMES] [--cloud=CLOUDS] [--username=USERNAME]\r\n'
+#  '        vm status [NAMES] [--cloud=CLOUDS] [--output=OUTPUT]\r\n'
+#  '        vm console [NAME] [--force]\r\n'
+#  '        vm log [NAME] [--force]\r\n'
+#  '        vm stop [NAMES]  [--dryrun]\r\n'
+#  '        vm start [NAMES] [--dryrun]\r\n'
+#  '        vm terminate [NAMES] [--cloud=CLOUD] [--dryrun]\r\n'
+#  '        vm delete [NAMES] [--cloud=CLOUD] [--dryrun]\r\n'
+#  '        vm refresh [--cloud=CLOUDS]\r\n'
+#  '        vm list [NAMES]\r\n'
+#  '                [--cloud=CLOUDS]\r\n'
+#  '                [--output=OUTPUT]\r\n'
+#  '                [--refresh]\r\n'
+#  '        vm boot [--n=COUNT]\r\n'
+#  '                [--name=VMNAMES]\r\n'
+#  '                [--cloud=CLOUD]\r\n'
+#  '                [--username=USERNAME]\r\n'
+#  '                [--image=IMAGE]\r\n'
+#  '                [--flavor=FLAVOR]\r\n'
+#  '                [--public]\r\n'
+#  '                [--secgroup=SECGROUPs]\r\n'
+#  '                [--group=GROUPs]\r\n'
+#  '                [--key=KEY]\r\n'
+#  '                [--dryrun]\r\n'
+#  '                [-v]\r\n'
+#  '        vm meta list [NAME]\r\n'
+#  '        vm meta set [NAME] KEY=VALUE...\r\n'
+#  '        vm meta delete [NAME] KEY...\r\n'
+#  '        vm script [--name=NAMES]\r\n'
+#  '                  [--username=USERNAME]\r\n'
+#  '                  [--key=KEY]\r\n'
+#  '                  [--dryrun]\r\n'
+#  '                  [--dir=DESTINATION]\r\n'
+#  '                  SCRIPT\r\n'
+#  '        vm ip assign [NAMES]\r\n'
+#  '                  [--cloud=CLOUD]\r\n'
+#  '        vm ip show [NAMES]\r\n'
+#  '                   [--group=GROUP]\r\n'
+#  '                   [--cloud=CLOUD]\r\n'
+#  '                   [--output=OUTPUT]\r\n'
+#  '                   [--refresh]\r\n'
+#  '        vm ip inventory [NAMES]\r\n'
+#  '        vm ssh [NAMES]\r\n'
+#  '               [--username=USER]\r\n'
+#  '               [--quiet]\r\n'
+#  '               [--ip=IP]\r\n'
+#  '               [--key=KEY]\r\n'
+#  '               [--command=COMMAND]\r\n'
+#  '        vm put SOURCE DESTINATION [NAMES]\r\n'
+#  '        vm get SOURCE DESTINATION [NAMES]\r\n'
+#  '        vm rename [OLDNAMES] [NEWNAMES] [--force] [--dryrun]\r\n'
+#  '        vm wait [--cloud=CLOUD] [--interval=INTERVAL] [--timeout=TIMEOUT]\r\n'
+#  '        vm info [--cloud=CLOUD]\r\n'
+#  '                [--output=OUTPUT]\r\n'
+#  '        vm username USERNAME [NAMES] [--cloud=CLOUD]\r\n'
+#  '        vm resize [NAMES] [--size=SIZE]\r\n'
+#  '\r\n'
+#  '    Arguments:\r\n'
+#  '        OUTPUT         the output format\r\n'
+#  '        COMMAND        positional arguments, the commands you want to\r\n'
+#  '                       execute on the server(e.g. ls -a) separated by '
+#  "';',\r\n"
+#  '                       you will get a return of executing result instead of '
+#  'login to\r\n'
+#  '                       the server, note that type in -- is suggested '
+#  'before\r\n'
+#  '                       you input the commands\r\n'
+#  '        NAME           server name. By default it is set to the name of last '
+#  'vm from database.\r\n'
+#  '        NAMES          server name. By default it is set to the name of last '
+#  'vm from database.\r\n'
+#  '        KEYPAIR_NAME   Name of the vm keypair to be used to create VM. Note '
+#  'this is\r\n'
+#  '                       not a path to key.\r\n'
+#  '        NEWNAMES       New names of the VM while renaming.\r\n'
+#  '        OLDNAMES       Old names of the VM while renaming.\r\n'
+#  '\r\n'
+#  '    Options:\r\n'
+#  '        -v             verbose, prints the dict at the end\r\n'
+#  '        --output=OUTPUT   the output format\r\n'
+#  '        -H --modify-knownhosts  Do not modify ~/.ssh/known_hosts file\r\n'
+#  "                              when ssh'ing into a machine\r\n"
+#  '        --username=USERNAME   the username to login into the vm. If not\r\n'
+#  '                              specified it will be guessed\r\n'
+#  '                              from the image name and the cloud\r\n'
+#  '        --ip=IP          give the public ip of the server\r\n'
+#  '        --cloud=CLOUD    give a cloud to work on, if not given, selected\r\n'
+#  '                         or default cloud will be used\r\n'
+#  '        --count=COUNT    give the number of servers to start\r\n'
+#  '        --detail         for table, a brief version\r\n'
+#  '                         is used as default, use this flag to print\r\n'
+#  '                         detailed table\r\n'
+#  '        --flavor=FLAVOR  give the name or id of the flavor\r\n'
+#  '        --group=GROUP          give the group name of server\r\n'
+#  '        --secgroup=SECGROUP    security group name for the server\r\n'
+#  '        --image=IMAGE    give the name or id of the image\r\n'
+#  '        --key=KEY        specify a key to use, input a string which\r\n'
+#  '                         is the full path to the private key file\r\n'
+#  '        --keypair_name=KEYPAIR_NAME   Name of the vm keypair to\r\n'
+#  '                                      be used to create VM.\r\n'
+#  '                                      Note this is not a path to key.\r\n'
+#  '        --user=USER      give the user name of the server that you want\r\n'
+#  '                         to use to login\r\n'
+#  '        --name=NAME      give the name of the virtual machine\r\n'
+#  "        --force          rename/ delete vms without user's confirmation\r\n"
+#  '        --command=COMMAND\r\n'
+#  '                         specify the commands to be executed\r\n'
+#  '\r\n'
+#  '\r\n'
+#  '    Description:\r\n'
+#  '        commands used to boot, start or delete servers of a cloud\r\n'
+#  '\r\n'
+#  '        vm default [options...]\r\n'
+#  '            Displays default parameters that are set for vm boot either\r\n'
+#  '            on the default cloud or the specified cloud.\r\n'
+#  '\r\n'
+#  '        vm boot [options...]\r\n'
+#  '            Boots servers on a cloud, user may specify flavor, image\r\n'
+#  '            .etc, otherwise default values will be used, see how to set\r\n'
+#  '            default values of a cloud: cloud help\r\n'
+#  '\r\n'
+#  '        vm start [options...]\r\n'
+#  '            Starts a suspended or stopped vm instance.\r\n'
+#  '\r\n'
+#  '        vm stop [options...]\r\n'
+#  '            Stops a vm instance .\r\n'
+#  '\r\n'
+#  '        vm delete [options...]\r\n'
+#  '\r\n'
+#  '            Delete servers of a cloud, user may delete a server by its\r\n'
+#  '            name or id, delete servers of a group or servers of a cloud,\r\n'
+#  '            give prefix and/or range to find servers by their names.\r\n'
+#  '            Or user may specify more options to narrow the search\r\n'
+#  '\r\n'
+#  '        vm floating_ip_assign [options...]\r\n'
+#  '            assign a public ip to a VM of a cloud\r\n'
+#  '\r\n'
+#  '        vm ip show [options...]\r\n'
+#  '            show the ips of VMs\r\n'
+#  '\r\n'
+#  '        vm ssh [options...]\r\n'
+#  '            login to a server or execute commands on it\r\n'
+#  '\r\n'
+#  '        vm list [options...]\r\n'
+#  '            same as command "list vm", please refer to it\r\n'
+#  '\r\n'
+#  '        vm status [options...]\r\n'
+#  '            Retrieves status of last VM booted on cloud and displays it.\r\n'
+#  '\r\n'
+#  '        vm refresh [--cloud=CLOUDS]\r\n'
+#  '            this command refreshes the data for virtual machines,\r\n'
+#  '            images and flavors for the specified clouds.\r\n'
+#  '\r\n'
+#  '        vm ping [NAMES] [--cloud=CLOUDS] [--count=N] '
+#  '[--processors=PROCESSORS]\r\n'
+#  '             pings the specified virtual machines, while using at most N '
+#  'pings.\r\n'
+#  '             The ping is executed in parallel.\r\n'
+#  '             If names are specifies the ping is restricted to the given '
+#  'names in\r\n'
+#  '             parameter format. If clouds are specified, names that are not '
+#  'in\r\n'
+#  '             these clouds are ignored. If the name is set in the '
+#  'variables\r\n'
+#  '             this name is used.\r\n'
+#  '\r\n'
+#  '        cms vm ssh --command="uname -a"\r\n'
+#  '\r\n'
+#  '              executes the uname command on the last booted vm\r\n'
+#  '\r\n'
+#  '        vm script [--name=NAMES]\r\n'
+#  '                  [--username=USERNAME]\r\n'
+#  '                  [--key=KEY]\r\n'
+#  '                  [--dryrun]\r\n'
+#  '                  [--dir=DESTINATION]\r\n'
+#  '                  [--shell=SHELL]\r\n'
+#  '                  SCRIPT\r\n'
+#  '\r\n'
+#  '           The script command copies a shell script to the specified vms\r\n'
+#  '           into the DESTINATION directory and than execute it. With\r\n'
+#  '           SHELL you can set the shell for executing the command,\r\n'
+#  '           this coudl even be a python interpreter. Examples for\r\n'
+#  '           SHELL are /bin/sh, /usr/bin/env python\r\n'
+#  '\r\n'
+#  '        vm put SOURCE DESTINATION [NAMES]\r\n'
+#  '\r\n'
+#  '            puts the file defined by SOURCE into the DESINATION folder\r\n'
+#  '            on the specified machines. If the file exists it is\r\n'
+#  '            overwritten, so be careful.\r\n'
+#  '\r\n'
+#  '        vm get SOURCE DESTINATION [NAMES]\r\n'
+#  '\r\n'
+#  '            gets  the file defined by SOURCE into the DESINATION folder\r\n'
+#  '            on the specified machines. The SOURCE is on the remote\r\n'
+#  '            machine. If one machine is specified, the SOURCE is the same\r\n'
+#  '            name as on the remote machine. If multiple machines are\r\n'
+#  '            specified, the name of the machine will be a prefix to the\r\n'
+#  '            filename. If the filenames exists, they will be overwritten,\r\n'
+#  '            so be careful.\r\n'
+#  '\r\n'
+#  '    Tip:\r\n'
+#  '        give the VM name, but in a hostlist style, which is very\r\n'
+#  '        convenient when you need a range of VMs e.g. sample[1-3]\r\n'
+#  "        => ['sample1', 'sample2', 'sample3']\r\n"
+#  "        sample[1-3,18] => ['sample1', 'sample2', 'sample3', 'sample18']\r\n"
+#  '\r\n'
+#  '    Quoting commands:\r\n'
+#  '        cm vm login gregor-004 --command="uname -a"\r\n'
+#  '\r\n'
+#  '    Limitations:\r\n'
+#  '\r\n'
+#  '        Azure: rename is not supported')
+# ----------------------------------------------------------------------
+[0m
+PASSED
+tests/1_local/test_cms.py::TestName::test_help_again 
+[35m
+# ######################################################################
+# test_help_again \tests\1_local\test_cms.py 38
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# result
+# ----------------------------------------------------------------------
+# 44:test_help_again .\tests\1_local\test_cms.py
+# ----------------------------------------------------------------------
+# ('Documented commands (type help <topic>):\r\n'
+#  '========================================\r\n'
+#  'EOF        data     image      pause     service  stopwatch  '
+#  'vm            \r\n'
+#  'admin      debug    info       plugin    set      storage    '
+#  'workflow_draft\r\n'
+#  'banner     default  init       provider  shell    sys      \r\n'
+#  'chenxu     echo     inventory  py        sleep    var      \r\n'
+#  'clear      flavor   ip         q         source   vbox     \r\n'
+#  'commands   group    key        quit      ssh      vcluster \r\n'
+#  'config     help     man        register  start    vdir     \r\n'
+#  'container  host     open       sec       stop     version')
+# ----------------------------------------------------------------------
+[0m
+PASSED
+tests/1_local/test_cms.py::TestName::test_benchmark 
+[35m
+# ######################################################################
+# test_benchmark \tests\1_local\test_cms.py 49
+# ######################################################################
+[0m
+
++-------------------+-----------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                             |
++-------------------+-----------------------------------------------------------------------------------+
+| cpu_count         | 12                                                                                |
+| mac_version       |                                                                                   |
+| machine           | ('AMD64',)                                                                        |
+| mem_available     | 8.6 GiB                                                                           |
+| mem_free          | 8.6 GiB                                                                           |
+| mem_percent       | 45.8%                                                                             |
+| mem_total         | 15.9 GiB                                                                          |
+| mem_used          | 7.3 GiB                                                                           |
+| node              | ('LAPTOP-0UEFF4CG',)                                                              |
+| platform          | Windows-10-10.0.17763-SP0                                                         |
+| processor         | ('Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',)                         |
+| processors        | Windows                                                                           |
+| python            | 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] |
+| release           | ('10',)                                                                           |
+| sys               | win32                                                                             |
+| system            | Windows                                                                           |
+| user              |                                                                                   |
+| version           | 10.0.17763                                                                        |
+| win_version       | ('10', '10.0.17763', 'SP0', '')                                                   |
++-------------------+-----------------------------------------------------------------------------------+
++--------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                    | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++--------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_cms/test_help       | 4.953 | 2019-12-23 04:57:21 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_vm         | 4.361 | 2019-12-23 04:57:26 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_help_again | 5.164 | 2019-12-23 04:57:31 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop     | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++--------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_cms/test_help,4.953,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_vm,4.361,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_help_again,5.164,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/1_local/test_config.py::TestConfig::test_config 
+[35m
+# ######################################################################
+# test_config \tests\1_local\test_config.py 32
+# ######################################################################
+[0m
+
+1 True 0 0 0
+2 True 0 0 0
+3 True 0 0 0
+4 True 0 0 0
+5 True 0 0 0
+6 True 0 0 0
+7 True 0 0 0
+8 True 0 0 0
+9 True 0 0 0
+PASSED
+tests/1_local/test_config.py::TestConfig::test_search 
+[35m
+# ######################################################################
+# test_search \tests\1_local\test_config.py 45
+# ######################################################################
+[0m
+['cloudmesh.cloud.docker.cm.active',
+ 'cloudmesh.cloud.azure.cm.active',
+ 'cloudmesh.cloud.azurearm.cm.active',
+ 'cloudmesh.cloud.azureaz.cm.active',
+ 'cloudmesh.cloud.awslibcloud.cm.active',
+ 'cloudmesh.cloud.aws.cm.active',
+ 'cloudmesh.cloud.google.cm.active',
+ 'cloudmesh.cloud.chameleon.cm.active',
+ 'cloudmesh.cloud.jetstream.cm.active',
+ 'cloudmesh.cloud.cybera-e.cm.active',
+ 'cloudmesh.cloud.vagrant.cm.active',
+ 'cloudmesh.cloud.vagrant_remote.cm.active']
+PASSED
+tests/1_local/test_config.py::TestConfig::test_dict 
+[35m
+# ######################################################################
+# test_dict \tests\1_local\test_config.py 54
+# ######################################################################
+[0m
+<class 'dict'>
+{'email': 'wang542@iu.edu',
+ 'firstname': 'chenxu',
+ 'github': 'wang542',
+ 'lastname': 'wang',
+ 'publickey': 'C:\\Users\\wangc\\.ssh\\id_rsa.pub',
+ 'user': 'wang542'}
+PASSED
+tests/1_local/test_config.py::TestConfig::test_config_subscriptable 
+[35m
+# ######################################################################
+# test_config_subscriptable \tests\1_local\test_config.py 64
+# ######################################################################
+[0m
+PASSED
+tests/1_local/test_config.py::TestConfig::test_dictreplace 
+[35m
+# ######################################################################
+# test_dictreplace \tests\1_local\test_config.py 72
+# ######################################################################
+[0m
+
+cloudmesh:
+  profile:
+    name: Gregor
+  unordered:
+    name: "{cloudmesh.other.name}.postfix"
+  other:
+    name: "{cloudmesh.profile.name}"
+
+
+
+cloudmesh:
+  profile:
+    name: Gregor
+  unordered:
+    name: "Gregor.postfix"
+  other:
+    name: "Gregor"
+
+
+{'cloudmesh': {'other': {'name': 'Gregor'},
+               'profile': {'name': 'Gregor'},
+               'unordered': {'name': 'Gregor.postfix'}}}
+PASSED
+tests/1_local/test_config.py::TestConfig::test_configreplace 
+[35m
+# ######################################################################
+# test_configreplace \tests\1_local\test_config.py 102
+# ######################################################################
+[0m
+{'email': 'wang542@iu.edu',
+ 'firstname': 'chenxu',
+ 'github': 'wang542',
+ 'lastname': 'wang',
+ 'publickey': 'C:\\Users\\wangc\\.ssh\\id_rsa.pub',
+ 'user': 'wang542'}
+PASSED
+tests/1_local/test_config.py::TestConfig::test_if_yaml_file_exists 
+[35m
+# ######################################################################
+# test_if_yaml_file_exists \tests\1_local\test_config.py 107
+# ######################################################################
+[0m
+PASSED
+tests/1_local/test_config.py::TestConfig::test_set 
+[35m
+# ######################################################################
+# test_set \tests\1_local\test_config.py 114
+# ######################################################################
+[0m
+Gregor
+PASSED
+tests/1_local/test_config.py::TestConfig::test_benchmark 
+[35m
+# ######################################################################
+# test_benchmark \tests\1_local\test_config.py 130
+# ######################################################################
+[0m
+
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                 | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_cms/test_help                    | 4.953 | 2019-12-23 04:57:21 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_vm                      | 4.361 | 2019-12-23 04:57:26 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_help_again              | 5.164 | 2019-12-23 04:57:31 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=1                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=2                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=3                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=4                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=5                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=6                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=7                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=8                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=9                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_search               | 0.009 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dict                 | 0.005 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_config_subscriptable | 0.004 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dictreplace          | 0.006 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_set                  | 0.045 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_cms/test_help,4.953,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_vm,4.361,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_help_again,5.164,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=1,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=2,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=3,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=4,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=5,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=6,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=7,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=8,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=9,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_search,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dict,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_config_subscriptable,0.004,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dictreplace,0.006,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_set,0.045,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/1_local/test_data.py::TestDatabaseUpdate::test_DatabaseUpdate 
+[35m
+# ######################################################################
+# test_DatabaseUpdate \tests\1_local\test_data.py 34
+# ######################################################################
+[0m
+[{'_id': ObjectId('5e0049408ec78969a6ea1fe5'),
+  'acess': '1577077056.4222066',
+  'cm': {'cloud': 'debug',
+         'collection': 'debug-file',
+         'created': '2019-12-23 04:57:36.540187',
+         'kind': 'file',
+         'modified': '2019-12-23 04:57:36.540187',
+         'name': 'debug:C:\\Users\\wangc\\.cloudmesh\\cloudmesh.yaml'},
+  'created': None,
+  'group': {'id': 'not supported on your os, please fix this test.',
+            'members': 'not supported on your os, please fix this test.',
+            'name': 'not supported on your os, please fix this test.'},
+  'modified': None,
+  'name': 'debug:C:\\Users\\wangc\\.cloudmesh\\cloudmesh.yaml',
+  'owner': 'windows',
+  'path': 'C:\\Users\\wangc\\.cloudmesh\\cloudmesh.yaml',
+  'permission': {'executable': True, 'readable': True, 'writable': True},
+  'size': 13834}]
+PASSED
+tests/1_local/test_data.py::TestDatabaseUpdate::test_remove_collection 
+[35m
+# ######################################################################
+# test_remove_collection \tests\1_local\test_data.py 97
+# ######################################################################
+[0m
+PASSED
+tests/1_local/test_data.py::TestDatabaseUpdate::test_benchmark 
+[35m
+# ######################################################################
+# test_benchmark \tests\1_local\test_data.py 104
+# ######################################################################
+[0m
+
++-------------------+-----------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                             |
++-------------------+-----------------------------------------------------------------------------------+
+| cpu_count         | 12                                                                                |
+| mac_version       |                                                                                   |
+| machine           | ('AMD64',)                                                                        |
+| mem_available     | 8.6 GiB                                                                           |
+| mem_free          | 8.6 GiB                                                                           |
+| mem_percent       | 45.8%                                                                             |
+| mem_total         | 15.9 GiB                                                                          |
+| mem_used          | 7.3 GiB                                                                           |
+| node              | ('LAPTOP-0UEFF4CG',)                                                              |
+| platform          | Windows-10-10.0.17763-SP0                                                         |
+| processor         | ('Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',)                         |
+| processors        | Windows                                                                           |
+| python            | 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] |
+| release           | ('10',)                                                                           |
+| sys               | win32                                                                             |
+| system            | Windows                                                                           |
+| user              |                                                                                   |
+| version           | 10.0.17763                                                                        |
+| win_version       | ('10', '10.0.17763', 'SP0', '')                                                   |
++-------------------+-----------------------------------------------------------------------------------+
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                 | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_cms/test_help                    | 4.953 | 2019-12-23 04:57:21 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_vm                      | 4.361 | 2019-12-23 04:57:26 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_help_again              | 5.164 | 2019-12-23 04:57:31 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=1                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=2                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=3                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=4                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=5                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=6                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=7                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=8                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=9                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_search               | 0.009 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dict                 | 0.005 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_config_subscriptable | 0.004 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dictreplace          | 0.006 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_set                  | 0.045 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_DatabaseUpdate         | 0.11  | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_remove_collection      | 0.092 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_cms/test_help,4.953,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_vm,4.361,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_help_again,5.164,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=1,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=2,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=3,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=4,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=5,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=6,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=7,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=8,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=9,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_search,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dict,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_config_subscriptable,0.004,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dictreplace,0.006,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_set,0.045,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_DatabaseUpdate,0.11,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_remove_collection,0.092,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/1_local/test_group.py::TestName::test_list 
+[35m
+# ######################################################################
+# test_list \tests\1_local\test_group.py 30
+# ######################################################################
+[0m
+PASSED
+tests/1_local/test_group.py::TestName::test_add 
+[35m
+# ######################################################################
+# test_add \tests\1_local\test_group.py 36
+# ######################################################################
+[0m
+[{'_id': ObjectId('5e0049408ec78969a6ea1fe8'),
+  'cm': {'cloud': 'local',
+         'collection': 'local-group',
+         'created': '2019-12-23 04:57:36.887180',
+         'kind': 'group',
+         'modified': '2019-12-23 04:57:36.887180',
+         'name': 'test'},
+  'members': [{'kind': 'vm', 'name': 'vm-1'},
+              {'kind': 'vm', 'name': 'vm-2'},
+              {'kind': 'vm', 'name': 'vm-3'}]}]
+[{'cm': {'cloud': 'local',
+         'collection': 'local-group',
+         'created': '2019-12-23 04:57:36.887180',
+         'kind': 'group',
+         'modified': '2019-12-23 04:57:36.887180',
+         'name': 'test'},
+  'members': [{'kind': 'vm', 'name': 'vm-1'},
+              {'kind': 'vm', 'name': 'vm-2'},
+              {'kind': 'vm', 'name': 'vm-3'}]}]
+- cm:
+    name: test
+    cloud: local
+    kind: group
+    collection: local-group
+    created: '2019-12-23 04:57:36.887180'
+    modified: '2019-12-23 04:57:36.887180'
+  members:
+  - name: vm-1
+    kind: vm
+  - name: vm-2
+    kind: vm
+  - name: vm-3
+    kind: vm
+
+PASSED
+tests/1_local/test_group.py::TestName::test_members 
+[35m
+# ######################################################################
+# test_members \tests\1_local\test_group.py 55
+# ######################################################################
+[0m
+[{'kind': 'vm', 'name': 'vm-1'},
+ {'kind': 'vm', 'name': 'vm-2'},
+ {'kind': 'vm', 'name': 'vm-3'}]
++------+------+
+| name | kind |
++------+------+
+| vm-1 | vm   |
+| vm-2 | vm   |
+| vm-3 | vm   |
++------+------+
+PASSED
+tests/1_local/test_group.py::TestName::test_benchmark 
+[35m
+# ######################################################################
+# test_benchmark \tests\1_local\test_group.py 67
+# ######################################################################
+[0m
+
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                 | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_cms/test_help                    | 4.953 | 2019-12-23 04:57:21 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_vm                      | 4.361 | 2019-12-23 04:57:26 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_help_again              | 5.164 | 2019-12-23 04:57:31 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                  | 0.0   | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=1                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=2                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=3                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=4                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=5                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=6                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=7                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=8                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=9                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_search               | 0.009 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dict                 | 0.005 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_config_subscriptable | 0.004 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dictreplace          | 0.006 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_set                  | 0.045 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_DatabaseUpdate         | 0.11  | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_remove_collection      | 0.092 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_group/test_list                  | 0.07  | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_group/test_add                   | 0.065 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_cms/test_help,4.953,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_vm,4.361,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_help_again,5.164,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=1,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=2,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=3,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=4,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=5,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=6,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=7,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=8,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=9,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_search,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dict,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_config_subscriptable,0.004,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dictreplace,0.006,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_set,0.045,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_DatabaseUpdate,0.11,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_remove_collection,0.092,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_group/test_list,0.07,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_group/test_add,0.065,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/1_local/test_key.py::TestName::test_key 
+[35m
+# ######################################################################
+# test_key \tests\1_local\test_key.py 23
+# ######################################################################
+[0m
+{'cm': {'cloud': 'local', 'kind': 'key', 'name': 'rsa'},
+ 'comment': 'wangchenxu1995@gmail.com',
+ 'fingerprint': 'd1:51:83:f0:dd:70:99:81:3b:6a:19:bf:49:38:98:24',
+ 'key': 'AAAAB3NzaC1yc2EAAAADAQABAAACAQC//N07ld9YAdNCSFtrG4Q+dhmv6EmC6C0qqxTISeGal7TsB7XAiqKheeZ0j7FIQYo7QGodGuOLs96v+TzwLZa8GS2qqcF4qMAk6W+tl53nLBBio/ELLIvUPmPDTyRh6xAQsVfyz1/68hWG22Hr5eAnHac0O09iq/fghiHBr9fx3p5OOYhs3G3CPIYbOU7D364haqFpgpmMxXtsDZPZ0DkY+H60UwGUzFd8TGjFChYYcHwDxOvD/QKQR4WAj7X2Apyd0SHO6d++kZERAZNfL77Gn5VQkn0f90qX1elfT0E+XtopZuK3mPjTeju0Xv09vFWE/ewLvCraKFIGiQGvsfDNjuwbv7HPAgUxCGG04WudCRyrOdKdY9hIl2DCtAOccwHEnB0eMcb7a7caZQmbopuplP2KpBvN/L+NGmm4AZoCGE+bYYFTZqxAD7zeglmQeDNhgkQdNOSpoF792XR1Vysw7F1cf0hBGGMLgZ4NLEbjlGqy4mjFg3RT4fc71pCsS2eFW7nB1b3YHFagtQHhEML8JI3mMLzbBK1fX/l5+gsM1f1M4PphcQBBUg+BehYvCvmW5LxV937nKxnso7o6YDclqmQmoAiOJtM5ZEGGnMYqLO0JbU5kTM94g9SaW1ZXelBLmbzle4BOs5FlrjjetNPMAxMfZDEU0R7ii7TwgdH62Q==',
+ 'location': {'private': 'C:\\Users\\wangc\\.ssh\\id_rsa',
+              'public': 'C:\\Users\\wangc\\.ssh\\id_rsa.pub'},
+ 'name': 'rsa',
+ 'path': 'C:\\Users\\wangc\\.ssh\\id_rsa.pub',
+ 'profile': {'email': 'wang542@iu.edu',
+             'firstname': 'chenxu',
+             'github': 'wang542',
+             'lastname': 'wang',
+             'publickey': 'C:\\Users\\wangc\\.ssh\\id_rsa.pub',
+             'user': 'wang542'},
+ 'public_key': 'ssh-rsa '
+               'AAAAB3NzaC1yc2EAAAADAQABAAACAQC//N07ld9YAdNCSFtrG4Q+dhmv6EmC6C0qqxTISeGal7TsB7XAiqKheeZ0j7FIQYo7QGodGuOLs96v+TzwLZa8GS2qqcF4qMAk6W+tl53nLBBio/ELLIvUPmPDTyRh6xAQsVfyz1/68hWG22Hr5eAnHac0O09iq/fghiHBr9fx3p5OOYhs3G3CPIYbOU7D364haqFpgpmMxXtsDZPZ0DkY+H60UwGUzFd8TGjFChYYcHwDxOvD/QKQR4WAj7X2Apyd0SHO6d++kZERAZNfL77Gn5VQkn0f90qX1elfT0E+XtopZuK3mPjTeju0Xv09vFWE/ewLvCraKFIGiQGvsfDNjuwbv7HPAgUxCGG04WudCRyrOdKdY9hIl2DCtAOccwHEnB0eMcb7a7caZQmbopuplP2KpBvN/L+NGmm4AZoCGE+bYYFTZqxAD7zeglmQeDNhgkQdNOSpoF792XR1Vysw7F1cf0hBGGMLgZ4NLEbjlGqy4mjFg3RT4fc71pCsS2eFW7nB1b3YHFagtQHhEML8JI3mMLzbBK1fX/l5+gsM1f1M4PphcQBBUg+BehYvCvmW5LxV937nKxnso7o6YDclqmQmoAiOJtM5ZEGGnMYqLO0JbU5kTM94g9SaW1ZXelBLmbzle4BOs5FlrjjetNPMAxMfZDEU0R7ii7TwgdH62Q== '
+               'wangchenxu1995@gmail.com',
+ 'source': 'ssh',
+ 'type': 'ssh-rsa',
+ 'uri': 'file://C:\\Users\\wangc\\.ssh\\id_rsa.pub'}
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC//N07ld9YAdNCSFtrG4Q+dhmv6EmC6C0qqxTISeGal7TsB7XAiqKheeZ0j7FIQYo7QGodGuOLs96v+TzwLZa8GS2qqcF4qMAk6W+tl53nLBBio/ELLIvUPmPDTyRh6xAQsVfyz1/68hWG22Hr5eAnHac0O09iq/fghiHBr9fx3p5OOYhs3G3CPIYbOU7D364haqFpgpmMxXtsDZPZ0DkY+H60UwGUzFd8TGjFChYYcHwDxOvD/QKQR4WAj7X2Apyd0SHO6d++kZERAZNfL77Gn5VQkn0f90qX1elfT0E+XtopZuK3mPjTeju0Xv09vFWE/ewLvCraKFIGiQGvsfDNjuwbv7HPAgUxCGG04WudCRyrOdKdY9hIl2DCtAOccwHEnB0eMcb7a7caZQmbopuplP2KpBvN/L+NGmm4AZoCGE+bYYFTZqxAD7zeglmQeDNhgkQdNOSpoF792XR1Vysw7F1cf0hBGGMLgZ4NLEbjlGqy4mjFg3RT4fc71pCsS2eFW7nB1b3YHFagtQHhEML8JI3mMLzbBK1fX/l5+gsM1f1M4PphcQBBUg+BehYvCvmW5LxV937nKxnso7o6YDclqmQmoAiOJtM5ZEGGnMYqLO0JbU5kTM94g9SaW1ZXelBLmbzle4BOs5FlrjjetNPMAxMfZDEU0R7ii7TwgdH62Q== wangchenxu1995@gmail.com
+<class 'cloudmesh.management.configuration.SSHkey.SSHkey'>
+{}
+PASSED
+tests/1_local/test_key.py::TestName::test_benchmark 
+[35m
+# ######################################################################
+# test_benchmark \tests\1_local\test_key.py 56
+# ######################################################################
+[0m
+
++-------------------+-----------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                             |
++-------------------+-----------------------------------------------------------------------------------+
+| cpu_count         | 12                                                                                |
+| mac_version       |                                                                                   |
+| machine           | ('AMD64',)                                                                        |
+| mem_available     | 8.6 GiB                                                                           |
+| mem_free          | 8.6 GiB                                                                           |
+| mem_percent       | 45.8%                                                                             |
+| mem_total         | 15.9 GiB                                                                          |
+| mem_used          | 7.3 GiB                                                                           |
+| node              | ('LAPTOP-0UEFF4CG',)                                                              |
+| platform          | Windows-10-10.0.17763-SP0                                                         |
+| processor         | ('Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',)                         |
+| processors        | Windows                                                                           |
+| python            | 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] |
+| release           | ('10',)                                                                           |
+| sys               | win32                                                                             |
+| system            | Windows                                                                           |
+| user              |                                                                                   |
+| version           | 10.0.17763                                                                        |
+| win_version       | ('10', '10.0.17763', 'SP0', '')                                                   |
++-------------------+-----------------------------------------------------------------------------------+
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                 | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_cms/test_help                    | 4.953 | 2019-12-23 04:57:21 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_vm                      | 4.361 | 2019-12-23 04:57:26 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_help_again              | 5.164 | 2019-12-23 04:57:31 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                  | 0.0   | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=1                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=2                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=3                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=4                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=5                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=6                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=7                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=8                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=9                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_search               | 0.009 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dict                 | 0.005 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_config_subscriptable | 0.004 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dictreplace          | 0.006 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_set                  | 0.045 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_DatabaseUpdate         | 0.11  | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_remove_collection      | 0.092 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_group/test_list                  | 0.07  | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_group/test_add                   | 0.065 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_key/test_key                     | 0.025 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_cms/test_help,4.953,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_vm,4.361,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_help_again,5.164,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=1,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=2,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=3,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=4,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=5,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=6,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=7,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=8,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=9,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_search,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dict,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_config_subscriptable,0.004,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dictreplace,0.006,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_set,0.045,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_DatabaseUpdate,0.11,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_remove_collection,0.092,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_group/test_list,0.07,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_group/test_add,0.065,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_key/test_key,0.025,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/1_local/test_name.py::TestName::test_define 
+[35m
+# ######################################################################
+# test_define \tests\1_local\test_name.py 50
+# ######################################################################
+[0m
+[34m
+# ----------------------------------------------------------------------
+# data
+# ----------------------------------------------------------------------
+# 56:test_define .\tests\1_local\test_name.py
+# ----------------------------------------------------------------------
+# {'counter': 1,
+#  'experiment': 'exp',
+#  'group': 'group',
+#  'kind': 'vm',
+#  'path': 'C:\\Users\\wangc\\.cloudmesh\\name.yaml',
+#  'schema': '{experiment}-{group}-{user}-{kind}-{counter}',
+#  'user': 'user'}
+# ----------------------------------------------------------------------
+[0m
+[34m
+# ----------------------------------------------------------------------
+# n.dict()
+# ----------------------------------------------------------------------
+# 57:test_define .\tests\1_local\test_name.py
+# ----------------------------------------------------------------------
+# {'counter': 1,
+#  'experiment': 'exp',
+#  'group': 'group',
+#  'kind': 'vm',
+#  'path': 'C:\\Users\\wangc\\.cloudmesh\\name.yaml',
+#  'schema': '{experiment}-{group}-{user}-{kind}-{counter}',
+#  'user': 'user'}
+# ----------------------------------------------------------------------
+[0m
+PASSED
+tests/1_local/test_name.py::TestName::test_define_new 
+[35m
+# ######################################################################
+# test_define_new \tests\1_local\test_name.py 60
+# ######################################################################
+[0m
+{'counter': 3,
+ 'kind': 'vm',
+ 'schema': '{user}-{kind}-{counter}',
+ 'user': 'wang542'}
+PASSED
+tests/1_local/test_name.py::TestName::test_name_reset 
+[35m
+# ######################################################################
+# test_name_reset \tests\1_local\test_name.py 77
+# ######################################################################
+[0m
+PASSED
+tests/1_local/test_name.py::TestName::test_name_print 
+[35m
+# ######################################################################
+# test_name_print \tests\1_local\test_name.py 85
+# ######################################################################
+[0m
+wang542-vm-1
+PASSED
+tests/1_local/test_name.py::TestName::test_name_dict 
+[35m
+# ######################################################################
+# test_name_dict \tests\1_local\test_name.py 93
+# ######################################################################
+[0m
+{'counter': 1,
+ 'kind': 'vm',
+ 'schema': '{user}-{kind}-{counter}',
+ 'user': 'wang542'}
+PASSED
+tests/1_local/test_name.py::TestName::test_name_incr 
+[35m
+# ######################################################################
+# test_name_incr \tests\1_local\test_name.py 105
+# ######################################################################
+[0m
+wang542-vm-2
+PASSED
+tests/1_local/test_name.py::TestName::test_name_counter 
+[35m
+# ######################################################################
+# test_name_counter \tests\1_local\test_name.py 114
+# ######################################################################
+[0m
+2
+{'counter': 2,
+ 'kind': 'vm',
+ 'schema': '{user}-{kind}-{counter}',
+ 'user': 'wang542'}
+{'counter': 2,
+ 'kind': 'vm',
+ 'schema': '{user}-{kind}-{counter}',
+ 'user': 'wang542'}
+wang542-vm-2
+PASSED
+tests/1_local/test_name.py::TestName::test_benchmark 
+[35m
+# ######################################################################
+# test_benchmark \tests\1_local\test_name.py 130
+# ######################################################################
+[0m
+
++-------------------+-----------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                             |
++-------------------+-----------------------------------------------------------------------------------+
+| cpu_count         | 12                                                                                |
+| mac_version       |                                                                                   |
+| machine           | ('AMD64',)                                                                        |
+| mem_available     | 8.6 GiB                                                                           |
+| mem_free          | 8.6 GiB                                                                           |
+| mem_percent       | 45.8%                                                                             |
+| mem_total         | 15.9 GiB                                                                          |
+| mem_used          | 7.3 GiB                                                                           |
+| node              | ('LAPTOP-0UEFF4CG',)                                                              |
+| platform          | Windows-10-10.0.17763-SP0                                                         |
+| processor         | ('Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',)                         |
+| processors        | Windows                                                                           |
+| python            | 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] |
+| release           | ('10',)                                                                           |
+| sys               | win32                                                                             |
+| system            | Windows                                                                           |
+| user              |                                                                                   |
+| version           | 10.0.17763                                                                        |
+| win_version       | ('10', '10.0.17763', 'SP0', '')                                                   |
++-------------------+-----------------------------------------------------------------------------------+
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                 | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_cms/test_help                    | 4.953 | 2019-12-23 04:57:21 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_vm                      | 4.361 | 2019-12-23 04:57:26 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_help_again              | 5.164 | 2019-12-23 04:57:31 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                  | 0.0   | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=1                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=2                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=3                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=4                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=5                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=6                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=7                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=8                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=9                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_search               | 0.009 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dict                 | 0.005 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_config_subscriptable | 0.004 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dictreplace          | 0.006 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_set                  | 0.045 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_DatabaseUpdate         | 0.11  | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_remove_collection      | 0.092 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_group/test_list                  | 0.07  | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_group/test_add                   | 0.065 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_key/test_key                     | 0.025 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_define                 | 0.009 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_define_new             | 0.008 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_reset             | 0.01  | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_print             |       | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_dict              | 0.007 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_incr              | 0.009 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_counter           | 0.008 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_cms/test_help,4.953,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_vm,4.361,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_help_again,5.164,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=1,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=2,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=3,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=4,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=5,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=6,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=7,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=8,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=9,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_search,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dict,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_config_subscriptable,0.004,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dictreplace,0.006,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_set,0.045,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_DatabaseUpdate,0.11,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_remove_collection,0.092,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_group/test_list,0.07,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_group/test_add,0.065,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_key/test_key,0.025,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_define,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_define_new,0.008,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_reset,0.01,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_print,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_dict,0.007,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_incr,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_counter,0.008,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/1_local/test_ping.py::TestPing::test_internal_ping 
+[35m
+# ######################################################################
+# test_internal_ping \tests\1_local\test_ping.py 42
+# ######################################################################
+[0m
+FAILED
+tests/1_local/test_ping.py::TestPing::test_ping_processor 
+[35m
+# ######################################################################
+# test_ping_processor \tests\1_local\test_ping.py 62
+# ######################################################################
+[0m
+
+Processors: 1
++-----------------------+---------+-----+-----+--------+
+| host                  | success | max | min | stddev |
++-----------------------+---------+-----+-----+--------+
+| 127.0.0.1             | True    |     |     |        |
+| localhost             | True    |     |     |        |
+| www.indiana.edu       | False   |     |     |        |
+| www.pbs.org           | False   |     |     |        |
+| www.github.com        | False   |     |     |        |
+| www.redhat.com        | False   |     |     |        |
+| www.openstack.org     | False   |     |     |        |
+| www.bbc.com           | False   |     |     |        |
+| www.ec2instances.info | False   |     |     |        |
+| aws.amazon.com        | False   |     |     |        |
++-----------------------+---------+-----+-----+--------+
+FAILED
+tests/1_local/test_ping.py::TestPing::test_benchmark 
+[35m
+# ######################################################################
+# test_benchmark \tests\1_local\test_ping.py 85
+# ######################################################################
+[0m
+
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                 | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_cms/test_help                    | 4.953 | 2019-12-23 04:57:21 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_vm                      | 4.361 | 2019-12-23 04:57:26 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_help_again              | 5.164 | 2019-12-23 04:57:31 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                  | 0.0   | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=1                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=2                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=3                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=4                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=5                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=6                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=7                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=8                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=9                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_search               | 0.009 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dict                 | 0.005 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_config_subscriptable | 0.004 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dictreplace          | 0.006 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_set                  | 0.045 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_DatabaseUpdate         | 0.11  | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_remove_collection      | 0.092 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_group/test_list                  | 0.07  | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_group/test_add                   | 0.065 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_key/test_key                     | 0.025 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_define                 | 0.009 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_define_new             | 0.008 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_reset             | 0.01  | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_print             |       | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_dict              | 0.007 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_incr              | 0.009 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_counter           | 0.008 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| total _ping                           | 6.138 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| ping 127.0.0.1                        | 3.033 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| ping localhost                        | 3.056 | 2019-12-23 04:57:40 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| ping www.indiana.edu                  | 0.049 | 2019-12-23 04:57:43 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| total p=1 c=1                         | 7.312 | 2019-12-23 04:57:43 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_cms/test_help,4.953,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_vm,4.361,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_help_again,5.164,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=1,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=2,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=3,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=4,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=5,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=6,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=7,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=8,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=9,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_search,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dict,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_config_subscriptable,0.004,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dictreplace,0.006,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_set,0.045,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_DatabaseUpdate,0.11,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_remove_collection,0.092,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_group/test_list,0.07,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_group/test_add,0.065,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_key/test_key,0.025,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_define,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_define_new,0.008,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_reset,0.01,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_print,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_dict,0.007,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_incr,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_counter,0.008,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,total _ping,6.138,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,ping 127.0.0.1,3.033,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,ping localhost,3.056,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,ping www.indiana.edu,0.049,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,total p=1 c=1,7.312,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/1_local/test_sec_command.py::TestSecCLI::test_clear 
+[35m
+# ######################################################################
+# test_clear \tests\1_local\test_sec_command.py 44
+# ######################################################################
+[0m
+clear cms sec clear
+
+PASSED
+tests/1_local/test_sec_command.py::TestSecCLI::test_load 
+[35m
+# ######################################################################
+# test_load \tests\1_local\test_sec_command.py 57
+# ######################################################################
+[0m
+load cms sec load
+
++---------+-------+----------+-----------+-----------+
+| Group   | Rule  | Protocol | Ports     | IP Range  |
++---------+-------+----------+-----------+-----------+
+| default | ssh   | tcp      | 22:22     | 0.0.0.0/0 |
+| default | icmp  | icmp     |           | 0.0.0.0/0 |
+| default | http  | tcp      | 80:80     | 0.0.0.0/0 |
+| default | https | tcp      | 443:443   | 0.0.0.0/0 |
+| flask   | ssh   | tcp      | 22:22     | 0.0.0.0/0 |
+| flask   | icmp  | icmp     |           | 0.0.0.0/0 |
+| flask   | http  | tcp      | 80:80     | 0.0.0.0/0 |
+| flask   | https | tcp      | 443:443   | 0.0.0.0/0 |
+| flask   | flask | tcp      | 8000:8000 | 0.0.0.0/0 |
++---------+-------+----------+-----------+-----------+
+
+PASSED
+tests/1_local/test_sec_command.py::TestSecCLI::test_rule_add 
+[35m
+# ######################################################################
+# test_rule_add \tests\1_local\test_sec_command.py 73
+# ######################################################################
+[0m
+rule add cms sec rule add deleteme FROMPORT TOPORT PROTOCOL CIDR
+
+PASSED
+tests/1_local/test_sec_command.py::TestSecCLI::test_rule_delete 
+[35m
+# ######################################################################
+# test_rule_delete \tests\1_local\test_sec_command.py 86
+# ######################################################################
+[0m
+rule delete cms sec rule delete deleteme
+
+PASSED
+tests/1_local/test_sec_command.py::TestSecCLI::test_group_add 
+[35m
+# ######################################################################
+# test_group_add \tests\1_local\test_sec_command.py 97
+# ######################################################################
+[0m
+group add cms sec group add deleteme empty empty
+
+PASSED
+tests/1_local/test_sec_command.py::TestSecCLI::test_group_delete 
+[35m
+# ######################################################################
+# test_group_delete \tests\1_local\test_sec_command.py 109
+# ######################################################################
+[0m
+group delete cms sec group delete deleteme
+
+PASSED
+tests/1_local/test_sec_command.py::TestSecCLI::test_rule_list 
+[35m
+# ######################################################################
+# test_rule_list \tests\1_local\test_sec_command.py 120
+# ######################################################################
+[0m
+rule list cms sec rule list
+None
+
+PASSED
+tests/1_local/test_sec_command.py::TestSecCLI::test_list 
+[35m
+# ######################################################################
+# test_list \tests\1_local\test_sec_command.py 137
+# ######################################################################
+[0m
+list cms sec list
+None
+None
+
+PASSED
+tests/1_local/test_sec_command.py::TestSecCLI::test_group_list 
+[35m
+# ######################################################################
+# test_group_list \tests\1_local\test_sec_command.py 150
+# ######################################################################
+[0m
+list cms sec group list
+None
+
+PASSED
+tests/1_local/test_sec_command.py::TestSecCLI::test_benchmark 
+[35m
+# ######################################################################
+# test_benchmark \tests\1_local\test_sec_command.py 163
+# ######################################################################
+[0m
+
++-------------------+-----------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                             |
++-------------------+-----------------------------------------------------------------------------------+
+| cpu_count         | 12                                                                                |
+| mac_version       |                                                                                   |
+| machine           | ('AMD64',)                                                                        |
+| mem_available     | 8.3 GiB                                                                           |
+| mem_free          | 8.3 GiB                                                                           |
+| mem_percent       | 47.7%                                                                             |
+| mem_total         | 15.9 GiB                                                                          |
+| mem_used          | 7.6 GiB                                                                           |
+| node              | ('LAPTOP-0UEFF4CG',)                                                              |
+| platform          | Windows-10-10.0.17763-SP0                                                         |
+| processor         | ('Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',)                         |
+| processors        | Windows                                                                           |
+| python            | 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] |
+| release           | ('10',)                                                                           |
+| sys               | win32                                                                             |
+| system            | Windows                                                                           |
+| user              |                                                                                   |
+| version           | 10.0.17763                                                                        |
+| win_version       | ('10', '10.0.17763', 'SP0', '')                                                   |
++-------------------+-----------------------------------------------------------------------------------+
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                 | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_cms/test_help                    | 4.953 | 2019-12-23 04:57:21 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_vm                      | 4.361 | 2019-12-23 04:57:26 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_help_again              | 5.164 | 2019-12-23 04:57:31 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                  | 0.0   | 2019-12-23 04:58:38 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=1                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=2                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=3                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=4                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=5                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=6                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=7                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=8                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=9                  | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_search               | 0.009 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dict                 | 0.005 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_config_subscriptable | 0.004 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dictreplace          | 0.006 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_set                  | 0.045 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_DatabaseUpdate         | 0.11  | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_remove_collection      | 0.092 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_group/test_list                  | 0.07  | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_group/test_add                   | 0.065 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_key/test_key                     | 0.025 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_define                 | 0.009 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_define_new             | 0.008 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_reset             | 0.01  | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_print             |       | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_dict              | 0.007 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_incr              | 0.009 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_counter           | 0.008 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| total _ping                           | 6.138 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| ping 127.0.0.1                        | 3.033 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| ping localhost                        | 3.056 | 2019-12-23 04:57:40 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| ping www.indiana.edu                  | 0.049 | 2019-12-23 04:57:43 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| total p=1 c=1                         | 7.312 | 2019-12-23 04:57:43 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_clear           | 5.224 | 2019-12-23 04:57:51 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local clear                           | 5.219 | 2019-12-23 04:57:51 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_load            | 5.603 | 2019-12-23 04:57:56 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local load                            | 5.598 | 2019-12-23 04:57:56 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_rule_add        | 4.007 | 2019-12-23 04:58:01 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local rule add                        | 3.999 | 2019-12-23 04:58:01 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_rule_delete     | 5.45  | 2019-12-23 04:58:05 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local rule delete                     | 5.444 | 2019-12-23 04:58:05 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_group_add       | 5.453 | 2019-12-23 04:58:11 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local group add                       | 5.448 | 2019-12-23 04:58:11 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_group_delete    | 5.982 | 2019-12-23 04:58:16 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local group delete                    | 5.977 | 2019-12-23 04:58:16 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_rule_list       | 5.049 | 2019-12-23 04:58:22 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local rule list                       | 5.045 | 2019-12-23 04:58:22 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_list            | 4.983 | 2019-12-23 04:58:28 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local list                            | 5.637 | 2019-12-23 04:58:33 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_group_list      | 5.645 | 2019-12-23 04:58:33 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++---------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_cms/test_help,4.953,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_vm,4.361,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_help_again,5.164,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=1,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=2,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=3,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=4,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=5,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=6,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=7,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=8,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=9,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_search,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dict,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_config_subscriptable,0.004,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dictreplace,0.006,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_set,0.045,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_DatabaseUpdate,0.11,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_remove_collection,0.092,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_group/test_list,0.07,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_group/test_add,0.065,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_key/test_key,0.025,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_define,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_define_new,0.008,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_reset,0.01,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_print,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_dict,0.007,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_incr,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_counter,0.008,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,total _ping,6.138,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,ping 127.0.0.1,3.033,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,ping localhost,3.056,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,ping www.indiana.edu,0.049,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,total p=1 c=1,7.312,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_clear,5.224,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local clear,5.219,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_load,5.603,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local load,5.598,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_rule_add,4.007,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local rule add,3.999,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_rule_delete,5.45,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local rule delete,5.444,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_group_add,5.453,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local group add,5.448,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_group_delete,5.982,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local group delete,5.977,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_rule_list,5.049,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local rule list,5.045,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_list,4.983,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local list,5.637,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_group_list,5.645,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/1_local/test_secgroup_database.py::test_clear 
+[35m
+# ######################################################################
+# test_clear \tests\1_local\test_secgroup_database.py 26
+# ######################################################################
+[0m
+PASSED
+tests/1_local/test_secgroup_database.py::test_upload_groups 
+[35m
+# ######################################################################
+# test_upload_groups \tests\1_local\test_secgroup_database.py 44
+# ######################################################################
+[0m
+add group: default
+add group: flask
+2
+PASSED
+tests/1_local/test_secgroup_database.py::test_upload_rules 
+[35m
+# ######################################################################
+# test_upload_rules \tests\1_local\test_secgroup_database.py 63
+# ######################################################################
+[0m
+add rule: ssh
+add rule: icmp
+add rule: flask
+add rule: http
+add rule: https
+5
+PASSED
+tests/1_local/test_secgroup_database.py::test_add_rule_to_group 
+[35m
+# ######################################################################
+# test_add_rule_to_group \tests\1_local\test_secgroup_database.py 83
+# ######################################################################
+[0m
+PASSED
+tests/1_local/test_secgroup_database.py::test_delete_rule_from_group 
+[35m
+# ######################################################################
+# test_delete_rule_from_group \tests\1_local\test_secgroup_database.py 101
+# ######################################################################
+[0m
+PASSED
+tests/1_local/test_secgroup_database.py::test_remove_group 
+[35m
+# ######################################################################
+# test_remove_group \tests\1_local\test_secgroup_database.py 120
+# ######################################################################
+[0m
+2 -> 1
+PASSED
+tests/1_local/test_secgroup_database.py::test_remove_rule 
+[35m
+# ######################################################################
+# test_remove_rule \tests\1_local\test_secgroup_database.py 137
+# ######################################################################
+[0m
+5 -> 4
+PASSED
+tests/1_local/test_secgroup_database.py::test_load_defaults 
+[35m
+# ######################################################################
+# test_load_defaults \tests\1_local\test_secgroup_database.py 157
+# ######################################################################
+[0m
+
+PASSED
+tests/1_local/test_secgroup_database.py::test_benchmark 
+[35m
+# ######################################################################
+# test_benchmark \tests\1_local\test_secgroup_database.py 172
+# ######################################################################
+[0m
+
++-------------------+-----------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                             |
++-------------------+-----------------------------------------------------------------------------------+
+| cpu_count         | 12                                                                                |
+| mac_version       |                                                                                   |
+| machine           | ('AMD64',)                                                                        |
+| mem_available     | 8.3 GiB                                                                           |
+| mem_free          | 8.3 GiB                                                                           |
+| mem_percent       | 47.7%                                                                             |
+| mem_total         | 15.9 GiB                                                                          |
+| mem_used          | 7.6 GiB                                                                           |
+| node              | ('LAPTOP-0UEFF4CG',)                                                              |
+| platform          | Windows-10-10.0.17763-SP0                                                         |
+| processor         | ('Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',)                         |
+| processors        | Windows                                                                           |
+| python            | 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] |
+| release           | ('10',)                                                                           |
+| sys               | win32                                                                             |
+| system            | Windows                                                                           |
+| user              |                                                                                   |
+| version           | 10.0.17763                                                                        |
+| win_version       | ('10', '10.0.17763', 'SP0', '')                                                   |
++-------------------+-----------------------------------------------------------------------------------+
++----------------------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                              | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++----------------------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_cms/test_help                                 | 4.953 | 2019-12-23 04:57:21 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_vm                                   | 4.361 | 2019-12-23 04:57:26 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_help_again                           | 5.164 | 2019-12-23 04:57:31 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                               | 0.0   | 2019-12-23 04:58:44 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=1                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=2                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=3                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=4                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=5                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=6                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=7                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=8                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=9                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_search                            | 0.009 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dict                              | 0.005 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_config_subscriptable              | 0.004 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dictreplace                       | 0.006 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_set                               | 0.045 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_DatabaseUpdate                      | 0.11  | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_remove_collection                   | 0.092 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_group/test_list                               | 0.07  | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_group/test_add                                | 0.065 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_key/test_key                                  | 0.025 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_define                              | 0.009 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_define_new                          | 0.008 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_reset                          | 0.01  | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_print                          |       | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_dict                           | 0.007 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_incr                           | 0.009 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_counter                        | 0.008 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| total _ping                                        | 6.138 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| ping 127.0.0.1                                     | 3.033 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| ping localhost                                     | 3.056 | 2019-12-23 04:57:40 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| ping www.indiana.edu                               | 0.049 | 2019-12-23 04:57:43 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| total p=1 c=1                                      | 7.312 | 2019-12-23 04:57:43 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_clear                        | 5.224 | 2019-12-23 04:57:51 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local clear                                        | 5.219 | 2019-12-23 04:57:51 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_load                         | 5.603 | 2019-12-23 04:57:56 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local load                                         | 5.598 | 2019-12-23 04:57:56 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_rule_add                     | 4.007 | 2019-12-23 04:58:01 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local rule add                                     | 3.999 | 2019-12-23 04:58:01 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_rule_delete                  | 5.45  | 2019-12-23 04:58:05 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local rule delete                                  | 5.444 | 2019-12-23 04:58:05 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_group_add                    | 5.453 | 2019-12-23 04:58:11 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local group add                                    | 5.448 | 2019-12-23 04:58:11 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_group_delete                 | 5.982 | 2019-12-23 04:58:16 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local group delete                                 | 5.977 | 2019-12-23 04:58:16 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_rule_list                    | 5.049 | 2019-12-23 04:58:22 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local rule list                                    | 5.045 | 2019-12-23 04:58:22 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_list                         | 4.983 | 2019-12-23 04:58:28 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local list                                         | 5.637 | 2019-12-23 04:58:33 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_group_list                   | 5.645 | 2019-12-23 04:58:33 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_clear                  | 0.038 | 2019-12-23 04:58:38 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_upload_groups          | 0.327 | 2019-12-23 04:58:38 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_upload_rules           | 2.057 | 2019-12-23 04:58:39 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_add_rule_to_group      | 0.045 | 2019-12-23 04:58:42 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_delete_rule_from_group | 0.05  | 2019-12-23 04:58:42 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_remove_group           | 0.026 | 2019-12-23 04:58:43 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_remove_rule            | 0.025 | 2019-12-23 04:58:43 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_load_defaults          | 0.449 | 2019-12-23 04:58:43 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++----------------------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_cms/test_help,4.953,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_vm,4.361,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_help_again,5.164,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=1,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=2,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=3,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=4,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=5,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=6,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=7,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=8,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=9,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_search,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dict,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_config_subscriptable,0.004,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dictreplace,0.006,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_set,0.045,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_DatabaseUpdate,0.11,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_remove_collection,0.092,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_group/test_list,0.07,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_group/test_add,0.065,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_key/test_key,0.025,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_define,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_define_new,0.008,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_reset,0.01,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_print,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_dict,0.007,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_incr,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_counter,0.008,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,total _ping,6.138,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,ping 127.0.0.1,3.033,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,ping localhost,3.056,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,ping www.indiana.edu,0.049,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,total p=1 c=1,7.312,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_clear,5.224,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local clear,5.219,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_load,5.603,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local load,5.598,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_rule_add,4.007,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local rule add,3.999,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_rule_delete,5.45,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local rule delete,5.444,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_group_add,5.453,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local group add,5.448,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_group_delete,5.982,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local group delete,5.977,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_rule_list,5.049,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local rule list,5.045,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_list,4.983,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local list,5.637,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_group_list,5.645,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_clear,0.038,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_upload_groups,0.327,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_upload_rules,2.057,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_add_rule_to_group,0.045,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_delete_rule_from_group,0.05,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_remove_group,0.026,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_remove_rule,0.025,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_load_defaults,0.449,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+tests/1_local/test_shell.py::TestName::test_shell 
+[35m
+# ######################################################################
+# test_shell \tests\1_local\test_shell.py 19
+# ######################################################################
+[0m
+UNDEFINED_TERMINAL_TYPE
+PASSED
+tests/1_local/test_shell.py::TestName::test_pwd 
+[35m
+# ######################################################################
+# test_pwd \tests\1_local\test_shell.py 27
+# ######################################################################
+[0m
+[31mERROR: problem executing subprocess[0m
+
+Trace:
+Traceback (most recent call last):
+      File "D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-common\cloudmesh\common\Shell.py", line 899, in execute
+        cwd=cwd)
+      File "C:\Python37\lib\subprocess.py", line 395, in check_output
+        **kwargs).stdout
+      File "C:\Python37\lib\subprocess.py", line 472, in run
+        with Popen(*popenargs, **kwargs) as process:
+      File "C:\Python37\lib\subprocess.py", line 775, in __init__
+        restore_signals, start_new_session)
+      File "C:\Python37\lib\subprocess.py", line 1178, in _execute_child
+        startupinfo)
+    FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+None
+PASSED
+tests/1_local/test_shell.py::TestName::test_ls_la_list 
+[35m
+# ######################################################################
+# test_ls_la_list \tests\1_local\test_shell.py 34
+# ######################################################################
+[0m
+[31mERROR: problem executing subprocess[0m
+
+Trace:
+Traceback (most recent call last):
+      File "D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-common\cloudmesh\common\Shell.py", line 899, in execute
+        cwd=cwd)
+      File "C:\Python37\lib\subprocess.py", line 395, in check_output
+        **kwargs).stdout
+      File "C:\Python37\lib\subprocess.py", line 472, in run
+        with Popen(*popenargs, **kwargs) as process:
+      File "C:\Python37\lib\subprocess.py", line 775, in __init__
+        restore_signals, start_new_session)
+      File "C:\Python37\lib\subprocess.py", line 1178, in _execute_child
+        startupinfo)
+    FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+None
+PASSED
+tests/1_local/test_shell.py::TestName::test_ls_la_string 
+[35m
+# ######################################################################
+# test_ls_la_string \tests\1_local\test_shell.py 41
+# ######################################################################
+[0m
+[31mERROR: problem executing subprocess[0m
+
+Trace:
+Traceback (most recent call last):
+      File "D:\School\B649_engineeringCloudComputing\ENV4\cm\cloudmesh-common\cloudmesh\common\Shell.py", line 899, in execute
+        cwd=cwd)
+      File "C:\Python37\lib\subprocess.py", line 395, in check_output
+        **kwargs).stdout
+      File "C:\Python37\lib\subprocess.py", line 472, in run
+        with Popen(*popenargs, **kwargs) as process:
+      File "C:\Python37\lib\subprocess.py", line 775, in __init__
+        restore_signals, start_new_session)
+      File "C:\Python37\lib\subprocess.py", line 1178, in _execute_child
+        startupinfo)
+    FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+None
+PASSED
+tests/1_local/test_shell.py::TestName::test_ls_la_wrapper 
+[35m
+# ######################################################################
+# test_ls_la_wrapper \tests\1_local\test_shell.py 48
+# ######################################################################
+[0m
+FAILED
+tests/1_local/test_shell.py::TestName::test_ls_la_wrapper_multi_options 
+[35m
+# ######################################################################
+# test_ls_la_wrapper_multi_options \tests\1_local\test_shell.py 55
+# ######################################################################
+[0m
+FAILED
+tests/1_local/test_shell.py::TestName::test_benchmark 
+[35m
+# ######################################################################
+# test_benchmark \tests\1_local\test_shell.py 62
+# ######################################################################
+[0m
+
++-------------------+-----------------------------------------------------------------------------------+
+| Machine Attribute | Value                                                                             |
++-------------------+-----------------------------------------------------------------------------------+
+| cpu_count         | 12                                                                                |
+| mac_version       |                                                                                   |
+| machine           | ('AMD64',)                                                                        |
+| mem_available     | 8.3 GiB                                                                           |
+| mem_free          | 8.3 GiB                                                                           |
+| mem_percent       | 47.7%                                                                             |
+| mem_total         | 15.9 GiB                                                                          |
+| mem_used          | 7.6 GiB                                                                           |
+| node              | ('LAPTOP-0UEFF4CG',)                                                              |
+| platform          | Windows-10-10.0.17763-SP0                                                         |
+| processor         | ('Intel64 Family 6 Model 158 Stepping 10, GenuineIntel',)                         |
+| processors        | Windows                                                                           |
+| python            | 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)] |
+| release           | ('10',)                                                                           |
+| sys               | win32                                                                             |
+| system            | Windows                                                                           |
+| user              |                                                                                   |
+| version           | 10.0.17763                                                                        |
+| win_version       | ('10', '10.0.17763', 'SP0', '')                                                   |
++-------------------+-----------------------------------------------------------------------------------+
++----------------------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| timer                                              | time  | start               | tag | node                 | user | system  | mac_version | win_version                     |
++----------------------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+| test_cms/test_help                                 | 4.953 | 2019-12-23 04:57:21 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_vm                                   | 4.361 | 2019-12-23 04:57:26 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_cms/test_help_again                           | 5.164 | 2019-12-23 04:57:31 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| benchmark_start_stop                               | 0.0   | 2019-12-23 04:58:44 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=1                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=2                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=3                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=4                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=5                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=6                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=7                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=8                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config_load n=9                               | 0.0   | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_search                            | 0.009 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dict                              | 0.005 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_config_subscriptable              | 0.004 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_dictreplace                       | 0.006 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_config/test_set                               | 0.045 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_DatabaseUpdate                      | 0.11  | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_data/test_remove_collection                   | 0.092 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_group/test_list                               | 0.07  | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_group/test_add                                | 0.065 | 2019-12-23 04:57:36 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_key/test_key                                  | 0.025 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_define                              | 0.009 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_define_new                          | 0.008 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_reset                          | 0.01  | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_print                          |       | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_dict                           | 0.007 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_incr                           | 0.009 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_name/test_name_counter                        | 0.008 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| total _ping                                        | 6.138 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| ping 127.0.0.1                                     | 3.033 | 2019-12-23 04:57:37 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| ping localhost                                     | 3.056 | 2019-12-23 04:57:40 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| ping www.indiana.edu                               | 0.049 | 2019-12-23 04:57:43 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| total p=1 c=1                                      | 7.312 | 2019-12-23 04:57:43 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_clear                        | 5.224 | 2019-12-23 04:57:51 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local clear                                        | 5.219 | 2019-12-23 04:57:51 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_load                         | 5.603 | 2019-12-23 04:57:56 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local load                                         | 5.598 | 2019-12-23 04:57:56 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_rule_add                     | 4.007 | 2019-12-23 04:58:01 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local rule add                                     | 3.999 | 2019-12-23 04:58:01 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_rule_delete                  | 5.45  | 2019-12-23 04:58:05 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local rule delete                                  | 5.444 | 2019-12-23 04:58:05 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_group_add                    | 5.453 | 2019-12-23 04:58:11 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local group add                                    | 5.448 | 2019-12-23 04:58:11 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_group_delete                 | 5.982 | 2019-12-23 04:58:16 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local group delete                                 | 5.977 | 2019-12-23 04:58:16 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_rule_list                    | 5.049 | 2019-12-23 04:58:22 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local rule list                                    | 5.045 | 2019-12-23 04:58:22 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_list                         | 4.983 | 2019-12-23 04:58:28 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| local list                                         | 5.637 | 2019-12-23 04:58:33 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_sec_command/test_group_list                   | 5.645 | 2019-12-23 04:58:33 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_clear                  | 0.038 | 2019-12-23 04:58:38 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_upload_groups          | 0.327 | 2019-12-23 04:58:38 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_upload_rules           | 2.057 | 2019-12-23 04:58:39 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_add_rule_to_group      | 0.045 | 2019-12-23 04:58:42 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_delete_rule_from_group | 0.05  | 2019-12-23 04:58:42 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_remove_group           | 0.026 | 2019-12-23 04:58:43 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_remove_rule            | 0.025 | 2019-12-23 04:58:43 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_secgroup_database/test_load_defaults          | 0.449 | 2019-12-23 04:58:43 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_shell/test_shell                              | 0.013 | 2019-12-23 04:58:44 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_shell/test_pwd                                | 0.055 | 2019-12-23 04:58:44 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_shell/test_ls_la_list                         | 0.007 | 2019-12-23 04:58:44 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_shell/test_ls_la_string                       | 0.006 | 2019-12-23 04:58:44 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_shell/test_ls_la_wrapper                      |       | 2019-12-23 04:58:44 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
+| test_shell/test_ls_la_wrapper_multi_options        |       | 2019-12-23 04:58:44 |     | ('LAPTOP-0UEFF4CG',) |      | Windows |             | ('10', '10.0.17763', 'SP0', '') |
++----------------------------------------------------+-------+---------------------+-----+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,test_cms/test_help,4.953,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_vm,4.361,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_cms/test_help_again,5.164,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=1,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=2,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=3,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=4,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=5,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=6,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=7,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=8,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config_load n=9,0.0,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_search,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dict,0.005,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_config_subscriptable,0.004,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_dictreplace,0.006,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_config/test_set,0.045,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_DatabaseUpdate,0.11,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_data/test_remove_collection,0.092,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_group/test_list,0.07,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_group/test_add,0.065,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_key/test_key,0.025,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_define,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_define_new,0.008,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_reset,0.01,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_print,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_dict,0.007,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_incr,0.009,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_name/test_name_counter,0.008,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,total _ping,6.138,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,ping 127.0.0.1,3.033,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,ping localhost,3.056,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,ping www.indiana.edu,0.049,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,total p=1 c=1,7.312,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_clear,5.224,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local clear,5.219,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_load,5.603,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local load,5.598,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_rule_add,4.007,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local rule add,3.999,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_rule_delete,5.45,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local rule delete,5.444,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_group_add,5.453,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local group add,5.448,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_group_delete,5.982,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local group delete,5.977,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_rule_list,5.049,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local rule list,5.045,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_list,4.983,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,local list,5.637,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_sec_command/test_group_list,5.645,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_clear,0.038,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_upload_groups,0.327,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_upload_rules,2.057,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_add_rule_to_group,0.045,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_delete_rule_from_group,0.05,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_remove_group,0.026,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_remove_rule,0.025,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_secgroup_database/test_load_defaults,0.449,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_shell/test_shell,0.013,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_shell/test_pwd,0.055,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_shell/test_ls_la_list,0.007,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_shell/test_ls_la_string,0.006,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_shell/test_ls_la_wrapper,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+#csv,test_shell/test_ls_la_wrapper_multi_options,None,None,('LAPTOP-0UEFF4CG',),,Windows,,('10', '10.0.17763', 'SP0', '')
+
+PASSED
+
+================================== FAILURES ===================================
+_________________________ TestPing.test_internal_ping _________________________
+
+self = <test_ping.TestPing object at 0x000001FB102A5F08>
+
+    def test_internal_ping(self):
+        HEADING()
+        StopWatch.start("total _ping")
+    
+        for host in hosts:
+            location = {
+                'ip': host,
+                'count': 1,
+            }
+    
+            StopWatch.start(f"ping {host}")
+            result = Host._ping(location)
+            StopWatch.stop(f"ping {host}")
+    
+            StopWatch.stop("total _ping")
+            if b'Access denied' in result['stdout'] and sys.platform == "win32":
+                print("ERROR: This test must be run in an administrative "
+                      "terminal")
+>           assert result['success']
+E           assert False
+
+tests\1_local\test_ping.py:60: AssertionError
+________________________ TestPing.test_ping_processor _________________________
+
+self = <test_ping.TestPing object at 0x000001FB1029FC08>
+
+    def test_ping_processor(self):
+        HEADING()
+        print()
+        for processors in range(1, len(hosts)):
+            print("Processors:", processors)
+            results = self.ping(processors=processors)
+            print(Printer.write(results,
+                                order=['host',
+                                       'success',
+                                       'max',
+                                       'min',
+                                       'stddev']
+                                ))
+            for result in results:
+>               assert result['success']
+E               assert False
+
+tests\1_local\test_ping.py:76: AssertionError
+_________________________ TestName.test_ls_la_wrapper _________________________
+
+self = <test_shell.TestName object at 0x000001FB1046F388>
+
+    def test_ls_la_wrapper(self):
+        HEADING()
+        Benchmark.Start()
+>       r = shell.ls("-la")
+E       TypeError: new_f() takes 0 positional arguments but 2 were given
+
+tests\1_local\test_shell.py:51: TypeError
+__________________ TestName.test_ls_la_wrapper_multi_options __________________
+
+self = <test_shell.TestName object at 0x000001FB10439B08>
+
+    def test_ls_la_wrapper_multi_options(self):
+        HEADING()
+        Benchmark.Start()
+>       r = shell.ls("-a", "-l")
+E       TypeError: new_f() takes 0 positional arguments but 3 were given
+
+tests\1_local\test_shell.py:58: TypeError
+=================== 4 failed, 55 passed in 86.69s (0:01:26) ===================
