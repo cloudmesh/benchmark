@@ -1,0 +1,92 @@
+============================= test session starts =============================
+platform win32 -- Python 3.7.4, pytest-5.3.1, py-1.8.0, pluggy-0.13.1 -- c:\users\brian\env3\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Brian\ENV3\cm\cloudmesh-cloud, inifile: pytest.ini
+collecting ... collected 3 items
+
+tests/2_local/test_ssh.py::TestSsh::test_internal_ssh 
+FAILED
+tests/2_local/test_ssh.py::TestSsh::test_ssh_processors 
+Processors: 1
+FAILED
+tests/2_local/test_ssh.py::TestSsh::test_benchmark 
++----------------------+------+---------------------+-------+----------------------+------+---------+-------------+---------------------------------+
+| timer                | time | start               | tag   | node                 | user | system  | mac_version | win_version                     |
++----------------------+------+---------------------+-------+----------------------+------+---------+-------------+---------------------------------+
+| total _ssh           |      | 2019-12-23 13:09:54 | local | ('DESKTOP-ENUDKA7',) |      | Windows |             | ('10', '10.0.17134', 'SP0', '') |
+| total p=1 c=1        |      | 2019-12-23 13:09:54 | local | ('DESKTOP-ENUDKA7',) |      | Windows |             | ('10', '10.0.17134', 'SP0', '') |
+| benchmark_start_stop | 0.0  | 2019-12-23 13:09:54 | local | ('DESKTOP-ENUDKA7',) |      | Windows |             | ('10', '10.0.17134', 'SP0', '') |
++----------------------+------+---------------------+-------+----------------------+------+---------+-------------+---------------------------------+
+
+csv,timer,time,starttag,node,user,system,mac_version,win_version
+#csv,total _ssh,None,None,('DESKTOP-ENUDKA7',),,Windows,,('10', '10.0.17134', 'SP0', '')
+#csv,total p=1 c=1,None,None,('DESKTOP-ENUDKA7',),,Windows,,('10', '10.0.17134', 'SP0', '')
+#csv,benchmark_start_stop,0.0,None,('DESKTOP-ENUDKA7',),,Windows,,('10', '10.0.17134', 'SP0', '')
+
+PASSED
+
+================================== FAILURES ===================================
+__________________________ TestSsh.test_internal_ssh __________________________
+
+self = <test_ssh.TestSsh object at 0x0000021F74D17088>
+
+    def test_internal_ssh(self):
+        print()
+        StopWatch.start("total _ssh")
+    
+        for host in hosts:
+            location = {
+                'host': host,
+>               'username': os.environ['USER'],
+                'key': '~/.ssh/id_rsa.pub',
+                'command': 'uname -a'
+    
+            }
+
+tests\2_local\test_ssh.py:72: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = environ({'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\Brian\\AppData\\Roaming', 'COMMONPROGRAMFILES': ... '_OLD_VIRTUAL_PROMPT': '$P$G', 'PYTEST_CURRENT_TEST': 'tests/2_local/test_ssh.py::TestSsh::test_internal_ssh (call)'})
+key = 'USER'
+
+    def __getitem__(self, key):
+        try:
+            value = self._data[self.encodekey(key)]
+        except KeyError:
+            # raise KeyError with the original key value
+>           raise KeyError(key) from None
+E           KeyError: 'USER'
+
+..\..\..\AppData\Local\Programs\Python\Python37\lib\os.py:678: KeyError
+_________________________ TestSsh.test_ssh_processors _________________________
+
+self = <test_ssh.TestSsh object at 0x0000021F74D85988>
+
+    def test_ssh_processors(self):
+    
+        print()
+        for processors in range(1, len(hosts)):
+            print("Processors:", processors)
+>           results = self.ssh(processors=processors)
+
+tests\2_local\test_ssh.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\2_local\test_ssh.py:60: in ssh
+    processors=processors)
+cloudmesh\common3\host.py:60: in ssh
+    username = os.environ['USER']
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = environ({'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\Brian\\AppData\\Roaming', 'COMMONPROGRAMFILES': ..._OLD_VIRTUAL_PROMPT': '$P$G', 'PYTEST_CURRENT_TEST': 'tests/2_local/test_ssh.py::TestSsh::test_ssh_processors (call)'})
+key = 'USER'
+
+    def __getitem__(self, key):
+        try:
+            value = self._data[self.encodekey(key)]
+        except KeyError:
+            # raise KeyError with the original key value
+>           raise KeyError(key) from None
+E           KeyError: 'USER'
+
+..\..\..\AppData\Local\Programs\Python\Python37\lib\os.py:678: KeyError
+========================= 2 failed, 1 passed in 0.78s =========================
